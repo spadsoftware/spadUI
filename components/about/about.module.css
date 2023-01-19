@@ -26,9 +26,13 @@
 .dot_line{
   color:red;
   min-height: 50px;
+  font-family: Gilroy-Bold !important;
+    font-weight: bold;
+    font-size: 11px;
 }
 .dot_line_last{
   min-height: 5px;
+  font-family: Gilroy-Bold;
 }
 .tlt{
   color: #d9232d;

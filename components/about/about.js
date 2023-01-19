@@ -98,6 +98,9 @@ const AboutComponent = () => {
           align="right"
           variant="p"
           color="text.secondary"
+          sx={{ fontFamily: "Gilroy-Bold !important",
+          fontWeight: 'bold',
+          fontSize: "11px"}}
         >
          Analysis
         </TimelineOppositeContent>
@@ -105,37 +108,51 @@ const AboutComponent = () => {
           <TimelineDot />
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent >Plan</TimelineContent>
+        <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
+          fontWeight: 'bold',
+          fontSize: "11px"}}>Plan</TimelineContent>
       </TimelineItem>
       <TimelineItem className= {classes.dot_line}>
-        <TimelineOppositeContent color="text.secondary">
+        <TimelineOppositeContent color="text.secondary"   sx={{ fontFamily: "Gilroy-Bold !important",
+          fontWeight: 'bold',
+          fontSize: "11px"}}>
         Develop 
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="primary"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Design</TimelineContent>
+        <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
+          fontWeight: 'bold',
+          fontSize: "11px"}}>Design</TimelineContent>
       </TimelineItem>
       <TimelineItem className= {classes.dot_line}>
-        <TimelineOppositeContent color="text.secondary">
+        <TimelineOppositeContent color="text.secondary"   sx={{ fontFamily: "Gilroy-Bold !important",
+          fontWeight: 'bold',
+          fontSize: "11px"}}>
           Test
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="error"/>
           <TimelineConnector />
         </TimelineSeparator>
-        <TimelineContent>Deploy</TimelineContent>
+        <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
+          fontWeight: 'bold',
+          fontSize: "11px"}}>Deploy</TimelineContent>
       </TimelineItem>
       <TimelineItem className= {classes.dot_line_last}>
-        <TimelineOppositeContent color="text.secondary">
+        <TimelineOppositeContent color="text.secondary"   sx={{ fontFamily: "Gilroy-Bold !important",
+          fontWeight: 'bold',
+          fontSize: "11px"}}> 
           Review
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="success"/>
         
         </TimelineSeparator>
-        <TimelineContent>Launch</TimelineContent>
+        <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
+          fontWeight: 'bold',
+          fontSize: "11px"}}>Launch</TimelineContent>
       </TimelineItem>
     </Timeline>
 
