@@ -73,7 +73,7 @@ const goalComponent = () => {
     
     </div>
    </div>
-   <Box
+   <Box style={{justifyContent: "center"}}
       sx={{
         display: 'flex',
         flexWrap: 'wrap',
@@ -82,6 +82,7 @@ const goalComponent = () => {
           width: 138,
           height: 108,
         },
+        
       }}
     >
  

@@ -25,7 +25,7 @@
 }
 .dot_line{
   color:red;
-  min-height: 50px;
+  min-height: 50px !important;
   font-family: Gilroy-Bold !important;
     font-weight: bold;
     font-size: 11px;
