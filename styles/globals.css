@@ -54,7 +54,9 @@ body {
   color: #252525;
   font-family: 'Montserrat ','helvetica','arial ', sans-serif;
 }
-
+.MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+  box-shadow: 0 0 6px 1px #00000012 !important;
+}
 h1,
 h2,
 h3,h4 {
