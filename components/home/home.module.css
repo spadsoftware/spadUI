@@ -17,8 +17,8 @@
     content: "";
     background: rgba(13, 20, 26, 0.7);
     position: absolute;
-    bottom: auto;
-    top: auto;
+    bottom: 0;
+    top: 0;
     left: 0;
     right: 0;
 }
@@ -47,8 +47,8 @@
 
 .home .homeContainer {
 	position: absolute;
-	bottom: 0;
-	top: 0;
+	bottom: auto;
+	top: auto;
 	left: 0;
 	right: 0;
 	/* display: flex; */
