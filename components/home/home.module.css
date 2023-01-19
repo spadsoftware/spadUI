@@ -127,6 +127,9 @@
         padding: 10px 20px 20px;
         position: relative;
         background: #fff;
+        display: flex;
+        align-items: center;
+    
       }
 
       .homeServiceiconBAHdr{
@@ -354,8 +357,8 @@ margin-top: 8px;
     text-align: center;
     background:#fff;
 color: black;
-    top: 50%;
-    left: 44%;
+    /* top: 50%;
+    left: 44%; */
 }
 
 
