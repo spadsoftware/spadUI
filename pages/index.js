@@ -78,11 +78,11 @@ function HomePage(props) {
 export const getStaticProps = async () => {
   const featuredPosts = getFeaturedPosts();
 
-  const response = await fetch("http://127.0.0.1:8080/pages");
+  // const response = await fetch("http://127.0.0.1:8080/pages");
 
-  const json = await response.json();
+  // const json = await response.json();
   return {
-    props: { pageDetails: json },
+    props: { pageDetails: "test" },
   };
 };
 

@@ -4,7 +4,7 @@ import classes from './contact-form.module.css';
 import Notification from '../ui/notification';
 
 async function sendContactData(contactDetails) {
-  const response = await fetch('/api/contact', {
+  const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
     method: 'POST',
     body: JSON.stringify(contactDetails),
     headers: {
