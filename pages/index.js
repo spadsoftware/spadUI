@@ -13,7 +13,7 @@ import WeServe from  './weServe'
 import Services from  './services'
 import Offers from  './offers'
 import Faq from  './faq'
-import Techno from './Techno'
+import Techno from './techno'
 import Events from  './events'
 import ContactUs from  './contactUs'
 import Image from 'next/image';
