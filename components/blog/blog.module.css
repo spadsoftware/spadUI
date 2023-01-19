@@ -1,0 +1,26 @@
+.section_blog{
+    text-align: center;
+}
+.MuiPagination-ul{
+    text-align: center;
+    justify-content: center;
+}
+.section_blog ul{
+    text-align: center;
+    justify-content: center;
+}
+.section_blog_hdr{
+    border-bottom: 2px solid gainsboro;
+    padding-bottom: 10px;
+}
+.section_blog_src{
+    text-align: right;
+}
+.blogImg{
+
+    left: 95px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s ease;
+
+}

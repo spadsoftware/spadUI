@@ -1,0 +1,60 @@
+.section_blog{
+    text-align: center;
+}
+.MuiPagination-ul{
+    text-align: center;
+    justify-content: center;
+}
+.section_blog ul{
+    text-align: center;
+    justify-content: center;
+}
+.section_blog_hdr{
+    border-bottom: 2px solid gainsboro;
+    padding-bottom: 10px;
+}
+.section_blog_src{
+    text-align: right;
+}
+.blogImg{
+
+    left: 95px;
+    width: 30px;
+    height: 30px;
+    transition: all 0.5s ease;
+
+}
+.singleBlog{
+    background-color: #021f61;
+    height:300px
+}
+.singleBlogHdr{
+    padding:15px;
+    color: white;
+    text-align: center;
+}
+.blogTopic{
+    /* border-right: 2px solid #e2423c; */
+    margin-top: 7px;
+
+}
+.blogTopicRecents{
+    margin-left:-15px !important;
+}
+.blogLeftTopic{
+    background-color: #021f61;   
+}
+.blogTopicRecent{
+   border: 2px solid #e2423c;
+
+    color: #e2423c;     
+}
+.blogLeftTopicHdr{
+    justify-content: center;
+}
+.blogLeftTopicRelated{
+    font-family: Gilroy-Bold;
+    font-weight: 400;
+    font-size: 22px;
+    padding: 15px;
+}

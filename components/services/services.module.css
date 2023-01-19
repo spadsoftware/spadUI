@@ -1,0 +1,231 @@
+.section_service{
+    text-align: center;
+    color: black;
+    padding-left:12px;
+    padding-right: 12px;
+    font-weight: bold;
+}
+.section__btm{
+    padding-bottom:15px !important;
+  }
+.section_service_tblhdr{
+    text-align: center;
+}
+.svc_img{
+    width:auto;
+}
+.section__subtlt{
+    padding: 12px;
+  }
+  
+
+.section_servicesvc1{
+background-color:#e1ffc9 ;
+padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+
+}
+.section_servicesvc2{
+    background-color:#ffd2d9;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+}
+.section_servicesvc3{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#ffd2d9
+}
+.section_servicesvc4{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#bdffe4
+}
+.section_servicesvc5{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#424256
+}
+.section_servicesvc6{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#d2e6ff
+}
+.section_servicesvc7{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#bdffe4
+}
+.section_servicesvc8{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#424256
+}
+.section_servicesvc9{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#ffd2d9
+}
+.section_servicesvc10{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#1d1d2e
+}
+.section_servicesvc11{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#0f7faf !important;
+}
+.section_servicesvc12{
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 10px;
+    background-color:#d2e6ff
+}
+/* .section_servicesvc12{
+    background-color:
+} */
+
+
+
+
+.section_servicesvc011{
+    background-color:#ffd2d9 ;
+    padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+    
+    }
+    .section_servicesvc21{
+        background-color:#b6d4fc;
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+    }
+    .section_servicesvc31{
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color:#d2e6ff
+    }
+    .section_servicesvc41{
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color:#b6d4fc
+    }
+    .section_servicesvc51{
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color:#fff2d5
+    }
+    .section_servicesvc61{
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color:#e7ffc9
+    }
+    .section_servicesvc71{
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color:#d2e6ff
+    }
+    .section_servicesvc81{
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color:#d2e6ff
+    }
+    .section_servicesvc91{
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color:#a6ceed
+    }
+    .section_servicesvc101{
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color:#fff2d5
+    }
+    .section_servicesvc111{
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color:#d2e6ff
+    }
+    .section_servicesvc121{
+        padding: 10px;
+        border: 2px solid white;
+        border-radius: 10px;
+        background-color:#dde38d
+    }
+
+
+
+.service_icon {
+			
+}
+.service_icon_gif {
+    background: url(../../public/images/services/smm.gif) no-repeat -145px -6px;
+    height: 106px;
+    width: 129px;
+}
+
+.hirel-technologies:hover  .service_icon_gif { 
+    
+    background: url(../../public/images/services/smm.gif) no-repeat -8px -7px;
+    height: 106px;
+    width: 129px;
+}
+
+.service_icon_gif2 {
+    background: url(../../public/images/services/ecom.gif) no-repeat -166px -6px;
+    height: 106px;
+    width: 158px;
+}
+
+.hirel-technologies:hover  .service_icon_gif2 { 
+    
+    background: url(../../public/images/services/ecom.gif) no-repeat -8px -7px;
+    height: 106px;
+    width: 158px;
+}
+
+.service_icon_gif3 {
+    background: url(../../public/images/services/php.gif) no-repeat -157px -6px;
+    height: 106px;
+    width: 158px;
+}
+
+.hirel-technologies:hover  .service_icon_gif3 { 
+    
+    background: url(../../public/images/services/php.gif) no-repeat -8px -3px;
+    height: 112px;
+    width: 158px;
+}
+
+.service_icon_gif4 {
+    background: url(../../public/images/services/mob.gif) no-repeat -157px -3px;
+    height: 112px;
+    width: 158px;
+}
+
+.hirel-technologies:hover  .service_icon_gif4 { 
+    
+    background: url(../../public/images/services/mob.gif) no-repeat -8px -7px;
+    height: 112px;
+    width: 158px;
+}

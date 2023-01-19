@@ -1,20 +1,33 @@
 {
-  "name": "nextjs-course",
+  "name": "nextjs-spad",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "export": "next export"
+    "start": "next start"
   },
   "dependencies": {
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
+    "@mui/icons-material": "^5.11.0",
+    "@mui/joy": "^5.0.0-alpha.61",
+    "@mui/lab": "^5.0.0-alpha.114",
+    "@mui/material": "^5.11.2",
+    "@mui/x-date-pickers": "^5.0.12",
+    "babel-plugin-styled-components": "^2.0.7",
+    "classnames": "^2.3.2",
+    "dayjs": "^1.11.7",
+    "fg-loadcss": "^3.1.0",
     "gray-matter": "^4.0.2",
     "mongodb": "^3.6.4",
-    "next": "10.0.6",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "next": "^13.1.1",
+    "react": "^18.2.0",
+    "react-creative-cursor": "^1.2.7",
+    "react-dom": "^18.2.0",
     "react-markdown": "^5.0.3",
+    "react-swipeable-views": "^0.14.0",
+    "react-swipeable-views-utils": "^0.14.0",
     "react-syntax-highlighter": "^15.4.3"
   }
 }

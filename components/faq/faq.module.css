@@ -1,0 +1,27 @@
+.section_faq{
+    text-align: center;
+    color: black;
+    padding: 12px;
+    font-weight: bold;
+    /* background-color: #eee; */
+}
+.section_faq_detail{
+    margin-bottom: 0;
+    text-align: left;
+
+}
+.section_faq_Title{
+    color:#d9232d
+}
+
+
+.section_faq_TitleText:hover{
+    color:#d9232d
+}
+
+.section__btm{
+    padding-bottom:15px !important;
+  }
+  .section__subtlt{
+    padding: 12px;
+  }

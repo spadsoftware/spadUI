@@ -42,17 +42,23 @@ body {
   --size-16: 4rem;
   --size-20: 5rem;
   --size-40: 10rem;
-
+  --bg-color:white;
+  --li-color:#042e6f;
+  --li-font-size:14px;
+  --li-font-weight:600;
   margin: 0;
-  background-color: var(--color-grey-500);
+  background-color: var(--bg-color);
+  --logo-red-color:#d9232d;
+  --logo1-red-color:#1e2762;
+  --logo3-red-color:#3f8ec6;
   color: #252525;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat ','helvetica','arial ', sans-serif;
 }
 
 h1,
 h2,
-h3 {
-  font-family: 'Oswald', 'Roboto', sans-serif;
+h3,h4 {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 a {
