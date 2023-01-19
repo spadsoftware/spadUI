@@ -26,8 +26,7 @@
     "react-creative-cursor": "^1.2.7",
     "react-dom": "^18.2.0",
     "react-markdown": "^5.0.3",
-    "react-swipeable-views": "^0.14.0",
-    "react-swipeable-views-utils": "^0.14.0",
+ 
     "react-syntax-highlighter": "^15.4.3"
   }
 }
