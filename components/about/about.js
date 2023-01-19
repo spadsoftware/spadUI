@@ -275,7 +275,9 @@ Our Services</h2> */}
           <Item className={classes.about_wrapperright1} >  
             <div >
             <h2 >
-            <p className={classes.test_bold}>Our Experts &amp; Clients Lifted us to</p>
+            <p className={classes.test_bold} 
+            style={{justifyContent:"center"}}
+            >Our Experts &amp; Clients Lifted us to</p>
 
               <span  
       className={classes.about_sub_test_bold} >Best</span> 

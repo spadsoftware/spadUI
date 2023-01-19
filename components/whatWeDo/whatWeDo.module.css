@@ -84,7 +84,9 @@
 
 .section_wwd_slider_services{
     }
-
+    .whatWeDo_section_wwd  .MuiMasonry-root {
+      margin: calc(0px);
+  }
 
 .section_wwd_slider_services_items{
   font-size: 100px;
