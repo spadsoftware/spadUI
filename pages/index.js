@@ -25,7 +25,8 @@ import Benefits from  './benefits'
 function HomePage(props) {
   return (
     <Fragment>
-      <title>Next | Hone</title>
+      <title>Spad Software | Home</title>
+      <link rel="shortcut icon" href="favicon.jpg" />
       <Head>
         <meta name="description" content="Spad software consultancy private limited Offering Online &amp; 
   Classroom Training Courses on AWS, Python, Data Science, Devops, Selenium, ML, AI, RPA, Azure, Digital Marketing,

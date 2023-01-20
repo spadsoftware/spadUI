@@ -6,7 +6,7 @@ function WhatWeDo(){
   return (
     <>
       <Head>
-        <title>Next | WhatWeDo</title>
+        <title>Spad Software | WhatWeDo</title>
         <meta name="keyword" content="WhatWeDo" />
       </Head>
 

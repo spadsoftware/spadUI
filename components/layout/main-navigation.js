@@ -55,9 +55,16 @@ function MainNavigation() {
               <a  className={router.pathname == "/blog" ? classes.active : ""}>Blog</a>
               </Link>
           </li>
+
           <li>
-            <Link href='/home'>
-              <a  className={router.pathname == "/home" ? "active" : "nonActive"}>Contact</a>
+            <Link href='/hireTalents'>
+              <a  className={router.pathname == "/hireTalents" ? "active" : "nonActive"}>Hire Talents</a>
+              </Link>
+          </li>
+
+          <li>
+            <Link href='/jobSeekers'>
+              <a  className={router.pathname == "/jobSeekers" ? "active" : "nonActive"}>Job Seekers</a>
               </Link>
           </li>
 

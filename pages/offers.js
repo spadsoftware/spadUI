@@ -6,7 +6,7 @@ const Offers = () => {
   return (
     <>
       <Head>
-        <title>Next | Offers</title>
+        <title>Spad Software | Offers</title>
         <meta name="keyword" content="Offers" />
       </Head>
 

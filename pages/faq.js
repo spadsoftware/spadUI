@@ -5,7 +5,7 @@ const Faq = () => {
   return (
     <>
       <Head>
-        <title>Next | Faq</title>
+        <title>Spad Software | Faq</title>
         <meta name="keyword" content="Faq" />
       </Head>
 

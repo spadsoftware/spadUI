@@ -74,11 +74,12 @@ useEffect(() => {
       <Grid  container spacing={{ xs: 2, md: 3 }} columns={{ xs: 3, sm: 8, md: 12 }}>
        
         <Grid item xs={8}>
-        <Accordion>
+        <Accordion  expanded={true}>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
                 id="panel1a-header"
+               
               >
                <HelpOutlineIcon className= {classes.section_faq_Title} />&nbsp;
                 <Typography className= {classes.section_faq_TitleText}>
@@ -174,7 +175,18 @@ useEffect(() => {
            
         </Grid>
         <Grid item xs={4}>
-        <Typography
+      
+        <List  sx={{
+        width: '100%',
+        bgcolor: 'background.paper',
+        position: 'relative',
+        overflow: 'auto',
+        maxHeight: 390,
+        boxShadow:'0 0 5px 2px #00000029',
+
+        '& ul': { padding: 0 },
+      }}>
+          <Typography
                 sx={{ display: 'inline',color:'#d9232d' }}
                 component="span"
                 variant="h6"
@@ -182,16 +194,8 @@ useEffect(() => {
               >
                Recent News
               </Typography>
-        <List  sx={{
-        width: '100%',
-        bgcolor: 'background.paper',
-        position: 'relative',
-        overflow: 'auto',
-        maxHeight: 260,
-        '& ul': { padding: 0 },
-      }}>
-        
         { 
+        
         Array.isArray(searchNews) ? searchNews.map(i => {
             return (
         <>

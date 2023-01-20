@@ -6,7 +6,9 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>Next | About</title>
+        <title>Spad Software | About</title>
+        <link rel="shortcut icon" href="favicon.jpg" />
+
         <meta name="keyword" content="about" />
       </Head>
 

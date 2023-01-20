@@ -6,7 +6,7 @@ const WeServe = () => {
   return (
     <>
       <Head>
-        <title>Next | WeServe</title>
+        <title>Spad Software | WeServe</title>
         <meta name="keyword" content="WeServe" />
       </Head>
 

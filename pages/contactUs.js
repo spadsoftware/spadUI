@@ -6,7 +6,7 @@ const ContactUs = () => {
   return (
     <>
       <Head>
-        <title>Next | ContactUs</title>
+        <title>Spad Software | ContactUs</title>
         <meta name="keyword" content="ContactUs" />
       </Head>
 <ContactUsComponent />

@@ -6,7 +6,7 @@ const Goal = () => {
   return (
     <>
       <Head>
-        <title>Next | Goal</title>
+        <title>Spad Software | Goal</title>
         <meta name="keyword" content="Goal" />
       </Head>
 

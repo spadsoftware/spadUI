@@ -6,8 +6,8 @@ const Blog = (props) => {
   return (
     <>
       <Head>
-        <title>Next | Blog</title>
-        <meta name="keyword" content="HomBloge" />
+        <title>Spad Software | Blog</title>
+        <meta name="keyword" content="Blog" />
        
       </Head>
 

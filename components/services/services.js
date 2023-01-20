@@ -61,8 +61,15 @@ const ServicesComponent = () => {
       <TabContext value={value}  className= {classes.section_service_tblcon}>
         <Box sx={{ borderBottom: 1, borderColor: 'divider',textAlign:'center' }}>
           <TabList onChange={handleChange} aria-label="lab API tabs example" 
-          className= {classes.section_service_tblhdr} centered >
-            <Tab  label=" Services" value="1" />
+          className= {classes.section_service_tblhdr} centered 
+          style={{background:'#b6d6ff',width:'98%',border:'1px solid #b6d6ff',
+          boxShadow:'0px 0px 0px 5px #b6d6ff'
+        
+        }}
+          
+          >
+            <Tab  label=" Services" value="1" 
+            />
             <Tab label=" Training" value="2" />
             <Tab label=" Consultancy" value="3" />
           </TabList>
@@ -355,7 +362,7 @@ const ServicesComponent = () => {
   <Grid item  className= {classes.section_servicesvcc101} xs={4} sm={4} md={4}>
   <div className={classes.svcs_img}>
   <Image className={classes.svc_img}
-  src={`/images/services/os.png`}
+  src={`/images/services/Os.png`}
   alt={'Spad Software Logo'}
   width={370}
   height={300}

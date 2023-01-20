@@ -6,7 +6,8 @@ const Home = (props) => {
   return (
     <>
       <Head>
-        <title>Next | Home</title>
+        <title>Spad Software | Home</title>
+        <link rel="shortcut icon" href="favicon.jpg" />
         <meta name="keyword" content="Home" />
        
       </Head>
