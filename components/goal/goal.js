@@ -269,7 +269,7 @@ const goalComponent = () => {
                     <span className={classes.card_mission_icon_text}>  &nbsp; &nbsp;On Time Delivery
                      </span>
    </span>
-   <hr />
+   
             <span className={classes.card_align}>
                 <span className="card_text">
                           <Image 
@@ -279,7 +279,7 @@ const goalComponent = () => {
           height={10}
           />&nbsp;
           Provide exceptional people who deliver extraordinary results. </span>
-          <hr />
+          
                           <span className="card_text"> 
                           <Image 
           src={`/images/title_header/ar.jpg`}
@@ -289,7 +289,7 @@ const goalComponent = () => {
           />&nbsp;
           Provide innovative software solutions for excellence and enterprise compliance. </span>
                         </span>
-                        <hr />
+                        
             <span className={classes.card_align}>
                 <span className="card_text">
                           <Image 
@@ -299,7 +299,7 @@ const goalComponent = () => {
           height={10}
           />&nbsp;
           Provide exceptional people who deliver extraordinary results. </span>
-          <hr />
+          
                           <span className="card_text"> 
                           <Image 
           src={`/images/title_header/ar.jpg`}
@@ -311,7 +311,7 @@ const goalComponent = () => {
                         </span>
                         
               </span>
-              <hr />
+              
       </TabPanel>
       <TabPanel className={classes.our_Process}  value={value} index={1}>
       <span className={classes.containerWrapper}>
@@ -327,7 +327,7 @@ const goalComponent = () => {
 
 
    </span>
-   <hr />
+   
    
               <span  className={classes.card_align}>
                 <span className={classes.card_text1}>
@@ -337,7 +337,7 @@ alt='Spad Software Log about'
 width={10}
 height={10}
 />&nbsp;Bridging The Gap Between Business And Technology. </span>
-<hr />
+
                 <span className={classes.card_text1}>  
                 <Image 
 src={`/images/title_header/ar.jpg`}
@@ -347,7 +347,7 @@ height={10}
 />&nbsp;SPAD Software is committed to helping its students to reach their goals and their training experiences, 
                 by providing the innovative surroundings and faculties </span>
               </span>
-               <hr />
+               
 
                <span  className={classes.card_align}>
                 <span className={classes.card_text1}>
@@ -357,7 +357,7 @@ alt='Spad Software Log about'
 width={10}
 height={10}
 />&nbsp;Bridging The Gap Between Business And Technology. </span>
-<hr />
+
                 <span className={classes.card_text1}>  
                 <Image 
 src={`/images/title_header/ar.jpg`}
@@ -367,7 +367,7 @@ height={10}
 />&nbsp;SPAD Software is committed to helping its students to reach their goals and their training experiences, 
                 by providing the innovative surroundings and faculties </span>
               </span>
-               <hr />
+               
 
 
             </span>
@@ -385,7 +385,7 @@ height={10}
                     <span className={classes.card_tc_icon_text}> &nbsp;  Trusted Relationship
                      </span>
    </span>
-           <hr />  
+             
 
               <span className={classes.card_align}>
                 <span className="card_text">
@@ -396,7 +396,7 @@ width={10}
 height={10}
 />&nbsp;
 Deliver world-class hiring solutions that anticipate and fulfill our client’s workforce needs.  </span>
-<hr />
+
                 <span className="card_text">  
                 <Image 
 src={`/images/title_header/ar.jpg`}
@@ -404,7 +404,7 @@ alt='Spad Software Log about'
 width={10}
 height={10}
 />&nbsp;Our vision is to become businesses’ first choice when it comes to software development and maintenance.</span>
-<hr />
+
 <span className="card_text">  
                 <Image 
 src={`/images/title_header/ar.jpg`}
@@ -412,7 +412,7 @@ alt='Spad Software Log about'
 width={10}
 height={10}
 />&nbsp;Our vision is to become businesses’ first choice when it comes to software development and maintenance.</span>
-<hr />
+
               </span>
             </span>
       </TabPanel>

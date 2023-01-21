@@ -6,7 +6,7 @@ function Logo() {
  <Image
   src={`/images/logo/spadLogov1.jpg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={200}
   height={56}
 />
 );

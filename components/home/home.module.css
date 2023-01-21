@@ -9,6 +9,15 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.home1{
+  width: 100%;
+  height: auto;
+  background: linear-gradient(180deg, #FEF7E2 0%, #EEEEFD 100%);
+  position:relative;
+  top:63px;
+}
 .multilineColor{
   color:black
 }
@@ -67,11 +76,11 @@
 .homeTitlechar{
   color:white
 }
-  .homeTitle:hover .homeTitlecharBlink{
+  /* .homeTitle:hover .homeTitlecharBlink{
     top: 20px;
     animation: flip-scale-down-diag-2 0.5s linear both;
   
-}
+} */
 /* .homeTitle:hover, .homeTitlecharBlink:nth-child(odd) {
     top: -20px;
     animation: flip-scale-down-diag-2 0.5s linear both;
@@ -98,8 +107,7 @@
 
 .homeTitlecharBlink{
   
-    animation: blink-title 3s infinite linear;
-	  display: inline-flex;
+    /* animation: blink-title 3s infinite linear; */
 	  color:#d9232d
 }
 @keyframes blink-title{
@@ -132,6 +140,9 @@
         background: #fff;
         display: flex;
         align-items: center;
+        /* margin-left: 177px;
+        width: 83%; */
+        justify-content: center;
     
       }
 
@@ -150,8 +161,21 @@
       .homeServiceiconFormBA{
         padding-left: 55px;
         width: 95%;
+        top: 80%;
+        position: absolute;
       }
+      .homeServiceiconBtn{
+        justify-content: center;
+          text-align: center;
+          background:#1d2862;
+      color: white;
+      height: 55px;
+      top: 8px;
+      }
+     
+
 }
+
 @media (max-width: 767px) {
     .home h1 {
         margin: 0 0 10px 0;
@@ -175,9 +199,21 @@
         width: 95%; */
         
       }
-
+      /* .homeServiceiconcategories{
+        width:93%;
+        
+      } */
+      .datepick .MuiInputBase-root{
+        width:212%
+      }
+      /* .dt{
+        width: 94% !important;
+      } */
 }
 
+.homeServiceiconcategories{
+  margin-top:8px
+}
 .homeServiceList{
     list-style: none;
     margin-bottom: 50px;
@@ -340,28 +376,40 @@
   border-color: var(--color-primary-500);
 }
 
+
+
+
 @media (min-width: 768px) {
   .contact h1 {
     font-size: var(--size-16);
     text-align: center;
   }
+
 }
 .homeServiceiconcategoryMain{
   margin-top: 8px;
 }
+.homeServiceiconcategorieslbl{
+  margin-bottom: 19px;
+}
+
 .homeServiceiconcategory{
 color: black;
-margin-top: 8px;
-    margin-left: -13px;
+margin-top: 14px;
+    margin-left: 19px;
 /* margin-top: 20px; */
+}
+.homeServiceiconcategorylabel{
+  width: 71%;
+    left: 32px;
 }
 .homeServiceiconBtn{
   justify-content: center;
     text-align: center;
-    background:#fff;
-color: black;
-    /* top: 50%;
-    left: 44%; */
+    background:#1d2862;
+color: white;
+height: 55px;
+
 }
 
 
