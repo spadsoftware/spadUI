@@ -189,7 +189,7 @@ style={{top:'60px',position:'relative',background: 'linear-gradient(180deg, #FEF
 
         
       
-        <Grid item xs={6} style={{paddingLeft:'0px'}}>
+        <Grid item xs={6} style={{}}>
         <h3 style={{color:'#da4536',textAlign:'center'}}>Why SPAD Software ?
     </h3>
     <h4 style={{display:'flex'}}>

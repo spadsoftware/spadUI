@@ -55,7 +55,7 @@ useEffect(() => {
   return (
     <>
       <section id="faq" className= {classes.section_faq}>
-    <div className= {classes.section_faq}>
+    <div>
       <div>
       
                 <div>Frequently Asked Questions</div>
@@ -68,7 +68,7 @@ useEffect(() => {
 
       <div className= {classes.section__subtlt}>We are offering latest technology to our clients and students </div>
       </div>
-    <div className= {classes.section_faq}>
+    <div >
 
 
       <Grid  container spacing={{ xs: 2, md: 3 }} columns={{ xs: 3, sm: 8, md: 12 }}>

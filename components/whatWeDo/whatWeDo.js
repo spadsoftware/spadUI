@@ -42,7 +42,7 @@ const WhatWeDoComponent = () => {
       {/* <Cursor isGelly={true}  cursorBackgrounColor='#fcf8f8c9'/> */}
   
     <section id="what_we_do" className= {classes.section_wwd}>
-      <div className= {classes.section_wwd}>
+      <div>
         <div>
           
                 <div  >What we do</div>

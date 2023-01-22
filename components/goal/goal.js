@@ -101,7 +101,7 @@ const goalComponent = () => {
   cursorBackgrounColor='#fcf8f8c9'/> */}
     <section id="about" className= {classes.section_goal}>
       <div className= {classes.section__btm}>
-    <div className= {classes.section_goal}>
+    <div >
   
               <div>Our Goal</div>  
                 <Image
@@ -246,6 +246,7 @@ const goalComponent = () => {
         <Tab label="Our Vision" {...a11yProps(2)} />
         <Tab label="Development Process" {...a11yProps(3)} />
         <Tab label="Escalation Process" {...a11yProps(4)} />
+        <Tab label="Industries we serve" {...a11yProps(5)} />
         {/* <Tab label="Escalation Process" {...a11yProps(4)} />
         <Tab label="Industries We serve" {...a11yProps(5)} />
        */}
@@ -281,8 +282,14 @@ const goalComponent = () => {
     fontWeight: '600'}} >
             Why to choose US?
               </span>
-              <span  className={classes.card_align}>
-              Bridging The Gap Between Business And Technology
+              <span style={{textAlign:'center',display:'block',fontWeight:'600'}} className={classes.card_align}>
+              Bridging The Gap Between 
+              &nbsp;<span style={{borderBottom:'3px solid red'}}>Business And Technology.</span>
+              
+              </span>
+              <span style={{textAlign:'center',display:'block',fontWeight:'600'}} className={classes.card_align}>
+              Fast TurnAround-Get your work done within 
+              &nbsp;<span style={{borderBottom:'3px solid red'}}>7 to 14 days.</span>
               </span>
   <Grid component="span" 
   container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{paddingTop:'20px'}}>
@@ -294,7 +301,7 @@ const goalComponent = () => {
                   width={256}
                   height={56}
                 /></span>
-                  <span style={{fontSize: '13px'}}> Affordable Cost</span>
+                  <span style={{fontSize: '13px'}}> Cost & quality</span>
                            </Grid >
          <Grid component="span"  item  xs={2} sm={4} md={6}>
          <span style={{display:'block'}}>
@@ -360,7 +367,7 @@ const goalComponent = () => {
          <Card sx={{ minWidth: 5,height:48}} component="span" >
               <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                1. Wireframes
+                1.Requirements
                 </Typography>
           
               </CardContent>
@@ -372,7 +379,7 @@ const goalComponent = () => {
         <Card sx={{ minWidth: 5,height:48}} component="span" >
               <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                2.MockUp
+                2.Wireframes
                 </Typography>
           
               </CardContent>
@@ -384,7 +391,7 @@ const goalComponent = () => {
          <Card sx={{ minWidth: 5,height:48}} component="span" >
               <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-               3. UI/UX Design
+               3.MockUp
                 </Typography>
           
               </CardContent>
@@ -396,7 +403,7 @@ const goalComponent = () => {
          <Card sx={{ minWidth: 5,height:48}} component="span" >
               <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-               4.Development
+               4. UI/UX
                 </Typography>
           
               </CardContent>
@@ -409,7 +416,7 @@ const goalComponent = () => {
          <Card sx={{ minWidth: 5,height:48}} component="span" >
               <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-               5.Testing
+               5.Development
                 </Typography>
           
               </CardContent>
@@ -421,7 +428,7 @@ const goalComponent = () => {
          <Card sx={{ minWidth: 5,height:48}} component="span" >
               <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-               6.Handover
+               6.Testing
                 </Typography>
           
               </CardContent>
@@ -433,7 +440,7 @@ const goalComponent = () => {
          <Card sx={{ minWidth: 5,height:48}} component="span" >
               <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-               7.Free Support
+               7.Handover
                 </Typography>
           
               </CardContent>
@@ -445,7 +452,7 @@ const goalComponent = () => {
          <Card sx={{ minWidth: 5,height:48}} component="span" >
               <CardContent>
                 <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-               8.Free Maintenance
+               8.Support
                 </Typography>
           
               </CardContent>
@@ -453,6 +460,19 @@ const goalComponent = () => {
               </CardActions>
             </Card>
          </Grid >
+         <Grid component="span" style={{height:'40px',textAlign:'left',padding:'3px'}} item xs={12} sm={12} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+               9.Free Branding
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+       
   </Grid>
     </Typography>
             
@@ -491,65 +511,135 @@ const goalComponent = () => {
              
                  </Typography>
       </TabPanel>
-      {/* <TabPanel className={classes.our_Process} value={value} index={4}>
-      <Image
-      className={classes.process_img}
-                  src={`/images/process/esclation.svg`}
-                  alt='Spad Software Log about'
-                  width={126}
-                  height={5}
-                />
+      <TabPanel className={classes.our_Process}  value={value} index={5}>
+
+      <Typography component="span">
+     
+  <Grid component="span" 
+  container spacing={2} columns={{ xs: 12, sm: 12, md: 12 }} style={{paddingTop:'20px'}}>
+     <Grid component="span" style={{padding: '0px'}} item xs={6} sm={6} md={4}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                <span className={classes.ed}>Education</span>
+                <span  className={classes.ind_name}>Education</span>
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+        <Grid component="span" style={{padding: '0px'}} item  xs={6} sm={6} md={4}>
+        <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                <span className={classes.md}>Health Care / Medical </span>
+                <span  className={classes.ind_name}>Health Care  </span>
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+                           </Grid >
+         <Grid component="span"style={{padding: '0px'}}  item xs={6} sm={6} md={4}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                <span className={classes.fsb}>Banking</span>
+               <span  className={classes.ind_name}> Banking</span>
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+         <Grid component="span" style={{padding: '0px'}} item xs={6} sm={6} md={4}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                <span className={classes.re}>E-commerce</span>
+                 <span  className={classes.ind_name}> E-commerce</span>
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+        
+         <Grid component="span" style={{padding: '0px'}} item xs={6} sm={6} md={4}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                <span className={classes.tr}>Travel</span>
+                <span  className={classes.ind_name}>Travel</span>
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+         <Grid component="span" style={{padding: '0px'}} item xs={6} sm={6} md={4}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                <span className={classes.fr}>Restaurants</span>
+                <span  className={classes.ind_name}>Restaurants</span>
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+          {/* <Grid component="span" style={{}} item xs={6} sm={6} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                <span className={classes.it}>IT</span>
+                 <span  className={classes.ind_name}>IT</span> 
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid > */}
+         {/* <Grid component="span" style={{height:'40px',textAlign:'left',padding:'3px'}} item xs={12} sm={12} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+               8.Support
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+         <Grid component="span" style={{height:'40px',textAlign:'left',padding:'3px'}} item xs={12} sm={12} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+               9.Free Branding
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid > */}
+       
+  </Grid>
+    </Typography>
+            
+
+     
       </TabPanel>
-      <TabPanel className={classes.our_Process} value={value} index={5}>
-      <Grid container rowSpacing={1} spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 4, md: 12 }}>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.ed}>Education</span>
-  <span  className={classes.ind_name}>Education</span>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.md}>Health Care </span>
-  <span  className={classes.ind_name}>Health Care </span>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.ent}>Entertainment</span>
-  <span  className={classes.ind_name}>Entertainment</span>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.fsb}>Financial</span>
-  <span  className={classes.ind_name}>Financial</span>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.ba}> Accounting</span>
-  <span  className={classes.ind_name}>Accounting</span>  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.re}>E-commerce</span>
-  <span  className={classes.ind_name}>E-commerce</span>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.tr}>Travel</span>
-  <span  className={classes.ind_name}>Travel</span>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.trl}>Logistics</span>
-  <span  className={classes.ind_name}>Logistics</span>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.fr}>Restaurants</span>
-  <span  className={classes.ind_name}>Restaurants</span>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.res}>RealEstate</span>
-  <span  className={classes.ind_name}>RealEstate</span>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.og}> Oil & Gas</span>
-  <span  className={classes.ind_name}> Oil & Gas</span>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <span className={classes.it}>IT & BPO</span>
-  <span  className={classes.ind_name}>IT & BPO</span>  </Grid>
-</Grid>
-      </TabPanel> */}
      
     </Box>
     </Grid>

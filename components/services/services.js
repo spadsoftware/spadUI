@@ -58,12 +58,11 @@ const ServicesComponent = () => {
       </div>
     
     <Box sx={{ width: '100%', typography: 'body1' }} className= {classes.section_service_box}>
-      <TabContext value={value}  className= {classes.section_service_tblcon}>
-        <Box sx={{ borderBottom: 1, borderColor: 'divider',textAlign:'center' }}>
+      <TabContext value={value} style={{}}>
+        <Box sx={{ width:'98%',borderBottom: 1, borderColor: 'divider',textAlign:'center' }}>
           <TabList onChange={handleChange} aria-label="lab API tabs example" 
           className= {classes.section_service_tblhdr} centered 
-          style={{background:'#b6d6ff',width:'98%',border:'1px solid #b6d6ff',
-          boxShadow:'0px 0px 0px 5px #b6d6ff'
+          style={{
         
         }}
           
@@ -128,7 +127,7 @@ const ServicesComponent = () => {
     <div className= {classes.service_icon_gif2}></div>
    </div>
 
-<h4>Ecommerce</h4>
+<h4 style={{color:'white'}}>Ecommerce</h4>
     </div>
   </Grid>
   <Grid item   xs={4} sm={4} md={2} className= {classes.section_servicesvc6}>
@@ -158,7 +157,7 @@ const ServicesComponent = () => {
   <div className= {classes.service_icon}>
     <div className= {classes.service_icon_gif3}></div>
    </div>
-<h4>PHP Development</h4>
+<h4 style={{color:'white'}}>PHP Development</h4>
     </div>
   </Grid>
 
@@ -178,7 +177,7 @@ const ServicesComponent = () => {
   <div className= {classes.service_icon}>
     <div className= {classes.service_icon_gif}></div>
    </div>
-<h4>Branding</h4>
+<h4 style={{color:'white'}}>Branding</h4>
     </div>
   </Grid>
   <Grid item className= {classes.section_servicesvc11}  xs={4} sm={4} md={2}>
