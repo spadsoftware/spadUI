@@ -51,7 +51,7 @@ const AboutComponent = () => {
 
     <section id="about" className= {classes.section_about}>
       <div className= {classes.section__btm}>
-    <div className= {classes.section_about}>
+    <div className= {classes.section_about1}>
     {/* <Image
                   src={`/images/title_header/hdrBtm.png`}
                   alt='Spad Software Log about'
@@ -78,7 +78,7 @@ const AboutComponent = () => {
                   height={50}
                 /> */}
     </span>
-       <div className= {classes.section_about}>What Makes Us One of The Top Rated Web Development 
+       <div className= {classes.section_about1}>What Makes Us One of The Top Rated Web Development 
       and Digital Marketing Company In Bangalore, India.</div>
       </div>
       <Box sx={{ width: '100%' }}>
