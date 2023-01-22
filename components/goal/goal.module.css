@@ -46,7 +46,12 @@
     height: 45px;background-color: #9ec73b ;
     border-radius: 10px;
 }
-
+.about_ms{
+  padding: 5px;display: inline;object-fit: contain;
+  width: 45px;
+  height: 45px;background-color: #aab3ff ;
+  border-radius: 10px;
+}
 .about_choose{
     padding: 5px;display: inline;object-fit: contain;
     width: 45px;

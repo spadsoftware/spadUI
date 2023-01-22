@@ -270,7 +270,7 @@ const ServicesComponent = () => {
   width={256}
   height={56}
 />
-<h4>mysql/MongoDB</h4>
+<h4>Database</h4>
     </div>
   </Grid>
   <Grid item className= {classes.section_servicesvc71}  xs={4} sm={4} md={2}>

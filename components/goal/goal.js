@@ -32,7 +32,9 @@ import FavoriteBorder from '@mui/icons-material/FavoriteBorder';
 import Favorite from '@mui/icons-material/Favorite';
 import BookmarkBorderIcon from '@mui/icons-material/BookmarkBorder';
 import BookmarkIcon from '@mui/icons-material/Bookmark';
-
+import Card from '@mui/material/Card';
+import CardActions from '@mui/material/CardActions';
+import CardContent from '@mui/material/CardContent';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
@@ -100,12 +102,7 @@ const goalComponent = () => {
     <section id="about" className= {classes.section_goal}>
       <div className= {classes.section__btm}>
     <div className= {classes.section_goal}>
-    {/* <Image
-                  src={`/images/title_header/hdrBtm.png`}
-                  alt='Spad Software Log about'
-                  width={126}
-                  height={5}
-                /> */}
+  
               <div>Our Goal</div>  
                 <Image
                   src={`/images/title_header/hdrBtm.png`}
@@ -249,183 +246,252 @@ const goalComponent = () => {
         <Tab label="Our Vision" {...a11yProps(2)} />
         <Tab label="Development Process" {...a11yProps(3)} />
         <Tab label="Escalation Process" {...a11yProps(4)} />
+        {/* <Tab label="Escalation Process" {...a11yProps(4)} />
         <Tab label="Industries We serve" {...a11yProps(5)} />
-      
+       */}
 
       </Tabs>
 
 
       <TabPanel className={classes.our_Process}  value={value} index={0}>
-      <span className={classes.containerWrapper}>
-            <span className={classes.containerHdr}>Our Mission</span>
-            <span className={classes.svcs_img}>
-              
-          <Image className={classes.about_mission}
-                  src={`/images/about/clock.png`}
-                  alt='Spad Software Log about'
-                  width={256}
-                  height={56}
-                />
-                    <span className={classes.card_mission_icon_text}>  &nbsp; &nbsp;On Time Delivery
-                     </span>
-   </span>
-   
-            <span className={classes.card_align}>
-                <span className="card_text">
-                          <Image 
-          src={`/images/title_header/ar.jpg`}
-          alt='Spad Software Log about'
-          width={10}
-          height={10}
-          />&nbsp;
-          Provide exceptional people who deliver extraordinary results. </span>
-          
-                          <span className="card_text"> 
-                          <Image 
-          src={`/images/title_header/ar.jpg`}
-          alt='Spad Software Log about'
-          width={10}
-          height={10}
-          />&nbsp;
-          Provide innovative software solutions for excellence and enterprise compliance. </span>
-                        </span>
-                        
-            <span className={classes.card_align}>
-                <span className="card_text">
-                          <Image 
-          src={`/images/title_header/ar.jpg`}
-          alt='Spad Software Log about'
-          width={10}
-          height={10}
-          />&nbsp;
-          Provide exceptional people who deliver extraordinary results. </span>
-          
-                          <span className="card_text"> 
-                          <Image 
-          src={`/images/title_header/ar.jpg`}
-          alt='Spad Software Log about'
-          width={10}
-          height={10}
-          />&nbsp;
-          Provide innovative software solutions for excellence and enterprise compliance. </span>
-                        </span>
-                        
+    
+      <Typography component="span">
+      <span style={{fontSize: '18px',
+    fontWeight: '600'}} >
+             Our Mission?
               </span>
+  <Grid component="span" 
+  container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{paddingTop:'20px'}}>
+ <Grid component="span"  item xs={12} sm={12} md={12}>
+              
+              Provide exceptional people who deliver extraordinary results
+              Provide innovative software solutions for excellence and enterprise compliance.
+             
+              </Grid >
+  </Grid>
+</Typography>
+
               
       </TabPanel>
       <TabPanel className={classes.our_Process}  value={value} index={1}>
-      <span className={classes.containerWrapper}>
-            <span className={classes.containerHdr}>Why to Choose Us?</span>
-            <span className={classes.svcs_img}>
- <Image className={classes.about_ac}
+
+
+      <Typography component="span">
+      <span style={{fontSize: '18px',
+    fontWeight: '600'}} >
+            Why to choose US?
+              </span>
+              <span  className={classes.card_align}>
+              Bridging The Gap Between Business And Technology
+              </span>
+  <Grid component="span" 
+  container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{paddingTop:'20px'}}>
+        <Grid component="span"  item  xs={2} sm={4} md={6}>
+        <span style={{display:'block'}}>
+        <Image className={classes.about_ac}
                   src={`/images/about/ac.png`}
                   alt='Spad Software Log about'
                   width={256}
                   height={56}
-                />
-                    <span className={classes.card_missionCost_icon_text}>  &nbsp; &nbsp;Affordable Costing  </span>
-
-
-   </span>
-   
-   
-              <span  className={classes.card_align}>
-                <span className={classes.card_text1}>
-                <Image 
-src={`/images/title_header/ar.jpg`}
-alt='Spad Software Log about'
-width={10}
-height={10}
-/>&nbsp;Bridging The Gap Between Business And Technology. </span>
-
-                <span className={classes.card_text1}>  
-                <Image 
-src={`/images/title_header/ar.jpg`}
-alt='Spad Software Log about'
-width={10}
-height={10}
-/>&nbsp;SPAD Software is committed to helping its students to reach their goals and their training experiences, 
-                by providing the innovative surroundings and faculties </span>
-              </span>
-               
-
-               <span  className={classes.card_align}>
-                <span className={classes.card_text1}>
-                <Image 
-src={`/images/title_header/ar.jpg`}
-alt='Spad Software Log about'
-width={10}
-height={10}
-/>&nbsp;Bridging The Gap Between Business And Technology. </span>
-
-                <span className={classes.card_text1}>  
-                <Image 
-src={`/images/title_header/ar.jpg`}
-alt='Spad Software Log about'
-width={10}
-height={10}
-/>&nbsp;SPAD Software is committed to helping its students to reach their goals and their training experiences, 
-                by providing the innovative surroundings and faculties </span>
-              </span>
-               
-
-
-            </span>
-      </TabPanel>
-      <TabPanel className={classes.our_Process}  value={value} index={2}>
-      <span className={classes.containerWrapper}>
-            <span className={classes.containerHdr}>Our Vision</span>
-            <span className={classes.svcs_img}>
-  <Image className={classes.about_choose}
+                /></span>
+                  <span style={{fontSize: '13px'}}> Affordable Cost</span>
+                           </Grid >
+         <Grid component="span"  item  xs={2} sm={4} md={6}>
+         <span style={{display:'block'}}>
+          <Image className={classes.about_choose}
                   src={`/images/about/clock.png`}
                   alt='Spad Software Log about'
                   width={256}
                   height={56}
                 />
-                    <span className={classes.card_tc_icon_text}> &nbsp;  Trusted Relationship
-                     </span>
-   </span>
-             
+                </span>
+            <span style={{fontSize: '13px'}}>On time Delivery</span> 
+         </Grid >
+         <Grid component="span"  item  xs={2} sm={4} md={6}>
+            <span style={{display:'block'}}>
+         <Image className={classes.about_mission}
+                  src={`/images/about/tr.png`}
+                  alt='Spad Software Log about'
+                  width={256}
+                  height={56}
+                />
+                </span>
+                  <span style={{fontSize: '13px'}}>Trusted Relationship</span> 
+         </Grid >
+         <Grid component="span"  item  xs={2} sm={4} md={6}>
+         <span style={{display:'block'}}>
+         <Image className={classes.about_ms}
+                  src={`/images/goal/ms.png`}
+                  alt='Spad Software Log about'
+                  width={256}
+                  height={56}
+                />
+                </span>
+                <span style={{fontSize: '13px'}}>Support</span>
+         </Grid >
+  </Grid>
+    </Typography>
 
-              <span className={classes.card_align}>
-                <span className="card_text">
-                <Image 
-src={`/images/title_header/ar.jpg`}
-alt='Spad Software Log about'
-width={10}
-height={10}
-/>&nbsp;
-Deliver world-class hiring solutions that anticipate and fulfill our client’s workforce needs.  </span>
-
-                <span className="card_text">  
-                <Image 
-src={`/images/title_header/ar.jpg`}
-alt='Spad Software Log about'
-width={10}
-height={10}
-/>&nbsp;Our vision is to become businesses’ first choice when it comes to software development and maintenance.</span>
-
-<span className="card_text">  
-                <Image 
-src={`/images/title_header/ar.jpg`}
-alt='Spad Software Log about'
-width={10}
-height={10}
-/>&nbsp;Our vision is to become businesses’ first choice when it comes to software development and maintenance.</span>
-
+      </TabPanel>
+      <TabPanel className={classes.our_Process}  value={value} index={2}>
+    
+            <Typography component="span">
+      <span style={{fontSize: '18px',
+    fontWeight: '600'}} >
+             Our Vision?
               </span>
-            </span>
+  <Grid component="span" 
+  container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{paddingTop:'20px'}}>
+ <Grid component="span"  item xs={12} sm={12} md={12}>
+ Our vision is to become businesses’ first choice when it comes to software development and maintenance.
+
+             
+              </Grid >
+  </Grid>
+            </Typography>
       </TabPanel>
       <TabPanel className={classes.our_Process}  value={value} index={3}>
-      <Image
+
+      <Typography component="span">
      
-                  src={`/images/goal/sdlc.svg`}
-                  alt='Spad Software Log about'
-                  width={376}
-                  height={300}
-                />
+  <Grid component="span" 
+  container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{paddingTop:'20px'}}>
+     <Grid component="span" style={{height:'40px',textAlign:'left',padding:'3px'}} item xs={12} sm={12} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                1. Wireframes
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+        <Grid component="span" style={{height:'40px',textAlign:'left',padding:'3px'}} item  xs={12} sm={12} md={3}>
+        <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+                2.MockUp
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+                           </Grid >
+         <Grid component="span"style={{height:'40px',textAlign:'left',padding:'3px'}}  item xs={12} sm={12} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+               3. UI/UX Design
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+         <Grid component="span" style={{height:'40px',textAlign:'left',padding:'3px'}} item xs={12} sm={12} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+               4.Development
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+        
+         <Grid component="span" style={{height:'40px',textAlign:'left',padding:'3px'}} item xs={12} sm={12} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+               5.Testing
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+         <Grid component="span" style={{height:'40px',textAlign:'left',padding:'3px'}} item xs={12} sm={12} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+               6.Handover
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+          <Grid component="span" style={{height:'40px',textAlign:'left',padding:'3px'}} item xs={12} sm={12} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+               7.Free Support
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+         <Grid component="span" style={{height:'40px',textAlign:'left',padding:'3px'}} item xs={12} sm={12} md={3}>
+         <Card sx={{ minWidth: 5,height:48}} component="span" >
+              <CardContent>
+                <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+               8.Free Maintenance
+                </Typography>
+          
+              </CardContent>
+              <CardActions>
+              </CardActions>
+            </Card>
+         </Grid >
+  </Grid>
+    </Typography>
+            
+
+     
       </TabPanel>
       <TabPanel className={classes.our_Process} value={value} index={4}>
+     
+      <Typography 
+         sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
+         component="span">
+          <Image
+      className={classes.process_img}
+                  src={`/images/process/esclation.svg`}
+                  alt='Spad Software Log about'
+                  width={126}
+                  height={5}
+                />
+                 </Typography>
+                 <Typography 
+         sx={{ flexGrow: 1, display: { xs: 'block', sm: 'none' } }}
+         component="span">
+              <span style={{fontSize: '18px',display:'block',color:'black',
+    fontWeight: '600'}} >
+               <span style={{color:'#de4332',}}>Team Lead</span>: you can reach Manager Within  4hour time frame 
+              </span>
+              <span style={{fontSize: '18px',display:'block',color:'black',
+    fontWeight: '600'}} >
+            <span style={{color:'#de4332',}}>Manager</span> :you can reach Within  12hour time frame 
+              </span>
+              
+              <span style={{fontSize: '18px',display:'block',color:'black',
+    fontWeight: '600'}} >
+              <span style={{color:'#de4332',}}>CTO&CEO</span>: you can reach Within  3 days time frame 
+              </span>
+             
+                 </Typography>
+      </TabPanel>
+      {/* <TabPanel className={classes.our_Process} value={value} index={4}>
       <Image
       className={classes.process_img}
                   src={`/images/process/esclation.svg`}
@@ -483,7 +549,7 @@ height={10}
   <span className={classes.it}>IT & BPO</span>
   <span  className={classes.ind_name}>IT & BPO</span>  </Grid>
 </Grid>
-      </TabPanel>
+      </TabPanel> */}
      
     </Box>
     </Grid>

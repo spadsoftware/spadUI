@@ -167,10 +167,11 @@ const hireTalents = () => {
 
     <Box sx={{textAlign:'left',background:'white',color:'black',
         
-    boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25);'}}>
+    boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25)'}}>
 
-<Grid container rowSpacing={1} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-        <Grid item xs={6} style={{left: '30px',position: 'relative',}}>
+<Grid container rowSpacing={1} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}
+style={{top:'60px',position:'relative',background: 'linear-gradient(180deg, #FEF7E2 0%, #EEEEFD 100%)'}}>
+        <Grid item xs={6} style={{left: '0px',position: 'relative',}}>
       
    <h3 style={{color:'#da4536',textAlign:'center'}}>why hire from Spad Software </h3>
         <h4 style={{display:'flex'}}>

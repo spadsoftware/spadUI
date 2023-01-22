@@ -60,7 +60,7 @@ const WhatWeDoComponent = () => {
    </div>
    </div>
       <Box   >
-      <Masonry columns={{ xs: 2, sm: 2,md:4 }}  spacing={2}>
+      <Masonry columns={{ xs: 1, sm: 1,md:4 }}  spacing={2}>
           <Item >
             <div className= {classes.item_list}>
               <div>
@@ -98,7 +98,7 @@ const WhatWeDoComponent = () => {
           <Item >
           <div className= {classes.item_list3}>
     <div>
-    <h3>WordPress/Joomla Development</h3>
+    <h3>WordPress</h3>
     <p className= {classes.items_lists}>The countless themes and iconic features of WordPress development has contributed 
         to the success of various companies. We offer client assistance to help enjoy the
          best of WordPress development.</p>
@@ -195,157 +195,7 @@ const WhatWeDoComponent = () => {
       </Masonry>
     </Box>
 
-{/* 
-      <Grid className= {classes.section_wwd_slider_services} 
-      container
-       spacing={{ xs: 2, md: 3 }} columns={{ xs: 3, sm: 4, md: 12 }}>
- 
-  <Grid item xs={3} >
-  <div className= {classes.item_list}>
-    <div>
-    <h3>UI / UX Design and Web Development</h3>
-    <p className= {classes.items_lists}>A stunning design and happy customers? hat’s right. 
-    Everything from the right tools, brilliant ideas and high expertise, 
-    you are guaranteed to enjoy the finished work that we provide.</p>
-   
-    </div>
-    </div>
 
-  </Grid>
-  <Grid item xs={3}>
-  <div className= {classes.item_list1}>
-    <div>
-    <h3> Mobile Development</h3>
-    <p className= {classes.items_lists}>Create a web design which can interact with your database dynamically with a proper source language. Our
-      web development team programs an interactive, efficient, user-friendly web page for your visitors. Your
-      platform is in our hands! Sweat not!</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-  <Grid item xs={3}>
-  <div className= {classes.item_list2}>
-    <div>
-    <h3>CMS Website Development</h3>
-    <p className= {classes.items_lists}>DRIVE your user control with our CMS service; we make our clients website more informative. Stand on
-      top in your division with our content customized service</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-  <Grid item xs={3}>
-  <div className= {classes.item_list3}>
-    <div>
-    <h3>WordPress/Joomla Development</h3>
-    <p className= {classes.items_lists}>The countless themes and iconic features of WordPress development has contributed 
-        to the success of various companies. We offer client assistance to help enjoy the
-         best of WordPress development.</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-
-  <Grid item xs={3} >
-  <div className= {classes.item_list4}>
-    <div>
-    <h3>Digital Marketing</h3>
-    <p className= {classes.items_lists}>A stunning design and happy customers? hat’s right. 
-    Everything from the right tools, brilliant ideas and high expertise, 
-    you are guaranteed to enjoy the finished work that we provide.</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-  <Grid item xs={3}>
-  <div className= {classes.item_list5}>
-    <div>
-    <h3> Social Media Marketing</h3>
-    <p className= {classes.items_lists}>Create a web design which can interact with your database dynamically with a proper source language. Our
-      web development team programs an interactive, efficient, user-friendly web page for your visitors. Your
-      platform is in our hands! Sweat not!</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-  <Grid item xs={3}>
-  <div className= {classes.item_list6}>
-    <div>
-    <h3>Search Engine Optimization</h3>
-    <p className= {classes.items_lists}>DRIVE your user control with our CMS service; we make our clients website more informative. Stand on
-      top in your division with our content customized service</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-  <Grid item xs={3}>
-  <div className= {classes.item_list7}>
-    <div>
-    <h3>Branding</h3>
-    <p className= {classes.items_lists}>The countless themes and iconic features of WordPress development has contributed 
-        to the success of various companies. We offer client assistance to help enjoy the
-         best of WordPress development.</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-
-
-  <Grid item xs={3} >
-  <div className= {classes.item_list8}>
-    <div>
-    <h3>Payment Gateway Integration</h3>
-    <p className= {classes.items_lists}>A stunning design and happy customers? hat’s right. 
-    Everything from the right tools, brilliant ideas and high expertise, 
-    you are guaranteed to enjoy the finished work that we provide.</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-  <Grid item xs={3}>
-  <div className= {classes.item_list9}>
-    <div>
-    <h3> Website Maintenanace & support</h3>
-    <p className= {classes.items_lists}>Create a web design which can interact with your database dynamically with a proper source language. Our
-      web development team programs an interactive, efficient, user-friendly web page for your visitors. Your
-      platform is in our hands! Sweat not!</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-  <Grid item xs={3}>
-  <div className= {classes.item_list10}>
-    <div>
-    <h3>Website Redesigning</h3>
-    <p className= {classes.items_lists}>DRIVE your user control with our CMS service; we make our clients website more informative. Stand on
-      top in your division with our content customized service</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-  <Grid item xs={3}>
-  <div className= {classes.item_list11}>
-    <div>
-    <h3>E-Commerce Solutions</h3>
-    <p className= {classes.items_lists}>The countless themes and iconic features of WordPress development has contributed 
-        to the success of various companies. We offer client assistance to help enjoy the
-         best of WordPress development.</p>
-   
-    </div>
-    </div>
-
-  </Grid>
-
-</Grid> */}
 
 
       </section>

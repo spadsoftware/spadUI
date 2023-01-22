@@ -179,9 +179,9 @@ padding: 10px;
 			
 }
 .service_icon_gif {
-    background: url(../../public/images/services/smm.gif) no-repeat -145px -6px;
+    background: url(../../public/images/services/smm.gif) no-repeat -161px -6px;
     height: 106px;
-    width: 129px;
+    width: 116px;
 }
 
 .hirel-technologies:hover  .service_icon_gif { 
@@ -192,9 +192,9 @@ padding: 10px;
 }
 
 .service_icon_gif2 {
-    background: url(../../public/images/services/ecom.gif) no-repeat -166px -6px;
+    background: url(../../public/images/services/ecom.gif) no-repeat -195px 3px;
     height: 106px;
-    width: 158px;
+    width: 116px;
 }
 
 .hirel-technologies:hover  .service_icon_gif2 { 
@@ -205,9 +205,9 @@ padding: 10px;
 }
 
 .service_icon_gif3 {
-    background: url(../../public/images/services/php.gif) no-repeat -157px -6px;
+    background: url(../../public/images/services/php.gif) no-repeat -182px -6px;
     height: 106px;
-    width: 158px;
+    width: 116px;
 }
 
 .hirel-technologies:hover  .service_icon_gif3 { 
@@ -218,9 +218,9 @@ padding: 10px;
 }
 
 .service_icon_gif4 {
-    background: url(../../public/images/services/mob.gif) no-repeat -157px -3px;
+    background: url(../../public/images/services/mob.gif) no-repeat -174px -3px;
     height: 112px;
-    width: 158px;
+    width: 118px;
 }
 
 .hirel-technologies:hover  .service_icon_gif4 { 
@@ -228,4 +228,28 @@ padding: 10px;
     background: url(../../public/images/services/mob.gif) no-repeat -8px -7px;
     height: 112px;
     width: 158px;
+}
+
+
+@media (min-width: 768px) {
+    .service_icon_gif {
+        background: url(../../public/images/services/smm.gif) no-repeat -145px -6px;
+        height: 106px;
+        width: 129px;
+    }
+    .service_icon_gif2 {
+        background: url(../../public/images/services/ecom.gif) no-repeat -166px -6px;
+        height: 106px;
+        width: 158px;
+    }
+    .service_icon_gif3 {
+        background: url(../../public/images/services/php.gif) no-repeat -157px -6px;
+        height: 106px;
+        width: 158px;
+    }
+    .service_icon_gif4 {
+        background: url(../../public/images/services/mob.gif) no-repeat -157px -3px;
+        height: 112px;
+        width: 158px;
+    }        
 }

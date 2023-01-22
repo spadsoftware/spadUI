@@ -150,12 +150,12 @@ console.log(enteredDate,enteredEmail,enteredName,
   
    
 
-    <Box sx={{textAlign:'left',background:'#e1ebf1',color:'black',
+    <Box sx={{textAlign:'left',background:'#e1ebf1',color:'black',textAlign: 'center',
         
     boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25);'}}>
 
 <Grid container rowSpacing={1} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-        <Grid item xs={6} style={{left: '30px',position: 'relative',}}>
+        <Grid item xs={6} style={{left: '0px',position: 'relative',}}>
       
    <h3 style={{color:'#da4536'}}>Get In Touch </h3>
         <h4>SPAD Software consultancy services Private Limited</h4>
@@ -174,7 +174,7 @@ console.log(enteredDate,enteredEmail,enteredName,
       <div style={{paddingTop:'0px'}}>
 
 
-
+      <Grid item xs={4} sm={12}>
         <TextField style={{}}
           id="standard-required"
           label="Name"
@@ -186,8 +186,9 @@ console.log(enteredDate,enteredEmail,enteredName,
           value={enteredName}
           variant="standard"
           onChange={(event) => setEnteredName(event.target.value)}
-        />
-       <TextField style={{marginLeft:'14px'}}
+        /></Grid>
+            <Grid item xs={4} sm={12}>
+       <TextField 
           id="standard-required"
           label="email"
           value={enteredEmail}
@@ -200,8 +201,9 @@ console.log(enteredDate,enteredEmail,enteredName,
 
           variant="standard"
           onChange={(event) => setEnteredEmail(event.target.value)}
-        />
-        <TextField style={{marginLeft:'14px'}}
+        /></Grid>
+            <Grid item xs={4} sm={12}>
+        <TextField 
           id="standard-required"
           label="Phone"
           value={enteredPhone}
@@ -213,8 +215,9 @@ console.log(enteredDate,enteredEmail,enteredName,
           name="phone"
           variant="standard"
           onChange={(event) => setEnteredPhone(event.target.value)}
-        />
-        <TextField style={{marginTop:'14px',width:'50%'}}
+        /></Grid>
+            <Grid item xs={4} sm={12}>
+        <TextField 
           id="standard-required"
           label="subject"
           value={enteredMessage}
@@ -226,8 +229,9 @@ console.log(enteredDate,enteredEmail,enteredName,
           name="subject"
           variant="standard"
           onChange={(event) => setEnteredMessage(event.target.value)}
-        />
-       <FormControl style={{marginLeft:'14px',marginTop:'13px',width:'40%'}} sx={{ m: 0, minWidth: 120 }}   >
+        /></Grid>
+            <Grid item xs={6} sm={12} style={{left:'35%',position:'relative',width:'32%'}}>
+       <FormControl  sx={{ m: 0, minWidth: 120 }}   >
         
         <InputLabel htmlFor="grouped-select"shrink={true} 
         style={{top:'10px',left:'-15px'}}>Services</InputLabel>
@@ -257,7 +261,8 @@ console.log(enteredDate,enteredEmail,enteredName,
                     <option value="DM">Digital Marketing</option>
                     <option value="BG">Branding</option>
         </NativeSelect>
-      </FormControl>
+      </FormControl></Grid>
+      <Grid item xs={4} sm={12} style={{left:'34%',position:'relative',width:'32%'}}>
       <LocalizationProvider style={{marginTop:'13px'}} dateAdapter={AdapterDayjs}>
         <DateTimePicker
         
@@ -274,8 +279,8 @@ console.log(enteredDate,enteredEmail,enteredName,
           />}
         />
     </LocalizationProvider>
-
-        <Button  style={{marginLeft:'20px',marginTop:'30px'}} type="submit" variant="contained">
+        </Grid>
+        <Button  style={{marginLeft:'10px',marginTop:'30px'}} type="submit" variant="contained">
           Get Quotes
         </Button>
         </div>

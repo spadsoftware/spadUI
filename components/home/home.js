@@ -192,23 +192,12 @@ console.log(enteredDate,enteredEmail,enteredName,
 
         <Stack spacing={2}  style={{position:'relative',top:'13%',textAlign:'center'
       ,padding:'10px'}}>
-
-  <Grid  sx={{ flexGrow: 1, display: { xs: 'block', sm: 'none' } }} container
+  <Grid  sx={{flexGrow: 1, display: { xs: 'block', sm: 'none' }}} container
               spacing={{ xs: 2, md: 3 }}
               columns={{  xs: 4, sm: 12, md: 12 }}
              
             >
-              <Grid item xs={12} sm={4} md={4} style={{display:'flex',color:'#000248'}}>
-             <div style={{fontSize: '17px',lineHeight:'45px',
-            fontWeight:'600',textAlign:'left'}}>
-             Looking for the &nbsp;
-             <span style={{borderBottom:'3px solid red'}}>Right Web Design &  Development 
-             Company</span> to visualize your business idea into reality?
-
-            Then you are landed in right place!
-             </div>
-              </Grid>
-              <Grid item xs={12} sm={4} md={4} style={{color:'#000248',paddingLeft:'5px'}}>
+               <Grid item xs={12} sm={4} md={4} style={{color:'#000248',paddingLeft:'5px'}}>
               <Divider/>
 
                 <div style={{fontSize: '15px',paddingBottom:'15px',
@@ -271,16 +260,27 @@ console.log(enteredDate,enteredEmail,enteredName,
                 <Divider/>
 
               </Grid>
-              <Grid item xs={12} sm={4} md={4} 
-              style={{display:'flex',color:'#000248',fontSize: '15px',
-              textAlign:'left',fontWeight:'600',
-              lineHeight:'33px'
-              }}>
-                
-              We are team of talented developers developing all kind of software
-              & Digital Marketing as well as providing Real time Training and
-              placement
+              <Grid item xs={12} sm={4} md={4} style={{color:'#000248',}}>
+             <div style={{fontSize: '17px',lineHeight:'45px',
+            fontWeight:'600',textAlign:'left'}}>
+            Looking for the &nbsp;
+             <span style={{borderBottom:'3px solid red'}}>Right Web Design &  Development 
+             Company</span> to visualize your business idea into reality?
+
+            Then you are landed in right place!
+            We are team of talented developers developing all kind of 
+            &nbsp;<span style={{borderBottom:'3px solid red'}}>software
+              & Digital Marketing </span> as well as providing 
+              &nbsp;<span style={{borderBottom:'3px solid red'}}>Real time Training and
+              placement. </span>
+              Our team consists of the best website builders in bangalore
+               who specializes in providing services for most of the industries 
+               like Ecommerce, Healthcare, IT, food Processing, Automobiles, 
+               Steel Equipments, Mining, Banking & Finance, software Training & stock market Training.
+             </div>
               </Grid>
+             
+             
               <Box
           sx={{
             "& .MuiTextField-root": { m: 1, width: "17ch" },
@@ -294,7 +294,8 @@ console.log(enteredDate,enteredEmail,enteredName,
             </div>
 
             <div className={classes.homeServiceiconBA}>
-              <TextField
+            <Grid item xs={4} sm={12}>
+              <TextField style={{width:'80%'}}
                 id="standard-required"
                 label="Name"
                 InputLabelProps={{
@@ -306,7 +307,9 @@ console.log(enteredDate,enteredEmail,enteredName,
                 variant="standard"
                 onChange={(event) => setEnteredName(event.target.value)}
               />
-              <TextField
+              </Grid>
+              <Grid item xs={4} sm={12}>
+              <TextField style={{width:'80%'}}
                 id="standard-required"
                 label="email"
                 value={enteredEmail}
@@ -317,8 +320,9 @@ console.log(enteredDate,enteredEmail,enteredName,
                 name="email"
                 variant="standard"
                 onChange={(event) => setEnteredEmail(event.target.value)}
-              />
-              <TextField
+              /></Grid>
+              <Grid item xs={4} sm={12}>
+              <TextField style={{width:'80%'}}
                 id="standard-required"
                 label="Phone"
                 value={enteredPhone}
@@ -330,8 +334,9 @@ console.log(enteredDate,enteredEmail,enteredName,
                 name="phone"
                 variant="standard"
                 onChange={(event) => setEnteredPhone(event.target.value)}
-              />
-              <TextField
+              /></Grid>
+              <Grid item xs={4} sm={12}>
+              <TextField style={{width:'80%'}}
                 id="standard-required"
                 label="subject"
                 value={enteredMessage}
@@ -342,8 +347,9 @@ console.log(enteredDate,enteredEmail,enteredName,
                 name="subject"
                 variant="standard"
                 onChange={(event) => setEnteredMessage(event.target.value)}
-              />
-              <FormControl
+              /></Grid>
+              <Grid item xs={4} sm={12}>
+              <FormControl style={{width:'110%',left:'3px'}}
                   sx={{ m: 0,  }}
                 className={classes.homeServiceiconcategorieslbl}
               >
@@ -382,7 +388,8 @@ console.log(enteredDate,enteredEmail,enteredName,
                   <option value="DM">Digital Marketing</option>
                   <option value="BG">Branding</option>
                 </NativeSelect>
-              </FormControl>
+              </FormControl></Grid>
+              <Grid item xs={4} sm={12} style={{width:'64%',display:'inline-block'}}>
               <LocalizationProvider
                 dateAdapter={AdapterDayjs}
                 
@@ -407,7 +414,7 @@ console.log(enteredDate,enteredEmail,enteredName,
                 />
                 </div>
               </LocalizationProvider>
-
+              </Grid>
               <Button
                 className={classes.homeServiceiconBtn}
                 type="submit"
@@ -417,31 +424,19 @@ console.log(enteredDate,enteredEmail,enteredName,
               </Button>
             </div>
           </form>
-        </Box>
+             </Box>
             </Grid>
-            
           
 </Stack>
 
     <Grid  sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } 
-            ,height:'100%',display:'flex'}} 
+            ,height:'100%',}} 
             container
-              spacing={{ xs: 2, md: 3 }}
+            
               columns={{  xs: 12, sm: 12, md: 12 }}>
 
-            <Grid  item xs={8} sm={8} md={8}>
-                 <div  item xs={6} sm={6} md={6}>
-                 <div style={{fontSize: '17px',lineHeight:'45px',
-                 color:'#000248',
-            fontWeight:'600',textAlign:'center'}}>
-             Looking for the &nbsp;
-             <span style={{borderBottom:'3px solid red'}}>Right Web Design &  Development 
-             Company</span> to visualize your business idea into reality?
-
-            Then you are landed in right place!
-             </div>
-              </div>
-              <div  item  xs={6} sm={6} md={6} style={{padding:'10px'}}>
+            <Grid  item xs={9} sm={9} md={9} style={{position:'relative',display:'inline-block'}}>
+            <div  item  xs={6} sm={6} md={6} style={{padding:'10px'}}>
               <div style={{fontSize: '35px',paddingBottom:'15px',
               fontWeight:'600',color:'#000248',textAlign:'center',}}>
               <span
@@ -478,15 +473,18 @@ console.log(enteredDate,enteredEmail,enteredName,
               <div style={{display:'flex',
               justifyContent:'center', color:'#000248',fontSize: '15px'}}>
                 <div style={{padding:'12px'}}>
+                <div style={{position:'relative',left:'10px'}}>
                 <Image
                   src={`/images/title_header/wedesign.svg`}
                   alt="Spad Software Log about"
                   width={56}
                   height={56}
                 />
+                </div>
                 <div style={{fontWeight:'600',fontSize:'15px'}}>We Design</div>
                 </div>
                 <div style={{padding:'12px'}}>
+                <div style={{position:'relative',left:'10px'}}>
                 <Image
                   
                   src={`/images/title_header/wedevelop.svg`}
@@ -494,32 +492,50 @@ console.log(enteredDate,enteredEmail,enteredName,
                   width={56}
                   height={56}
                 />
+                </div>
                 <div style={{fontWeight:'600',fontSize:'15px'}}>We Develop</div>
                 </div>
                 <div style={{padding:'12px'}}>
+                <div style={{position:'relative',left:'10px'}}>
                 <Image
                   src={`/images/title_header/wesupport.svg`}
                   alt="Spad Software Log about"
                   width={56}
                   height={56}
                 />
+                </div>
                 <div style={{fontWeight:'600',fontSize:'15px'}}>We Support</div>
                 </div>
                 </div>
               </div>
               
-              <div  item  xs={6} sm={6} md={6}>
-                <div  style={{color:'#000248',fontSize: '17px',
-              textAlign:'left',fontWeight:'600',
-              lineHeight:'33px',textAlign:'center'}}>
-              We are team of talented developers developing all kind of software
-              & Digital Marketing as well as providing Real time Training and
-              placement
+
+                 <div  item xs={6} sm={6} md={6} style={{paddingLeft:'35px'}}>
+                 <div style={{fontSize: '17px',lineHeight:'45px',
+                 color:'#000248',
+            fontWeight:'600',textAlign:'left'}}>
+             Looking for the &nbsp;
+             <span style={{borderBottom:'3px solid red'}}>Right Web Design &  Development 
+             Company</span> to visualize your business idea into reality?
+
+            Then you are landed in right place!
+            We are team of talented developers developing all kind of 
+            &nbsp;<span style={{borderBottom:'3px solid red'}}>software
+              & Digital Marketing </span> as well as providing 
+              &nbsp;<span style={{borderBottom:'3px solid red'}}>Real time Training and
+              placement. </span>
+              Our team consists of the best website builders in bangalore
+               who specializes in providing services for most of the industries 
+               like Ecommerce, Healthcare, IT, food Processing, Automobiles, 
+               Steel Equipments, Mining, Banking & Finance, software Training & stock market Training.
+             </div>
               </div>
-              </div>
+              
+          
               </Grid>   
-              <Grid  item xs={4} sm={4} md={4} style={{padding:'15px'}}>
-              <Card sx={{ minWidth: 275 }}>
+             
+              <Grid  item xs={3} sm={3} md={3} style={{padding:'15px',display:'inline-block'}}>
+              <Card >
       <CardContent>
       <form onSubmit={sendMessageHandler}>
             <div style={{textAlign:'center',paddingBottom:'30px',fontSize:'20px'}}>
@@ -527,7 +543,10 @@ console.log(enteredDate,enteredEmail,enteredName,
             </div>
 
             <div >
-              <TextField
+            <Grid container >
+            <Grid item xs={4} sm={12}>
+              <TextField 
+              style={{width:'80%'}}
                 id="standard-required"
                 label="Name"
                 InputLabelProps={{
@@ -539,19 +558,23 @@ console.log(enteredDate,enteredEmail,enteredName,
                 variant="standard"
                 onChange={(event) => setEnteredName(event.target.value)}
               />
-              <TextField
+              </Grid>
+              <Grid item xs={12} sm={12}>
+              <TextField style={{width:'80%'}}
                 id="standard-required"
                 label="email"
                 value={enteredEmail}
                 InputLabelProps={{
                   shrink: true,
                 }}
-                style={{left:'8px'}}
+                // style={{left:'8px'}}
                 name="email"
                 variant="standard"
                 onChange={(event) => setEnteredEmail(event.target.value)}
               />
-              <TextField
+              </Grid>
+              <Grid item xs={12} sm={12}>
+              <TextField style={{width:'80%'}}
                 id="standard-required"
                 label="Phone"
                 value={enteredPhone}
@@ -559,13 +582,15 @@ console.log(enteredDate,enteredEmail,enteredName,
                   shrink: true,
                
                 }}
-                style={{top:'10px',}}
+                // style={{top:'10px',}}
                 type="number"
                 name="phone"
                 variant="standard"
                 onChange={(event) => setEnteredPhone(event.target.value)}
               />
-              <TextField
+              </Grid>
+              <Grid item xs={12} sm={12} >
+              <TextField style={{width:'80%'}}
                 id="standard-required"
                 label="subject"
                 value={enteredMessage}
@@ -573,20 +598,21 @@ console.log(enteredDate,enteredEmail,enteredName,
                   shrink: true,
                   
                 }}
-                style={{top:'10px',left:'8px'}}
+                // style={{top:'10px',left:'8px'}}
                 name="subject"
                 variant="standard"
                 onChange={(event) => setEnteredMessage(event.target.value)}
               />
-                 <div style={{display:'flex'}}>
-              <FormControl
+              </Grid>
+              <Grid item xs={12} sm={12} style={{top:'10px',position:'relative',left:'-16px'}}>
+              <FormControl style={{width:'80%'}}
                   sx={{ m: 0,  }}
-                  style={{top:'30px',width:'183px'}}
+                  // style={{top:'30px',width:'183px'}}
               >
                 <InputLabel
                   htmlFor="grouped-select"
                   shrink={true}
-                style={{left:'-16px'}}
+             
                 >
                   Services
                 </InputLabel>
@@ -596,7 +622,7 @@ console.log(enteredDate,enteredEmail,enteredName,
                   onChange={(event) => setEnteredCategory(event.target.value)}
                   id="grouped-select"
                   label="Grouping"
-                
+                  style={{left:'17px'}}
                 >
                   <option value="dv"> </option>
 
@@ -619,7 +645,9 @@ console.log(enteredDate,enteredEmail,enteredName,
                   <option value="BG">Branding</option>
                 </NativeSelect>
               </FormControl>
-              <div style={{left:'10px',top:'30px',width:'50%',position:'relative'}}>
+             </Grid>
+             <Grid  style={{top:'23px',position:'relative',left:'0px',maxWidth:'82%'}}
+             item xs={12} sm={12}>
               <LocalizationProvider
                 dateAdapter={AdapterDayjs}
                 
@@ -644,8 +672,9 @@ console.log(enteredDate,enteredEmail,enteredName,
                 />
              
               </LocalizationProvider>
-              </div>
-              </div>
+             
+              </Grid>
+              </Grid>
             </div>
           </form>
       </CardContent>

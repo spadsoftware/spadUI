@@ -133,9 +133,9 @@ function MainNavigation(props) {
   return (
     <>
 
-    <Box sx={{ display: 'flex',background:'white',color:'Black' }}>
+    <Box sx={{ display: 'flex',background:'#fdf7e3',color:'Black' }}>
         <CssBaseline />
-        <AppBar component="nav"  style={{background:'white',color:'Black'}}>
+        <AppBar component="nav"  style={{background:'#fdf7e3',color:'Black'}}>
           <Toolbar>
             <IconButton
               color="inherit"
@@ -151,12 +151,20 @@ function MainNavigation(props) {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
-               <Logo />
+                 <Image
+            src={`/images/logo/Logo.jpg`}
+            alt={'Spad Software Logo'}
+            width={170}
+            height={56}
+            style={{padding:'10px'}}
+          />
             </Typography>
            
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
               {navItems.map((item) => (
-                <Button key={item} sx={{ color: '#fff' }} >
+                <Button key={item} sx={{ color: '#fff' }} 
+                  style={{fontWeight:'600',fontSize:'12px'}}
+                  >
                   
                   <Link href={item[0].toLocaleLowerCase()+ item.slice(1)}>
               <a style={{color:'Black'}}
@@ -169,7 +177,7 @@ function MainNavigation(props) {
             <Typography 
              sx={{ flexGrow: 1, display: { xs: 'block', sm: 'none' } }}>
             <Image
-            src={`/images/logo/spadLogov1.jpg`}
+            src={`/images/logo/Logo.jpg`}
             alt={'Spad Software Logo'}
             width={170}
             height={56}
