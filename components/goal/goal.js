@@ -280,17 +280,10 @@ const goalComponent = () => {
       <Typography component="span">
       <span style={{fontSize: '18px',
     fontWeight: '600'}} >
-            Why to choose US?
-              </span>
-              <span style={{textAlign:'center',display:'block',fontWeight:'600'}} className={classes.card_align}>
-              Bridging The Gap Between 
+            Bridging The Gap Between 
               &nbsp;<span style={{borderBottom:'3px solid red'}}>Business And Technology.</span>
-              
               </span>
-              <span style={{textAlign:'center',display:'block',fontWeight:'600'}} className={classes.card_align}>
-              Fast TurnAround-Get your work done within 
-              &nbsp;<span style={{borderBottom:'3px solid red'}}>7 to 14 days.</span>
-              </span>
+            
   <Grid component="span" 
   container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{paddingTop:'20px'}}>
         <Grid component="span"  item  xs={2} sm={4} md={6}>

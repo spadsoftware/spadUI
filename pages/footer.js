@@ -196,6 +196,7 @@ console.log(enteredDate,enteredEmail,enteredName,
       <h3 style={{color:'#da4536'}}>Get In Touch </h3>
            <h5>SPAD Software consultancy services Private Limited,Bangalore-India</h5>
            <h5>GSTIN:33ABICS7047K1ZZ</h5>
+           <h5>CIN:U72900TN2022PTC152959</h5>
            <h5>softwareservices.helpdesk@gmail.com / 8438353493</h5>
         
            </Grid>
@@ -204,9 +205,12 @@ console.log(enteredDate,enteredEmail,enteredName,
 
             <span>
          <div>
-           <span style={{fontSize:'14px',fontWeight:'600'}}>Term of services - </span> 
-           <span style={{fontSize:'14px',fontWeight:'600'}}> Privacy policy -</span>  
-           <span style={{fontSize:'14px',fontWeight:'600'}}> Refund policy </span> 
+           <span style={{fontSize:'14px',fontWeight:'600'}}>
+           <Link   href='/tc'style={{color:'#da4536'}}>Term of services</Link> - </span> 
+           <span style={{fontSize:'14px',fontWeight:'600'}}> 
+           <Link   href='/privacy'style={{color:'#da4536'}}>Privacy policy</Link> -</span>  
+           <span style={{fontSize:'14px',fontWeight:'600'}}> 
+           <Link   href='/refund'style={{color:'#da4536'}}>Refund policy</Link> </span> 
            </div>
            <div>
            <Image

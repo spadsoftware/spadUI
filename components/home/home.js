@@ -291,17 +291,17 @@ console.log(enteredDate,enteredEmail,enteredName,
                 }}
               >
                 Looking for the &nbsp;
-                <span style={{ borderBottom: "3px solid red" }}>
+                <span className= {classes.section_wwd_lt}>
                   Right Web Design & Development Company
                 </span>{" "}
                 to visualize your business idea into reality? Then you are
                 landed in right place! We are team of talented developers
                 developing all kind of &nbsp;
-                <span style={{ borderBottom: "3px solid red" }}>
+                <span className= {classes.section_wwd_lt}>
                   software & Digital Marketing{" "}
                 </span>{" "}
                 as well as providing &nbsp;
-                <span style={{ borderBottom: "3px solid red" }}>
+                <span className= {classes.section_wwd_lt}>
                   Real time Training and placement.{" "}
                 </span>
                 Our team consists of the best website builders in bangalore who
@@ -592,17 +592,17 @@ console.log(enteredDate,enteredEmail,enteredName,
                 }}
               >
                 Looking for the &nbsp;
-                <span style={{ borderBottom: "3px solid red" }}>
+                <span className= {classes.section_wwd_lt}>
                   Right Web Design & Development Company
                 </span>{" "}
                 to visualize your business idea into reality? Then you are
                 landed in right place! We are team of talented developers
                 developing all kind of &nbsp;
-                <span style={{ borderBottom: "3px solid red" }}>
+                <span className= {classes.section_wwd_lt}>
                   software & Digital Marketing{" "}
                 </span>{" "}
                 as well as providing &nbsp;
-                <span style={{ borderBottom: "3px solid red" }}>
+                <span className= {classes.section_wwd_lt}>
                   Real time Training and placement.{" "}
                 </span>
                 Our team consists of the best website builders in bangalore who

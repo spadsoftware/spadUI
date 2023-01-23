@@ -67,7 +67,9 @@ useEffect(() => {
                 /></div>
 
       <div className= {classes.section__subtlt}>We are offering latest technology to our clients and students </div>
+      
       </div>
+
     <div >
 
 

@@ -19,7 +19,7 @@ import ContactUs from  './contactUs'
 import Image from 'next/image';
 import Footer from  './footer'
 import Benefits from  './benefits'
-
+import MoneyBack from './moneyBack'
 
 
 function HomePage(props) {
@@ -49,6 +49,7 @@ function HomePage(props) {
       {/* <Benefits /> */}
       <Services />
       {/* <Offers /> */}
+      <MoneyBack />
       <Faq />
       {/* <Events />
       <ContactUs /> */}

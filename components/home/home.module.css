@@ -9,7 +9,13 @@
     align-items: center;
     justify-content: center;
 }
-
+.section_wwd_lt{
+  /* color:#d9232d;
+  background-color: #FFFF00; */
+  background: linear-gradient(#d9232d,#d9232d) bottom repeat-x;
+  /* transition: all 0.25s ease-out; */
+  color:white;
+}
 
 .home1{
   width: 100%;
