@@ -56,7 +56,7 @@ const WhatWeDoComponent = () => {
    <div  className= {classes.section__subtlt} >Want to connect with our experts to
       avail the service?
   
-   <a   className= {classes.section_wwd_lt}>Let's talk</a>
+   <p className= {classes.section_wwd_lt}>Let's talk</p>
    </div>
    </div>
       <Box   >

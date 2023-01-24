@@ -173,7 +173,8 @@ const jobSeekers = () => {
   return (
     <>
      <Head>
-    <title>Top 10 Web design company in Bangalore,Best Web Development Company in Bangalore, Web Design Company, Website Development Agency in India -Spad Software</title>
+    <title>
+    Web Development Company in Bangalore, Website Development Agency , Web design company, Digital Marketing company , Software training company,- Spad Software</title>
         <meta name="keyword" content="JobSeeker" />
       </Head>
   

@@ -46,7 +46,9 @@ const MoneyBack = () => {
   return (
     <>
      <Head>
-    <title>Top 10 Web design company in Bangalore,Best Web Development Company in Bangalore, Web Design Company, Website Development Agency in India -Spad Software</title>
+    <title>
+    Web Development Company in Bangalore, Website Development Agency ,
+     Web design company, Digital Marketing company , Software training company,- Spad Software</title>
         <meta name="keyword" content="Hire Talent" />
       </Head>
   
@@ -58,7 +60,7 @@ const MoneyBack = () => {
         borderWidth: "0px 0px 0px 20px",
         borderColor: "#0231f7",
         transition: "background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s",
-            padding: "50px 0px 20px 0px",
+            padding: "0px 0px 0px 0px",
         boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25);'}}>
    <h3 style={{color:'#da4536',textAlign:'center',top:'0px',position:'relative'}}>Spad Software Money Back Policy</h3>
 <Grid container rowSpacing={1} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}
@@ -83,7 +85,12 @@ style={{top:'0px',position:'relative'
 <h4  style={{marginTop:'20px',fontSize:'33px'}}>
 100% Money-Back Guarantee</h4>
    <div style={{fontSize:'15px',fontWeight:'600',lineHeight:'30px'}}>Get the design you love or your money back. it’s as simple as that.</div>
-   <div style={{fontSize:'15px',fontWeight:'600',lineHeight:'30px'}}>We believe if our clients are happy only then can we stay and thrive in business for the long term. for some reason, if you don’t feel satisfied we’re not satisfied as well either we do everything we can to make you happy or you’ll get 100% money back after seeing the first design.</div>
+   <div style={{fontSize:'15px',fontWeight:'600',lineHeight:'30px'}}>We believe if our clients are happy only then can we stay and thrive 
+   in business for the long term. for some reason, 
+   if you don’t feel satisfied we’re not satisfied as well
+    either we do everything we can to make you happy or
+    &nbsp;<span style={{borderBottom:'3px solid #0231f7',color:'#0231f7'}}> you’ll 
+    get 100% money back </span>after seeing the first design.</div>
 
    <div style={{paddingTop:'10px'}}><Image
   src={`/images/mb/signature.png`}

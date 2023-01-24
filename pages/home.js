@@ -6,7 +6,7 @@ const Home = (props) => {
   return (
     <>
       <Head>
-        <title>Spad Software | Home</title>
+        <title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software</title>
         <link rel="shortcut icon" href="favicon.jpg" />
         <meta name="keyword" content="Home" />
        

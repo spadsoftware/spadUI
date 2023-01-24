@@ -1,14 +1,14 @@
 .section_service{
     text-align: center;
     color: black;
-    padding-left:12px;
-    padding-right: 12px;
+    /* padding-left:12px;
+    padding-right: 12px; */
     font-weight: bold;
     border-style: solid;
     border-width: 0px 0px 0px 20px;
     border-color: #F89000;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-        padding: 50px 0px 20px 0px;
+        /* padding: 50px 0px 20px 0px; */
     
 }
 .section__btm{

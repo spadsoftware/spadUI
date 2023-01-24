@@ -17,14 +17,15 @@
 .section_about1 {
   text-align: center;
   color: black;
-  padding: 12px;
+  padding: 0px;
   /* background-color: #eee; */
   font-weight: bold;
-
+  top: 19px;
+  position: relative;
  
 }
 .section__btm{
-  padding-bottom:15px !important;
+  /* padding-bottom:15px !important; */
 }
 
 .wrapper1 {

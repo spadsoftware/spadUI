@@ -45,7 +45,8 @@ const tc = () => {
   return (
     <>
      <Head>
-    <title>Top 10 Web design company in Bangalore,Best Web Development Company in Bangalore, Web Design Company, Website Development Agency in India -Spad Software</title>
+    <title>
+    Spad Software Terms and conditions policy in Bangalore India</title>
         <meta name="keyword" content="Hire Talent" />
       </Head>
   
@@ -281,7 +282,7 @@ URL
    13.4 Contact Information
    </div>
    <div>
-   softwareservices.helpdesk@gmail.com / 8438353493
+   info@spadsoftware.com / 8438353493
    </div>
    
 </div>

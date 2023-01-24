@@ -44,9 +44,7 @@ const privacy = () => {
     <>
       <Head>
         <title>
-          Top 10 Web design company in Bangalore,Best Web Development Company in
-          Bangalore, Web Design Company, Website Development Agency in India
-          -Spad Software
+        Spad Software privacy policy in Bangalore India
         </title>
         <meta name="keyword" content="Hire Talent" />
       </Head>
@@ -202,7 +200,7 @@ We partner with a third-party ad network to manage our advertising on other site
                     When you receive newsletters or promotional communications from us, 
                     you may indicate a preference to stop receiving further communications 
                     from us and you will have the opportunity to “opt-out” by getting in touch with us at
-                     softwareservices.helpdesk@gmail.com through email and with the appropriate subject.
+                     info@spadsoftware.com through email and with the appropriate subject.
                     </div>
                     <div>
                     3.Despite your indicated e-mail preferences, we may send you service-related 
@@ -214,8 +212,8 @@ We partner with a third-party ad network to manage our advertising on other site
                     4.Deletion or Changes
 Upon request, SPAD Software will provide you with information about whether we hold any of your 
 personal information. You may change any of your Personal Information get in touch with us at 
-softwareservices.helpdesk@gmail.com through email and with the appropriate subject. You may request deletion
- of your Personal Information by getting in touch with us at softwareservices.helpdesk@gmail.com through email 
+info@spadsoftware.com through email and with the appropriate subject. You may request deletion
+ of your Personal Information by getting in touch with us at info@spadsoftware.com through email 
  and with the appropriate subject, but please note that we may be required to keep this information 
  and not delete it (or to keep this information for a certain time, in which case we will comply
   with your deletion request only after we have fulfilled such requirements). When we delete any 
@@ -248,7 +246,7 @@ but may remain in our archives. We will respond to your request to access within
                  our Site in addition to other endorsements. If you choose to 
                  provide a testimonial on the Site, we may post your testimonial
                   for marketing purposes. If you wish to update or delete your
-                 testimonial, you can contact us at softwareservices.helpdesk@gmail.com.
+                 testimonial, you can contact us at info@spadsoftware.com.
                 </div>
               </div>
 
@@ -286,7 +284,7 @@ but may remain in our archives. We will respond to your request to access within
                 <h4 style={{ marginTop: "20px" }}>Contact</h4>
                 <div>
                 You may contact us regarding this policy by getting in touch
-                 with us at softwareservices.helpdesk@gmail.com through email and with the appropriate subject.
+                 with us at info@spadsoftware.com through email and with the appropriate subject.
                 </div>
               </div>
 

@@ -52,12 +52,7 @@ const AboutComponent = () => {
     <section id="about" className= {classes.section_about}>
       <div className= {classes.section__btm}>
     <div className= {classes.section_about1}>
-    {/* <Image
-                  src={`/images/title_header/hdrBtm.png`}
-                  alt='Spad Software Log about'
-                  width={126}
-                  height={5}
-                /> */}
+
                
                <div>
                About <span className={classes.tlt}>Us</span>
@@ -78,8 +73,8 @@ const AboutComponent = () => {
                   height={50}
                 /> */}
     </span>
-       <div className= {classes.section_about1}>What Makes Us One of The Top Rated Web Development 
-      and Digital Marketing Company In Bangalore, India.</div>
+       <h1 className= {classes.section_about1}>What Makes Us One of The Top Rated Web Development 
+      and Digital Marketing Company In Bangalore, India.</h1>
       </div>
       <Box sx={{ width: '100%' }}>
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 8, md: 12 }}>
@@ -288,8 +283,8 @@ Our Services</h2> */}
          </p>
           <p className={classes.cl_brown}>A company’s website design plays a key role in providing the first impression to the customers.
              
-               Each Spad Software developer stands as the pillar to our growth as the leading web design and development company
-               Each Spad Software developer stands as the pillar to our growth as the leading web design and development company.
+          &nbsp;<span style={{borderBottom:'3px solid red',color:'red'}}>  Each Spad Software developer stands as the pillar to our growth as the leading web design and development company
+              </span> Each Spad Software developer stands as the pillar to our growth as the leading web design and development company.
                And as a web design company, 
                Each Spad Software developer stands as the pillar to our growth as the leading web design and development company
                And as a web design company, 

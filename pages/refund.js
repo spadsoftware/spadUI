@@ -45,7 +45,8 @@ const refund = () => {
   return (
     <>
      <Head>
-    <title>Top 10 Web design company in Bangalore,Best Web Development Company in Bangalore, Web Design Company, Website Development Agency in India -Spad Software</title>
+    <title>
+    Web Development Company in Bangalore, Website Development Agency , Web design company, Digital Marketing company , Software training company,- Spad Software</title>
         <meta name="keyword" content="Hire Talent" />
       </Head>
   
@@ -64,7 +65,7 @@ style={{top:'60px',position:'relative',background: 'linear-gradient(180deg, #FEF
       
 
 <h4  style={{marginTop:'20px'}}>Refund Timeline:</h4>
-   <div>Once you request the refund by sending mail to softwareservices.helpdesk@gmail.com your refund will be initiated in 48 hours. 
+   <div>Once you request the refund by sending mail to info@spadsoftware.com your refund will be initiated in 48 hours. 
     and you” ll receive a refund amount into your bank account in 2 to 3 working days after initiation.</div>
  
 </div>

@@ -148,7 +148,8 @@ console.log(enteredDate,enteredEmail,enteredName,
   return (
     <>
      <Head>
-    <title>Top 10 Web design company in Bangalore,Best Web Development Company in Bangalore, Web Design Company, Website Development Agency in India -Spad Software</title>
+    <title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software
+     </title>
         <meta name="keyword" content="Footer" />
       </Head>
   
@@ -197,7 +198,7 @@ console.log(enteredDate,enteredEmail,enteredName,
            <h5>SPAD Software consultancy services Private Limited,Bangalore-India</h5>
            <h5>GSTIN:33ABICS7047K1ZZ</h5>
            <h5>CIN:U72900TN2022PTC152959</h5>
-           <h5>softwareservices.helpdesk@gmail.com / 8438353493</h5>
+           <h5>info@spadsoftware.com / 8438353493</h5>
         
            </Grid>
            <Grid item xs={6} md={4} style={{left: '0px',position: 'relative',}}>

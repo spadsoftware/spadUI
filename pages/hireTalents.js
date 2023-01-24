@@ -159,7 +159,7 @@ const hireTalents = () => {
   return (
     <>
      <Head>
-    <title>Top 10 Web design company in Bangalore,Best Web Development Company in Bangalore, Web Design Company, Website Development Agency in India -Spad Software</title>
+    <title> Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software</title>
         <meta name="keyword" content="Hire Talent" />
       </Head>
   
@@ -230,7 +230,7 @@ Hire Candidates who’ve been trained from Industry Experts.
 Already Well Trained on Live Projects with Hands-on.
     </div>
   </h4>
-        {/* <h5>Email:softwareservices.helpdesk@gmail.com</h5>
+        {/* <h5>Email:info@spadsoftware.com</h5>
         <h5>Contact:8438353493</h5>
         <h5>Location:Bangalore India</h5>   */}
         

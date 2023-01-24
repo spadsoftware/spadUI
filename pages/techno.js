@@ -6,7 +6,7 @@ const Techno = () => {
   return (
     <>
       <Head>
-        <title>Spad Software | Techno</title>
+        <title>Spad Software | Technology</title>
         <meta name="keyword" content="Techno" />
       </Head>
 

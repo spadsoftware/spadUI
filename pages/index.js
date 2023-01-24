@@ -25,16 +25,11 @@ import MoneyBack from './moneyBack'
 function HomePage(props) {
   return (
     <Fragment>
-      <title>Spad Software | Home</title>
+      <title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software</title>
       <link rel="shortcut icon" href="favicon.jpg" />
       <Head>
-        <meta name="description" content="Spad software consultancy private limited Offering Online &amp; 
-  Classroom Training Courses on AWS, Python, Data Science, Devops, Selenium, ML, AI, RPA, Azure, Digital Marketing,
-   Full Stack Developer, Tableau, Java, Angular, Power BI etc. Best Software Training Institute in Chennai &amp; 
-   Bangalore .Leading Software Development Company in Bangalore, India. We have core expert for custom Software development,
-    Mobile app and Website development,Realtime Training,
-    HR services,Top HR Consulting firm,IT-Consulting services,No 1 Placement Agency in Trichy,coimbatore, Chennai, Bangalore
-  " />
+        <meta name="description" content="We are a leading web designing and development company in Bangalore. Our expert team of website developers in Bangalore creates high quality websites and digital marketing. Contact us now!
+        Best HR services, Top HR Consulting firm, No 1 Placement Agency in Bangalore." />
   <meta name="keywords" content="Software Training Institute,Java Training,Full stack Training,Python Training, 
   Web Design Company, Web Development Company, Website Design Company, Website Development Company, web designing company." />
 
