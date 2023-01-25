@@ -9,7 +9,7 @@ import Home from  './home'
 import About from  './about'
 import WhatWeDo from  './whatWeDo'
 import Goal from  './goal'
-import WeServe from  './weServe'
+import HowItWork from  './howItWork'
 import Services from  './services'
 import Offers from  './offers'
 import Faq from  './faq'
@@ -41,6 +41,7 @@ function HomePage(props) {
       <Home pageDetails={props.pageDetails}/>
       <About />
       <Goal />
+      <HowItWork />
       <WhatWeDo />
       {/* <Goal />
       <WeServe /> */}

@@ -47,7 +47,7 @@ function appBarLabel(label) {
   );
 }
 const drawerWidth = 240;
-const navItems = ['Home','About', 'Goal','Services','WhatWeDo','HireTalents','JobSeekers','Pricing'];
+const navItems = ['Home','About', 'Goal','howItWork','Services','WhatWeDo','HireTalents','JobSeekers','Pricing'];
 
 function HomeIcon(props) {
   return (
