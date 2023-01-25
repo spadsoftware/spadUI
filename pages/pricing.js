@@ -161,32 +161,23 @@ function renderCellExpand(params) {
       
 
 
-     <><> <Script async src="https://www.googletagmanager.com/gtag/js?id=G-HM2WBMT0Q0"></Script>
-        <Script>
-          {` window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'G-HM2WBMT0Q0');
-        `}
-        </Script></>
-        
-        <Button
-          component="button"
-
-          variant="contained"
-          size="small"
-          value={params.value || ''}
-          onKeyDown={(event) => {
-            if (event.key === ' ') {
-              // Prevent key navigation when focus is on button
-              event.stopPropagation();
-            }
-          } }
-        >
-          <Link style={{ color: 'white' }} href='/home'> Buy @ &nbsp;
-            {params.value} </Link>
-        </Button></>
+      
+      <Button
+      component="button"
+     
+      variant="contained"
+      size="small"
+      value={params.value || ''}
+      onKeyDown={(event) => {
+        if (event.key === ' ') {
+          // Prevent key navigation when focus is on button
+          event.stopPropagation();
+        }
+      }}
+    >
+       <Link style={{color:'white'}}  href='/home'> Buy @ &nbsp;
+  {params.value} </Link>
+    </Button>
     );
     
   }

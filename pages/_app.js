@@ -46,19 +46,6 @@ function MyApp({ Component, pageProps }) {
 <meta name="owner" content="spad software"></meta>
 <link rel="canonical" href="https://www.spadsoftware.com"></link>
       </Head>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=GTM-5C433P6"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){window.dataLayer.push(arguments);}
-          gtag('js', new Date());
-
-          gtag('config', 'GTM-5C433P6');
-        `}
-      </Script>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-HM2WBMT0Q0"></Script>
       <Script>
       {` window.dataLayer = window.dataLayer || [];
