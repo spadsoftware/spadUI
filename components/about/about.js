@@ -279,20 +279,19 @@ Our Services</h2> */}
               Web Design,Branding and Digital Marketing Company in Bangalore</h2>
 
           
-            <p className={classes.cl_brown}>Established in 2022, in Bangalore, India, Spad Software has successfully made its name noteworthy as an experienced web development company. Our team of enriched professionals in UI/UX design, application development, web design and web development are trained to bring the best to the table no matter what. 
+            <p className={classes.cl_brown}>Established in 2022, in Bangalore, India, 
+            Spad Software is a web design, development, and digital marketing agency. We also provide training and placement consultancy services. We are a team of talented and experienced developers who are passionate about software development and digital marketing.
+
          </p>
           <p className={classes.cl_brown}>A company’s website design plays a key role in providing the first impression to the customers.
              
           &nbsp;<span style={{borderBottom:'3px solid red',color:'red'}}>  Each Spad Software developer stands as the pillar to our growth as the leading web design and development company
-              </span> Each Spad Software developer stands as the pillar to our growth as the leading web design and development company.
-               And as a web design company, 
-               Each Spad Software developer stands as the pillar to our growth as the leading web design and development company
-               And as a web design company, 
-               Each Spad Software developer stands as the pillar to our growth as the leading web design and development company
-               And as a web design company, 
-               Each Spad Software developer stands as the pillar to our growth as the leading web design and development company
-              And as a web design company, 
-               Each Spad Software developer stands as the pillar to our growth as the leading web design and development company.</p>
+              </span>  &nbsp;
+We believe in delivering quality work and customer satisfaction is our top priority.
+
+Our team has a vast amount of experience in software development, web development, digital marketing, and graphic design. 
+
+We are always looking to push the boundaries and exceed our client’s expectations. If you are looking for a team of passionate and experienced developers who can help you take your business to the next level then contact us today!.</p>
               
             </div>
             </Item>

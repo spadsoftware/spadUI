@@ -20,18 +20,22 @@ import Image from 'next/image';
 import Footer from  './footer'
 import Benefits from  './benefits'
 import MoneyBack from './moneyBack'
+import Script from 'next/script'
 
 
 function HomePage(props) {
   return (
     <Fragment>
-      <title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software</title>
       <link rel="shortcut icon" href="favicon.jpg" />
       <Head>
-        <meta name="description" content="We are a leading web designing and development company in Bangalore. Our expert team of website developers in Bangalore creates high quality websites and digital marketing. Contact us now!
-        Best HR services, Top HR Consulting firm, No 1 Placement Agency in Bangalore." />
-  <meta name="keywords" content="Software Training Institute,Java Training,Full stack Training,Python Training, 
-  Web Design Company, Web Development Company, Website Design Company, Website Development Company, web designing company." />
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software</title>
+
+
+
+
 
       </Head>
       <Home pageDetails={props.pageDetails}/>

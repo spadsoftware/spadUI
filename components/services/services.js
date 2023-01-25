@@ -54,7 +54,9 @@ const ServicesComponent = () => {
                 /></div>
                 
   
-      <div className= {classes.section__subtlt}>We are offering latest technology to our clients and students </div>
+      <div className= {classes.section__subtlt}>
+      Get Expert Web Design, Development and 
+      Digital Marketing Solutions with Real-Time Training and Placement Assistance.</div>
       </div>
     
     <Box sx={{ width: '100%', typography: 'body1' }} className= {classes.section_service_box}>

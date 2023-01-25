@@ -96,6 +96,41 @@ useEffect(() => {
                 </Typography>
               </AccordionDetails>
             </Accordion>
+
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <HelpOutlineIcon className= {classes.section_faq_Title}/>&nbsp;
+                <Typography className= {classes.section_faq_TitleText}>What all services does spad software provide?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography className= {classes.section_faq_detail}>
+                At spad software, we provide a comprehensive suite of services including web design, training and placement consultancy, web development, digital marketing, and more. We are also a team of talented developers that can create all kinds of custom software. Additionally, we offer real-time trainings to students as well as professionals. So no 
+                 what kind of help you need in the digitally driven world, spad software has got your back!                </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+            <Accordion>
+              <AccordionSummary
+                expandIcon={<ExpandMoreIcon />}
+                aria-controls="panel2a-content"
+                id="panel2a-header"
+              >
+                <HelpOutlineIcon className= {classes.section_faq_Title}/>&nbsp;
+                <Typography className= {classes.section_faq_TitleText}>What kind of software does spad software develop?</Typography>
+              </AccordionSummary>
+              <AccordionDetails>
+                <Typography className= {classes.section_faq_detail}>
+                At spad software, we develop custom software and websites tailored to the exact needs of our clients. Our experienced team of developers specialise in a wide range of technologies, including Web Design, PHP, ASP.NET, HTML5, JavaScript, AngularJS, ReactJS and Node.js. We also provide real-time training & placement services for web development and digital marketing platforms such as SEO & Social Media Marketing (SMM). Furthermore, we provide branding design services for designers to showcase their creative flair. With spad software you can trust that we have got you covered when it comes to
+                 developing your own software and achieving success in your digital marketing endeavours!
+                  </Typography>
+              </AccordionDetails>
+            </Accordion>
+
+
             <Accordion>
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
@@ -201,12 +236,13 @@ useEffect(() => {
         Array.isArray(searchNews) ? searchNews.map(i => {
             return (
         <>
-        <ListItem alignItems="flex-start">
+        <ListItem alignItems="flex-start" key={i.id}>
                       <ListItemAvatar>
-                        <Avatar alt="Remy Sharp" src="/static/images/avatar/1.jpg" />
+                        <Avatar  alt="Remy Sharp" src="https://mui.com/static/images/avatar/2.jpg" />
                       </ListItemAvatar>
                       <ListItemText
-                        primary=  {i.title}
+                      key={i.id}
+                        primary= {i.title}
                         secondary={
                           <React.Fragment>
                             <Typography
@@ -222,7 +258,6 @@ useEffect(() => {
                         }
                       />
                     </ListItem>
-                    <Divider variant="inset" component="li" />
         </>
              
 

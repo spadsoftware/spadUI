@@ -24,6 +24,9 @@
   position: relative;
  
 }
+.cl_brown{
+  line-height: 30px;
+}
 .section__btm{
   /* padding-bottom:15px !important; */
 }

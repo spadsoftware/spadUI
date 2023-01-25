@@ -281,3 +281,16 @@
  height: 48px;
  font-size: 0; 
 }
+@media (max-width: 768px) {
+  .hdr{
+    font-size:11px
+  }
+}
+
+
+@media (min-width: 768px) {
+  .hdr{
+    font-size:18px
+  }
+}
+

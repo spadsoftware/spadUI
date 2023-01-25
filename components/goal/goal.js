@@ -263,10 +263,13 @@ const goalComponent = () => {
               </span>
   <Grid component="span" 
   container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{paddingTop:'20px'}}>
- <Grid component="span"  item xs={12} sm={12} md={12}>
+ <Grid component="span"  item xs={12} sm={12} md={12}
+ className={classes.hdr}>
+
               
               Provide exceptional people who deliver extraordinary results
-              Provide innovative software solutions for excellence and enterprise compliance.
+              With spad software, you can be confident that your software will be developed to the highest standards.
+              We use the latest technologies and tools to ensure that your software is of the highest quality.
              
               </Grid >
   </Grid>
@@ -282,6 +285,7 @@ const goalComponent = () => {
     fontWeight: '600'}} >
             Bridging The Gap Between 
               &nbsp;<span style={{borderBottom:'3px solid red'}}>Business And Technology.</span>
+            
               </span>
             
   <Grid component="span" 
@@ -342,10 +346,8 @@ const goalComponent = () => {
               </span>
   <Grid component="span" 
   container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{paddingTop:'20px'}}>
- <Grid component="span"  item xs={12} sm={12} md={12}>
- Our vision is to become businesses’ first choice when it comes to software development and maintenance.
-
-             
+ <Grid component="span"  item xs={12} sm={12} md={12}  className={classes.hdr}>
+ Spad software is a versatile tool that can help you with all your software needs, from developing custom applications to providing real-time training and placement. with our team of talented developers, you can be sure that your project is in good hands.   
               </Grid >
   </Grid>
             </Typography>

@@ -307,8 +307,7 @@ console.log(enteredDate,enteredEmail,enteredName,
                 Our team consists of the best website builders in bangalore who
                 specializes in providing services for most of the industries
                 like Ecommerce, Healthcare, IT, food Processing, Automobiles,
-                Steel Equipments, Mining, Banking & Finance, software Training &
-                stock market Training.
+                Steel Equipments, Mining, Banking & Finance.
               </div>
             </Grid>
 
@@ -596,15 +595,9 @@ console.log(enteredDate,enteredEmail,enteredName,
                   Right Web Design & Development Company
                 </span>{" "}
                 to visualize your business idea into reality? Then you are
-                landed in right place! We are team of talented developers
-                developing all kind of &nbsp;
-                <span className= {classes.section_wwd_lt}>
-                  software & Digital Marketing{" "}
-                </span>{" "}
-                as well as providing &nbsp;
-                <span className= {classes.section_wwd_lt}>
-                  Real time Training and placement.{" "}
-                </span>
+                landed in right place!   Spad software is your one-stop shop for all your software development needs.
+                Power Up Your Development and Design Skills with spad Software.
+                Turn your visions into reality with the help of our talented team of developers.
                 Our team consists of the best website builders in bangalore who
                 specializes in providing services for most of the industries
                 like Ecommerce, Healthcare, IT, food Processing, Automobiles,
