@@ -59,6 +59,15 @@ function MyApp({ Component, pageProps }) {
           gtag('config', 'GTM-5C433P6');
         `}
       </Script>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-HM2WBMT0Q0"></Script>
+      <Script>
+      {` window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HM2WBMT0Q0');
+        `}
+      </Script>
 
       <Component {...pageProps} />
     </Layout>

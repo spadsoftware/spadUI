@@ -32,8 +32,15 @@ function HomePage(props) {
       <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software</title>
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-HM2WBMT0Q0"></Script>
+      <Script>
+    {` window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-
+      gtag('config', 'G-HM2WBMT0Q0');
+      `}
+    </Script>
 
 
 
