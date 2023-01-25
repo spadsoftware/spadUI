@@ -159,17 +159,17 @@ console.log(enteredDate,enteredEmail,enteredName,
       message: requestError,
     };
   }
-  React.useEffect(() => {
-    const node = loadCSS(
-      'https://use.fontawesome.com/releases/v5.14.0/css/all.css',
-      // Inject before JSS
-      document.querySelector('#font-awesome-css') || document.head.firstChild,
-    );
+  // React.useEffect(() => {
+  //   const node = loadCSS(
+  //     'https://use.fontawesome.com/releases/v5.14.0/css/all.css',
+  //     // Inject before JSS
+  //     document.querySelector('#font-awesome-css') || document.head.firstChild,
+  //   );
 
-    return () => {
-      node.parentNode.removeChild(node);
-    };
-  }, []); 
+  //   return () => {
+  //     node.parentNode.removeChild(node);
+  //   };
+  // }, []); 
   return (
     <>
       <section id="home" className={classes.home1}>
