@@ -100,8 +100,8 @@ const HomeComponent = (props) => {
   
   async function sendMessageHandler(event) {
     event.preventDefault();
-console.log(enteredDate,enteredEmail,enteredName,
-  enteredPhone,enteredCategory,enteredMessage,value.$d)
+// console.log(enteredDate,enteredEmail,enteredName,
+//   enteredPhone,enteredCategory,enteredMessage,value.$d)
 
     setRequestStatus('pending');
 
@@ -633,7 +633,7 @@ console.log(enteredDate,enteredEmail,enteredName,
                   </div >{" "}
                   <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}> 1st year Running successfully.</div>
                 </Paper>
-                <Paper variant="outlined"  elevation={1} style={{background:'#bedbff'}}>
+                <Paper elevation={1} style={{background:'#bedbff'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
                     <Image
                       src={`/images/home/pd.png`}
@@ -644,7 +644,7 @@ console.log(enteredDate,enteredEmail,enteredName,
                   </div>
                   <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}> 10+ Projects launched</div>
                 </Paper>
-                <Paper variant="outlined"  elevation={2} style={{background:'#e5e5e5'}}>
+                <Paper  elevation={2} style={{background:'#e5e5e5'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
                     {" "}
                     <Image
@@ -656,7 +656,7 @@ console.log(enteredDate,enteredEmail,enteredName,
                   </div>
                   <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>client satisfaction</div>
                 </Paper>
-                <Paper variant="outlined"  elevation={3} style={{background:'#e7ffc9'}}>
+                <Paper  elevation={3} style={{background:'#e7ffc9'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
                     <Image
                       src={`/images/home/cr.png`}
@@ -667,7 +667,7 @@ console.log(enteredDate,enteredEmail,enteredName,
                   </div>
                   <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>happy customer</div>
                 </Paper>
-                <Paper variant="outlined"  elevation={4} style={{background:'#fff2d5'}}>
+                <Paper   elevation={4} style={{background:'#fff2d5'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
                     <Image
                       src={`/images/home/moneyback.png`}
@@ -679,7 +679,7 @@ console.log(enteredDate,enteredEmail,enteredName,
 
                   <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>100% money Back</div>
                 </Paper>
-                <Paper variant="outlined"  elevation={5} style={{background:'#d4d6d9'}}>
+                <Paper  elevation={5} style={{background:'#d4d6d9'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
                     <Image
                       src={`/images/home/trust.png`}
@@ -691,7 +691,7 @@ console.log(enteredDate,enteredEmail,enteredName,
 
                   <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>trusted Relationship</div>
                 </Paper>
-                <Paper variant="outlined"  elevation={6} style={{background:'#b1c3d7'}}>
+                <Paper  elevation={6} style={{background:'#b1c3d7'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
                     {" "}
                     <Image
@@ -703,7 +703,7 @@ console.log(enteredDate,enteredEmail,enteredName,
                   </div>
                   <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>more options for marketing</div>
                 </Paper>
-                <Paper variant="outlined"  elevation={7} style={{background:'#bdffe4'}}>
+                <Paper  elevation={7} style={{background:'#bdffe4'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
                     <Image
                       src={`/images/home/support.png`}

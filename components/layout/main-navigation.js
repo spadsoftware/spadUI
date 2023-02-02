@@ -91,7 +91,7 @@ function MainNavigation(props) {
       }
       else{
         setRerender(true);
-        console.log(rerender)
+        // console.log(rerender)
       }
       }
     };

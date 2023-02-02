@@ -50,7 +50,7 @@ const HowItWorks = () => {
     borderColor: "#212861",
     transition: "background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s",
         padding: "0px 0px 0px 0px",
-    boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25);'
+    boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25)'
     }}>
       <h5 style={{fontSize:'18px',color:'#d1482d',textAlign:'center'}}>How Spad Software Works-It's 3 step process.</h5>
       <div style={{fontSize:'18px',color:'#d1482d',textAlign:'center'}}>Start</div>
@@ -92,7 +92,7 @@ const HowItWorks = () => {
       <TimelineSeparator>
         <TimelineConnector />
         <TimelineDot  style={{background:'#212861'}}>
-          <SavedSearchIcon  style={{background:''}}/>
+          <SavedSearchIcon />
         </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>

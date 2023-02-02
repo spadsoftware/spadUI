@@ -89,7 +89,7 @@ const jobSeekers = () => {
   const handleCapture = ({ target }) => {
     setEnteredFile(target.files[0]);
     setEnteredFileName(target.files[0].name)
-    console.log(target.files[0])
+    // console.log(target.files[0])
   };
 
 

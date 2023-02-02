@@ -70,7 +70,7 @@ import {
 
   const About = (props) => {
     const { query } = props;
-  console.log(query);
+  // console.log(query);
     const [enteredEmail, setEnteredEmail] = useState('');
     const [enteredName, setEnteredName] = useState('');
     const [enteredMessage, setEnteredMessage] = useState('');
@@ -79,8 +79,8 @@ import {
     const [enteredDate, setEnteredDate] = useState('');
     async function sendMessageHandler(event) {
       event.preventDefault();
-  console.log(enteredDate,enteredEmail,enteredName,
-    enteredPhone,enteredCategory,enteredMessage,value.$d)
+  // console.log(enteredDate,enteredEmail,enteredName,
+  //   enteredPhone,enteredCategory,enteredMessage,value.$d)
   
       setRequestStatus('pending');
   
@@ -113,10 +113,24 @@ import {
   const handleChange = (newValue) => {
     setValue(newValue);
   };
-  const router = useRouter();
-  const currentRoute = router.pathname;
     // console.log(services);
-    const filterdSvcs = Services.filter(services => services.name == router.asPath.split('/')[2])
+    //const [filterdSvcs, setfilterdSvcs] =  useState('');
+
+    const router = useRouter();
+    const currentRoute = router.pathname;
+
+    let filterdSvcs = Services.filter(services => services.name == router.asPath.split('/')[2])
+    // setfilterdSvcs(fltrsvc)
+    console.log(filterdSvcs)
+
+    // useEffect(() => {
+      
+    //   console.log("fltrsvc")
+    // }, []);
+
+
+
+
 function createMarkup() {
   return {
      __html: filterdSvcs[0].expect,
@@ -151,12 +165,12 @@ function createMarkup() {
         boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25)'}}>
                 
 
-            <Image
+               {filterdSvcs[0]?<Image
               src={filterdSvcs[0].img}
               alt={'Spad Software Logo'}
               width={876}
               height={366}
-            />
+            />:''}
           
           
               </Grid>
@@ -366,10 +380,12 @@ function createMarkup() {
                   }}
                 >
 
-          <div style={{textAlign:'center',fontSize:'15px',fontWeight:'600'}}>Why spad software for Your {filterdSvcs[0].title}?</div>
+          <div style={{textAlign:'center',fontSize:'15px',fontWeight:'600'}}>Why spad software for Your 
+          {filterdSvcs[0]?filterdSvcs[0].title:''}
+          ?</div>
 
           <hr />
-          {filterdSvcs[0].about}
+          {filterdSvcs[0]?filterdSvcs[0].about:''}
                                
            </Paper>
           
@@ -394,11 +410,11 @@ function createMarkup() {
                 >
                 <div style={{textAlign:'center',fontSize:'15px',fontWeight:'600'}}>Technology</div>
                 <ul>
-        <li>{filterdSvcs[0].techno.split('-')[0]}</li>
-         <li>{filterdSvcs[0].techno.split('-')[1]}</li>
-         <li>{filterdSvcs[0].techno.split('-')[2]}</li>
-         <li>{filterdSvcs[0].techno.split('-')[3]}</li>
-         <li>{filterdSvcs[0].techno.split('-')[4]}</li>
+        <li>{filterdSvcs[0]?filterdSvcs[0].techno.split('-')[0]:''}</li>
+         <li>{filterdSvcs[0]?filterdSvcs[0].techno.split('-')[1]:''}</li>
+         <li>{filterdSvcs[0]?filterdSvcs[0].techno.split('-')[2]:''}</li>
+         <li>{filterdSvcs[0]?filterdSvcs[0].techno.split('-')[3]:''}</li>
+         <li>{filterdSvcs[0]?filterdSvcs[0].techno.split('-')[4]:''}</li>
 
 
         </ul>
@@ -412,9 +428,9 @@ function createMarkup() {
         padding: "0px 0px 0px 0px",
     boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25)'}}>
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
-                <div style={{textAlign:'center',fontSize:'15px',fontWeight:'600'}}> Why  {filterdSvcs[0].title} for your dream project?</div>
+                <div style={{textAlign:'center',fontSize:'15px',fontWeight:'600'}}> Why  {filterdSvcs[0]?filterdSvcs[0].title:''} for your dream project?</div>
                 
-                {filterdSvcs[0].desc}
+                {filterdSvcs[0]?filterdSvcs[0].desc:''}
                 <p>Our experts understand the latest UI technologies and architectures, as well as key user experience trends.</p>
                 </Paper>
               </Grid>
@@ -428,10 +444,10 @@ function createMarkup() {
                 <Paper sx={{ p: 2, display: 'flex', flexDirection: 'column' }}>
                 <div style={{textAlign:'center',fontSize:'15px',fontWeight:'600'}}>  what to expect? </div>
           <ul>
-        <li>{filterdSvcs[0].expect.split('-')[0]}</li>
-         <li>{filterdSvcs[0].expect.split('-')[1]}</li>
-         <li>{filterdSvcs[0].expect.split('-')[2]}</li>
-         <li>{filterdSvcs[0].expect.split('-')[3]}</li>
+        <li>{filterdSvcs[0]?filterdSvcs[0].expect.split('-')[0]:''}</li>
+         <li>{filterdSvcs[0]?filterdSvcs[0].expect.split('-')[1]:''}</li>
+         <li>{filterdSvcs[0]?filterdSvcs[0].expect.split('-')[2]:''}</li>
+         <li>{filterdSvcs[0]?filterdSvcs[0].expect.split('-')[3]:''}</li>
 
         </ul>
 

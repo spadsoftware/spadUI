@@ -112,7 +112,7 @@ const BlogComponent = (props) => {
 
   const handleChangeSearch = (event, value) => {
 
-    console.log(event.target.value)
+   // console.log(event.target.value)
     if(event.target.value!==''){
         setFilterdatas(data.filter(x => x.title.toLowerCase().includes(event.target.value.toLowerCase()))
         )

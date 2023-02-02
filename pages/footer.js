@@ -87,8 +87,8 @@ const footer = () => {
   
   async function sendMessageHandler(event) {
     event.preventDefault();
-console.log(enteredDate,enteredEmail,enteredName,
-  enteredPhone,enteredCategory,enteredMessage,value.$d)
+// console.log(enteredDate,enteredEmail,enteredName,
+//   enteredPhone,enteredCategory,enteredMessage,value.$d)
 
     setRequestStatus('pending');
 

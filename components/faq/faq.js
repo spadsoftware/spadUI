@@ -288,13 +288,12 @@ useEffect(() => {
         
         Array.isArray(searchNews) ? searchNews.map(i => {
             return (
-        <>
-        <ListItem alignItems="flex-start" key={i.id}>
+     
+        <ListItem alignItems="flex-start"   key={i.id}>
                       <ListItemAvatar>
                         <Avatar  alt="Remy Sharp" src={i.img} />
                       </ListItemAvatar>
                       <ListItemText
-                      key={i.id}
                         primary= {i.title}
                         secondary={
                           <React.Fragment>
@@ -314,7 +313,7 @@ useEffect(() => {
                         }
                       />
                     </ListItem>
-        </>
+       
              
 
 

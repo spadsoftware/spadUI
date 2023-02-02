@@ -40,7 +40,7 @@ const Item = styled(Paper)(({ theme }) => ({
   }));
   
   async function sendContactData(details) {
-    console.log(details)
+    // console.log(details)
     const response = await fetch('http://127.0.0.1:8080/hire', {
       method: 'POST',
       body: JSON.stringify(details),
