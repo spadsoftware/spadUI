@@ -25,7 +25,7 @@ import {
   import ChevronLeftIcon from '@mui/icons-material/ChevronLeft';
   import NotificationsIcon from '@mui/icons-material/Notifications';
   import Footer from  '../footer'
-  import { Services } from "../data";
+  import { Services } from "../../public/data";
   import Image from 'next/image';
   import { useState, useEffect } from 'react';
   import dayjs from 'dayjs';
