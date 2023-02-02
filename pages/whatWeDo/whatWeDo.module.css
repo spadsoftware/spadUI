@@ -6,7 +6,7 @@
     padding-bottom:5px;
     border-style: solid;
     border-width: 0px 0px 0px 20px;
-    border-color: #F89000;
+    border-color: #da4536;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
         /* padding: 50px 0px 20px 0px; */
     
@@ -26,12 +26,29 @@
 .section_wwd_lt{
     /* color:#d9232d;
     background-color: #FFFF00; */
-    background: linear-gradient(#d9232d,#d9232d) bottom repeat-x;
+    animation-duration: 10s;
+    animation-name: flash;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation:flash 10s infinite;
+    /* background: linear-gradient(#d9232d,#d9232d) bottom repeat-x; */
     /* transition: all 0.25s ease-out; */
-    color:white;
+    /* color:white; */
     display:inline-block !important;
 }
+@keyframes flash  {
+  0% {color: #3f8ec4}
+  50% {color: #d9232d;}
+  100% {color: green;}
+ 
 
+}
+@-webkit-keyframes flash  {
+  0% {color: #3f8ec4}
+  50% {color: #d9232d;}
+  100% {color: green;}
+
+}
 
 @-webkit-keyframes wobble {
     0% {

@@ -6,7 +6,7 @@
     font-weight: bold;
     border-style: solid;
     border-width: 0px 0px 0px 20px;
-    border-color: #F89000;
+    border-color: #da4536;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
         /* padding: 50px 0px 20px 0px; */
     
@@ -54,7 +54,7 @@ padding: 10px;
     padding: 10px;
     border: 2px solid white;
     border-radius: 10px;
-    background-color:#424256
+    background-color:#bdffe4
 }
 .section_servicesvc6{
     padding: 10px;
@@ -72,7 +72,7 @@ padding: 10px;
     padding: 10px;
     border: 2px solid white;
     border-radius: 10px;
-    background-color:#424256
+    background-color:#bdffe4
 }
 .section_servicesvc9{
     padding: 10px;
@@ -90,7 +90,7 @@ padding: 10px;
     padding: 10px;
     border: 2px solid white;
     border-radius: 10px;
-    background-color:#0f7faf !important;
+    background-color:#bdffe4 !important;
 }
 .section_servicesvc12{
     padding: 10px;
@@ -185,7 +185,7 @@ padding: 10px;
 			
 }
 .service_icon_gif {
-    background: url(../../public/images/services/smm.gif) no-repeat -161px -6px;
+    background: url(../../public/images/services/smm.gif) no-repeat -8px -7px;
     height: 106px;
     width: 116px;
 }
@@ -239,7 +239,7 @@ padding: 10px;
 
 @media (min-width: 768px) {
     .service_icon_gif {
-        background: url(../../public/images/services/smm.gif) no-repeat -145px -6px;
+        background: url(../../public/images/services/smm.gif) no-repeat 8px -7px;
         height: 106px;
         width: 129px;
     }

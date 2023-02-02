@@ -102,13 +102,25 @@ const ServicesComponent = () => {
   </Grid>
   <Grid item className= {classes.section_servicesvc3} xs={4} sm={4} md={2}>
   <div className={classes.svcs_img}>
-   <Image className={classes.svc_img}
+   <Image className=
+   {classes.svc_img}
   src={`/images/services/services-mainten.png`}
   alt={'Spad Software Logo'}
   width={256}
   height={56}
 />
 <h4>Website Maintenanace</h4>
+    </div>
+  </Grid>
+  <Grid item className= {classes.section_servicesvc12}  xs={4} sm={4} md={2}>
+  <div className={classes.svcs_img}>
+   <Image className={classes.svc_img}
+  src={`/images/services/services-redesign.png`}
+  alt={'Spad Software Logo'}
+  width={256}
+  height={56}
+/>
+<h4>Website Redesigning</h4>
     </div>
   </Grid>
   <Grid item className= {classes.section_servicesvc4}  xs={4} sm={4} md={2}>
@@ -125,11 +137,14 @@ const ServicesComponent = () => {
 
   <Grid item className= {classes.section_servicesvc5} xs={4} sm={4} md={2}>
   <div className={classes.svcs_img}>
-  <div className= {classes.service_icon}>
-    <div className= {classes.service_icon_gif2}></div>
-   </div>
+  <Image className={classes.svc_img}
+  src={`/images/services/ec.png`}
+  alt={'Spad Software Logo'}
+  width={256}
+  height={56}
+/>
 
-<h4 style={{color:'white'}}>Ecommerce</h4>
+<h4 >Ecommerce</h4>
     </div>
   </Grid>
   <Grid item   xs={4} sm={4} md={2} className= {classes.section_servicesvc6}>
@@ -143,6 +158,7 @@ const ServicesComponent = () => {
 <h4>WordPress Development</h4>
     </div>
   </Grid>
+ 
   <Grid item className= {classes.section_servicesvc7}  xs={4} sm={4} md={2}>
   <div className={classes.svcs_img}>
    <Image className={classes.svc_img}
@@ -156,10 +172,13 @@ const ServicesComponent = () => {
   </Grid>
   <Grid item className= {classes.section_servicesvc8}  xs={4} sm={4} md={2}>
   <div className={classes.svcs_img}>
-  <div className= {classes.service_icon}>
-    <div className= {classes.service_icon_gif3}></div>
-   </div>
-<h4 style={{color:'white'}}>PHP Development</h4>
+  <Image className={classes.svc_img}
+  src={`/images/services/services-csm.png`}
+  alt={'Spad Software Logo'}
+  width={256}
+  height={56}
+/>
+<h4 >PHP Development</h4>
     </div>
   </Grid>
 
@@ -184,23 +203,17 @@ const ServicesComponent = () => {
   </Grid>
   <Grid item className= {classes.section_servicesvc11}  xs={4} sm={4} md={2}>
   <div className={classes.svcs_img}>
-  <div className= {classes.service_icon}>
-    <div className= {classes.service_icon_gif4}></div>
-   </div>
-<h4>Mobile App</h4>
-    </div>
-  </Grid>
-  <Grid item className= {classes.section_servicesvc12}  xs={4} sm={4} md={2}>
-  <div className={classes.svcs_img}>
-   <Image className={classes.svc_img}
-  src={`/images/services/services-redesign.png`}
+  <Image className={classes.svc_img}
+  src={`/images/services/mb.png`}
   alt={'Spad Software Logo'}
   width={256}
   height={56}
 />
-<h4>Website Redesigning</h4>
+<h4>Mobile App</h4>
     </div>
   </Grid>
+ 
+   
 </Grid>
           
           </TabPanel>

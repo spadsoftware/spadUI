@@ -1,6 +1,6 @@
 import React from "react";
 import Head from "next/head";
-import WhatWeDoComponent from '../components/whatWeDo/whatWeDo'
+import WhatWeDoComponent from '../pages/whatWeDo/whatWeDo'
 
 function WhatWeDo(){
   return (

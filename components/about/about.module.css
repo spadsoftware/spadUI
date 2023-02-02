@@ -44,7 +44,7 @@
   padding:0px !important;
 }
 .dot_line{
-  color:red;
+  color:rgba(0, 0, 0, 0.6);
   min-height: 50px !important;
   font-family: Gilroy-Bold !important;
     font-weight: bold;

@@ -32,3 +32,32 @@
   .section__subtlt{
     padding: 12px;
   }
+
+  .clickHere{
+    animation-duration: 7s;
+    animation-name: flash;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation:flash 7s infinite;
+    font-size: 12px;
+    font-weight: bolder;
+    /* background: linear-gradient(#d9232d,#d9232d) bottom repeat-x; */
+    /* transition: all 0.25s ease-out; */
+    /* color:white; */
+    display:inline-block !important;
+}
+.clickHere:hover{ cursor: pointer; }
+
+@keyframes flash  {
+  0% {color: #d9232d}
+  50% {color: black;}
+  100% {color:#d9232d;}
+ 
+
+}
+@-webkit-keyframes flash  {
+  0% {color: #d9232d}
+  50% {color: black;}
+  100% {color: #d9232d;}
+
+}

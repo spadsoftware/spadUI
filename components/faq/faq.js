@@ -28,6 +28,7 @@ import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import Masonry from '@mui/lab/Masonry';
+import Link from 'next/link';
 
 
 
@@ -35,9 +36,61 @@ import Masonry from '@mui/lab/Masonry';
 const faqComponent = () => {
 
   const [searchNews, setNewDatas] = useState([]);
+
+
 const getProfile = async () => {
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
-  const data = await response.json();
+  // const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  // const data = await response.json();
+  const data=[
+    {
+      id:1,
+      title:'Andriod 2+ years opening',
+      body:'Looking for andriod developer having 2+ years of experience',
+      img:'/images/faq/jo1.png',
+      link:'/jobSeekers',
+      linkText:'upload your resume'
+    },
+    {
+      id:2,
+      title:'IOS 2+ years opening',
+      body:'Looking for IOS developer having 2+ years of experience',
+      img:'/images/faq/jo1.png',
+      link:'/jobSeekers',
+      linkText:'upload your resume'
+    },
+    {
+      id:3,
+      title:'MEAN Stack 2+ years opening',
+      body:'Looking for MEAN Stack developer having 2+ years of experience',
+      img:'/images/faq/jo1.png',
+      link:'/jobSeekers',
+      linkText:'upload your resume'
+    },
+    {
+      id:4,
+      title:'RealTime Python Training',
+      body:'On 31-march-2023, We are going to conduct realtime online training.',
+      img:'/images/faq/t1.jpeg',
+      link:'/home',
+      linkText:'Book an appoinment'
+    },
+    {
+      id:5,
+      title:'RealTime Java Training',
+      body:'On 31-march-2023, We are going to conduct realtime online training. ',
+      img:'/images/faq/t1.jpeg',
+      link:'/home',
+      linkText:'Book an appoinment'
+    },
+    {
+      id:6,
+      title:'RealTime MeanStack Training',
+      body:'On 31-march-2023, We are going to conduct realtime online training. ',
+      img:'/images/faq/t1.jpeg',
+      link:'/home',
+      linkText:'Book an appoinment'
+    }
+  ]
   setNewDatas(data.slice(0, 6).map(item=>item))
 };
 
@@ -218,7 +271,7 @@ useEffect(() => {
         bgcolor: 'background.paper',
         position: 'relative',
         overflow: 'auto',
-        maxHeight: 390,
+        maxHeight: 484,
         boxShadow:'0 0 5px 2px #00000029',
 
         '& ul': { padding: 0 },
@@ -238,7 +291,7 @@ useEffect(() => {
         <>
         <ListItem alignItems="flex-start" key={i.id}>
                       <ListItemAvatar>
-                        <Avatar  alt="Remy Sharp" src="https://mui.com/static/images/avatar/2.jpg" />
+                        <Avatar  alt="Remy Sharp" src={i.img} />
                       </ListItemAvatar>
                       <ListItemText
                       key={i.id}
@@ -254,6 +307,9 @@ useEffect(() => {
                            
                             </Typography>
                             {i.body}
+                            <Link   href={i.link} >
+                        <span className= {classes.clickHere}>&nbsp;&nbsp; {i.linkText}
+                      </span></Link>
                           </React.Fragment>
                         }
                       />

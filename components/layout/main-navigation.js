@@ -33,6 +33,7 @@ import SvgIcon from '@mui/material/SvgIcon';
 import Icon from '@mui/material/Icon';
 import { loadCSS } from 'fg-loadcss';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+const { useState, useEffect } = React;
 
 function appBarLabel(label) {
   return (
@@ -62,10 +63,43 @@ function MainNavigation(props) {
 
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
-
+  const container = window !== undefined ? () => window().document.body : undefined;
+  const isBrowser = () => typeof window !== 'undefined'; 
+  const router = useRouter();
+  const currentRoute = router.pathname;
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
+
+  const [rerender, setRerender] = useState(false);
+
+  useEffect(() => {
+    if(currentRoute=='/' || currentRoute=='/home'){
+        setRerender(false);
+    }
+    else{
+      
+      setRerender(true);
+    }
+     
+
+    const options = { passive: true }; // options must match add/remove event
+    const scroll = (event) => {
+      if(event.path[1].window.pageYOffset){
+      if(event.path[1].window.pageYOffset<500){
+        setRerender(false);
+      }
+      else{
+        setRerender(true);
+        console.log(rerender)
+      }
+      }
+    };
+    document.addEventListener("scroll", scroll, options);
+    // remove event on unmount to prevent a memory leak
+    () => document.removeEventListener("scroll", scroll, options);
+   }, []);
+
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -90,17 +124,6 @@ function MainNavigation(props) {
   };
   const menuId = 'primary-search-account-menu';
 
-  // React.useEffect(() => {
-  //   const node = loadCSS(
-  //     'https://use.fontawesome.com/releases/v5.14.0/css/all.css',
-  //     // Inject before JSS
-  //     document.querySelector('#font-awesome-css') || document.head.firstChild,
-  //   );
-
-  //   return () => {
-  //     node.parentNode.removeChild(node);
-  //   };
-  // }, []);
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
@@ -125,17 +148,15 @@ function MainNavigation(props) {
     </Box>
              
   );
-  const container = window !== undefined ? () => window().document.body : undefined;
 
-  const router = useRouter();
-  const currentRoute = router.pathname
+  //rerender=currentRoute.includes('/whatWeDo/')
 
   return (
     <>
 
-    <Box sx={{ display: 'flex',background:'#fdf7e3',color:'Black' }}>
+    <Box sx={{ display: 'flex',background:rerender?'rgb(255 255 255)':'#fdf7e3',color:'Black' }}>
         <CssBaseline />
-        <AppBar component="nav"  style={{background:'#fdf7e3',color:'Black'}}>
+        <AppBar component="nav"  style={{background:rerender?'rgb(255 255 255)':'#fdf7e3',color:'Black'}}>
           <Toolbar>
             <IconButton
               color="inherit"
@@ -151,6 +172,7 @@ function MainNavigation(props) {
               component="div"
               sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block' } }}
             >
+                 {!rerender?
                  <Image
             src={`/images/logo/Logo.jpg`}
             alt={'Spad Software Logo'}
@@ -158,6 +180,14 @@ function MainNavigation(props) {
             height={56}
             style={{padding:'10px'}}
           />
+          :
+          <Image
+          src={`/images/logo/spadLogov1.jpg`}
+          alt={'Spad Software Logo'}
+          width={170}
+          height={56}
+          style={{padding:'10px'}}
+        />}
             </Typography>
            
             <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
@@ -166,7 +196,7 @@ function MainNavigation(props) {
                   style={{fontWeight:'600',fontSize:'12px'}}
                   >
                   
-                  <Link href={item[0].toLocaleLowerCase()+ item.slice(1)}>
+                  <Link href={'/'+item[0].toLocaleLowerCase()+ item.slice(1)} shallow>
               <a style={{color:'Black'}}
               className={router.pathname == item[0].toLocaleLowerCase()+ item.slice(1) ? classes.active : ""}>{item}</a>
             </Link>

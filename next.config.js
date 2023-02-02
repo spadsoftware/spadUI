@@ -27,6 +27,7 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     newNextLinkBehavior: false,
+    scrollRestoration: true,
   },
 };
 

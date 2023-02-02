@@ -14,6 +14,7 @@ import Image from 'next/image';
 const { useState, useEffect } = React;
 import { Cursor } from 'react-creative-cursor';
 import 'react-creative-cursor/dist/styles.css';
+import Link from "next/link";
 
 import Masonry from '@mui/lab/Masonry';
 
@@ -68,7 +69,9 @@ const WhatWeDoComponent = () => {
               <p className= {classes.items_lists}>A stunning design and happy customers? hat’s right. 
               Everything from the right tools, brilliant ideas and high expertise, 
               you are guaranteed to enjoy the finished work that we provide.</p>
-            
+              <Link href= {`whatWeDo/ui`} key='1'>
+              Read More &nbsp;
+              </Link>
           </div>
           </div>
           </Item>
@@ -80,7 +83,9 @@ const WhatWeDoComponent = () => {
     <p className= {classes.items_lists}>Create a web design which can interact with your database dynamically with a proper source language. Our
       web development team programs an interactive, efficient, user-friendly web page for your visitors. Your
       platform is in our hands! Sweat not!</p>
-   
+      <Link href= {`whatWeDo/mb`} key='1'>
+              Read More &nbsp;
+              </Link>
     </div>
     </div>
           </Item>
@@ -90,7 +95,9 @@ const WhatWeDoComponent = () => {
     <h3>CMS Website Development</h3>
     <p className= {classes.items_lists}>DRIVE your user control with our CMS service; we make our clients website more informative. Stand on
       top in your division with our content customized service</p>
-   
+      <Link href= {`whatWeDo/cms`} key='1'>
+              Read More &nbsp;
+              </Link>
     </div>
     </div>
 
@@ -102,7 +109,9 @@ const WhatWeDoComponent = () => {
     <p className= {classes.items_lists}>The countless themes and iconic features of WordPress development has contributed 
         to the success of various companies. We offer client assistance to help enjoy the
          best of WordPress development.</p>
-   
+         <Link href= {`whatWeDo/wp`} key='1'>
+              Read More &nbsp;
+              </Link>
     </div>
     </div>
           </Item>
@@ -110,10 +119,10 @@ const WhatWeDoComponent = () => {
           <div className= {classes.item_list4}>
     <div>
     <h3>Digital Marketing</h3>
-    <p className= {classes.items_lists}>A stunning design and happy customers? hat’s right. 
-    Everything from the right tools, brilliant ideas and high expertise, 
-    you are guaranteed to enjoy the finished work that we provide.</p>
-   
+    <p className= {classes.items_lists}> Our Internet Marketing experts knowledge with Search Engine Optimization,Search Engine Marketing, Social Media Optimization, Link Building and Digital Internet Advertising. We are providing affordable online Marketing services to all our clients. We have listed all the Digital Marketing Services in this website. You can go through them and make the right decision of consigning a project with us!</p>
+    <Link href= {`whatWeDo/dm`} key='1'>
+              Read More &nbsp;
+              </Link>
     </div>
     </div>
           </Item>
@@ -124,7 +133,9 @@ const WhatWeDoComponent = () => {
     <p className= {classes.items_lists}>Create a web design which can interact with your database dynamically with a proper source language. Our
       web development team programs an interactive, efficient, user-friendly web page for your visitors. Your
       platform is in our hands! Sweat not!</p>
-   
+      <Link href= {`whatWeDo/smm`} key='1'>
+              Read More &nbsp;
+              </Link>
     </div>
     </div>
           </Item>
@@ -132,9 +143,10 @@ const WhatWeDoComponent = () => {
           <div className= {classes.item_list6}>
     <div>
     <h3>Search Engine Optimization</h3>
-    <p className= {classes.items_lists}>DRIVE your user control with our CMS service; we make our clients website more informative. Stand on
-      top in your division with our content customized service</p>
-   
+    <p className= {classes.items_lists}> Search Engine Optimization is used to show your website in the unpaid search engines (Google, Bing, Yahoo), and improve the ranking of your website. When your website is listed in major search sites, results in letting your content to appear related term in searched on the very first pages.</p>
+    <Link href= {`whatWeDo/seo`} key='1'>
+              Read More &nbsp;
+              </Link>
     </div>
     </div>
 
@@ -143,10 +155,10 @@ const WhatWeDoComponent = () => {
           <div className= {classes.item_list7}>
     <div>
     <h3>Branding</h3>
-    <p className= {classes.items_lists}>The countless themes and iconic features of WordPress development has contributed 
-        to the success of various companies. We offer client assistance to help enjoy the
-         best of WordPress development.</p>
-   
+    <p className= {classes.items_lists}>Your greatest challenge is to prove to your prospects that you are different and better than any other company. Like many other things in life, when it comes to messages first impressions count. By stating your company’s vision and objectives, you appeal to the brand persona.</p>
+    <Link href= {`whatWeDo/bg`} key='1'>
+              Read More &nbsp;
+              </Link>
     </div>
     </div>
           </Item>
@@ -154,10 +166,11 @@ const WhatWeDoComponent = () => {
           <div className= {classes.item_list8}>
     <div>
     <h3>Payment Gateway Integration</h3>
-    <p className= {classes.items_lists}>A stunning design and happy customers? hat’s right. 
-    Everything from the right tools, brilliant ideas and high expertise, 
-    you are guaranteed to enjoy the finished work that we provide.</p>
-   
+    <p className= {classes.items_lists}>With e-commerce and online shopping increasing at exponential rates now a days, it is essential that your web store is integrated with a multiple payment gateway. Payment gateway is a service that can be used to process credit card and debit card transactions when accepting online orders from your customers. 
+    These payment gateways are provided by different banks and other dedicated Payment Processors. </p>
+    <Link href= {`whatWeDo/pgi`} key='1'>
+              Read More &nbsp;
+              </Link>
     </div>
     </div>
           </Item>
@@ -165,10 +178,10 @@ const WhatWeDoComponent = () => {
           <div className= {classes.item_list9}>
     <div>
     <h3> Website Maintenanace & support</h3>
-    <p className= {classes.items_lists}>Create a web design which can interact with your database dynamically with a proper source language. Our
-      web development team programs an interactive, efficient, user-friendly web page for your visitors. Your
-      platform is in our hands! Sweat not!</p>
-   
+    <p className= {classes.items_lists}>We are considerate about maintaining the website which is created by the user and update the website to surpass the users’ opponent in any way even such as simple change in text, adding additional complex functionality or tools to the websites.</p>
+    <Link href= {`whatWeDo/wms`} key='1'>
+              Read More &nbsp;
+              </Link>
     </div>
     </div>
           </Item>
@@ -176,9 +189,10 @@ const WhatWeDoComponent = () => {
           <div className= {classes.item_list10}>
     <div>
     <h3>Website Redesigning</h3>
-    <p className= {classes.items_lists}>DRIVE your user control with our CMS service; we make our clients website more informative. Stand on
-      top in your division with our content customized service</p>
-   
+    <p className= {classes.items_lists}> We design and develop different types of splendid websites including Static, E-commerce, customized, dynamic, and content management system etc. Our web development team has great knowledge to create best websites with latest trends in design of web pages.</p>
+    <Link href= {`whatWeDo/wrd`} key='1'>
+              Read More &nbsp;
+              </Link>
     </div>
     </div>
           </Item>

@@ -47,7 +47,7 @@ const HowItWorks = () => {
     <section style={{top:'0px',position:'relative',
     borderStyle: 'solid',
     borderWidth: "0px 0px 0px 20px",
-    borderColor: "#0231f7",
+    borderColor: "#212861",
     transition: "background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s",
         padding: "0px 0px 0px 0px",
     boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25);'
@@ -66,13 +66,15 @@ const HowItWorks = () => {
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineConnector />
-        <TimelineDot  color="primary">
-          <ImportContactsIcon style={{background:''}}/>
+        <TimelineDot  style={{background:'#212861'}}>
+          <ImportContactsIcon/>
         </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
-        <Typography variant="h6" component="span" style={{fontSize:'18px',color:'#d1482d'}}>
+        <Typography variant="h6" component="span" style={{fontSize:'18px',
+        background:'linear-gradient(#d9232d,#d9232d) bottom repeat-x',
+        color:'white'}}>
           Tell Us your Requirement
         </Typography>
         <Typography>You can select the requirement like web development,web design,digital marketing,real time Training,Placement services through book an Appoinment</Typography>
@@ -89,13 +91,17 @@ const HowItWorks = () => {
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineConnector />
-        <TimelineDot  color="primary">
+        <TimelineDot  style={{background:'#212861'}}>
           <SavedSearchIcon  style={{background:''}}/>
         </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
-        <Typography variant="h6" component="span" style={{fontSize:'18px',color:'#d1482d'}}>
+        <Typography variant="h6" component="span" style={{
+          fontSize:'18px',
+          background:'linear-gradient(#d9232d,#d9232d) bottom repeat-x',
+          color:'white'
+        }}>
           We will alalyze your requirement
         </Typography>
         <Typography>Our Expert team will look into your requirement and will prepare the process and quote</Typography>
@@ -112,13 +118,16 @@ const HowItWorks = () => {
       </TimelineOppositeContent>
       <TimelineSeparator>
         <TimelineConnector />
-        <TimelineDot color="primary">
+        <TimelineDot style={{background:'#212861'}}>
           <RequestQuoteIcon/>
         </TimelineDot>
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }} >
-        <Typography variant="h6" component="span" style={{fontSize:'18px',color:'#d1482d'}}>
+        <Typography variant="h6" component="span" style={{
+          fontSize:'18px',
+          background:'linear-gradient(#d9232d,#d9232d) bottom repeat-x',
+          color:'white'}}>
           Get the quote 
         </Typography>
         <Typography>we will get back with you within 24 hours and provide 
