@@ -83,7 +83,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/services/services-digital.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Digital Marketing</h4>
@@ -94,7 +94,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/services/services-ui-ux.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>UI / UX Design and Development</h4>
@@ -106,7 +106,7 @@ const ServicesComponent = () => {
    {classes.svc_img}
   src={`/images/services/services-mainten.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Website Maintenanace</h4>
@@ -117,7 +117,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/services/services-redesign.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Website Redesigning</h4>
@@ -128,7 +128,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/services/services-csm.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>CMS Website Development</h4>
@@ -140,7 +140,7 @@ const ServicesComponent = () => {
   <Image className={classes.svc_img}
   src={`/images/services/ec.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 
@@ -152,7 +152,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/services/services-wordpress.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>WordPress Development</h4>
@@ -164,7 +164,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/services/services-seo.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Search Engine Optimization</h4>
@@ -175,7 +175,7 @@ const ServicesComponent = () => {
   <Image className={classes.svc_img}
   src={`/images/services/services-csm.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4 >PHP Development</h4>
@@ -187,7 +187,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/services/services-payment.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Payment Gateway Integration</h4>
@@ -206,7 +206,7 @@ const ServicesComponent = () => {
   <Image className={classes.svc_img}
   src={`/images/services/mb.png`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Mobile App</h4>
@@ -224,7 +224,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/tech/angt.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Angular</h4>
@@ -235,7 +235,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/tech/reactt.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>React</h4>
@@ -246,7 +246,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/tech/javat.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Java</h4>
@@ -257,7 +257,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/tech/node.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Nodejs</h4>
@@ -269,7 +269,7 @@ const ServicesComponent = () => {
   <Image className={classes.svc_img}
   src={`/images/tech/pyt.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 
@@ -281,7 +281,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/tech/m.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Database</h4>
@@ -292,7 +292,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/tech/seo.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>SEO/Digital Marketing</h4>
@@ -303,7 +303,7 @@ const ServicesComponent = () => {
   <Image className={classes.svc_img}
   src={`/images/tech/php.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>PHP</h4>
@@ -315,7 +315,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/tech/w.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Wordpress</h4>
@@ -326,7 +326,7 @@ const ServicesComponent = () => {
   <Image className={classes.svc_img}
   src={`/images/tech/aws.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Aws</h4>
@@ -337,7 +337,7 @@ const ServicesComponent = () => {
   <Image className={classes.svc_img}
   src={`/images/tech/d.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Devops</h4>
@@ -348,7 +348,7 @@ const ServicesComponent = () => {
    <Image className={classes.svc_img}
   src={`/images/tech/h.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <h4>Bigdata</h4>

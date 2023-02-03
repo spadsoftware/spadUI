@@ -50,22 +50,32 @@ function HomePage(props) {
       <Goal />
       <HowItWork />
       <WhatWeDo />
-      {/* <Goal />
-      <WeServe /> */}
       <Techno />
-      {/* <Benefits /> */}
       <Services />
-      {/* <Offers /> */}
+     
       <MoneyBack />
+      
       <Faq />
-      {/* <Events />
+      
+      <Footer />
+      {/* 
+      
+      
+       
+   
+  
+
+      
+      */}
+           {/* <Goal />
+         <WeServe /> */}
+        {/* <Benefits /> */}
+          {/* <Offers /> */}
+          {/* <Events />
       <ContactUs /> */}
 
       {/* <Hero />
       <FeaturedPosts posts={props.posts} /> */}
-        <Footer />
-
-
      
     </Fragment>
   );

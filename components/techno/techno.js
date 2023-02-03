@@ -55,13 +55,13 @@ const TechnoComponent = () => {
    
       <div className= {classes.section__subtlt}>We are offering latest technology to our clients and students </div>
       </div>
-      <Grid container rowSpacing={1} spacing={{ xs: 2, md: 2 }} columns={{ xs: 4, sm: 4, md: 12 }}>
+      <Grid container  columns={{ xs: 4, sm: 4, md: 12 }}>
   <Grid item xs={1} md={2} sm={2}>
     
     <Image className={classes.tech_img}
   src={`/images/tech/javat.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div  className={classes.tech_imgTxt}>JAVA</div>
@@ -70,7 +70,7 @@ const TechnoComponent = () => {
   <Image className={classes.tech_img}
   src={`/images/tech/got.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>GOLANG</div>
@@ -79,7 +79,7 @@ const TechnoComponent = () => {
   <Image className={classes.tech_img}
   src={`/images/tech/php.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>php</div>
@@ -88,7 +88,7 @@ const TechnoComponent = () => {
   <Image className={classes.tech_img}
   src={`/images/tech/andt.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>ANDRIOS</div>
@@ -97,7 +97,7 @@ const TechnoComponent = () => {
   <Image className={classes.tech_img}
   src={`/images/tech/angt.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>ANGULAR</div>
@@ -106,7 +106,7 @@ const TechnoComponent = () => {
   <Image className={classes.tech_img}
   src={`/images/tech/dot.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>.NET</div>
@@ -115,7 +115,7 @@ const TechnoComponent = () => {
   <Image className={classes.tech_img}
   src={`/images/tech/ios.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>IOS</div>
@@ -124,7 +124,7 @@ const TechnoComponent = () => {
   <Image className={classes.tech_img}
   src={`/images/tech/node.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>NODE</div>
@@ -133,7 +133,7 @@ const TechnoComponent = () => {
     <Image className={classes.tech_img}
   src={`/images/tech/pyt.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>PYTHON</div>
@@ -142,7 +142,7 @@ const TechnoComponent = () => {
     <Image className={classes.tech_img}
   src={`/images/tech/svg.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>WEB DEVELOP</div>
@@ -152,7 +152,7 @@ const TechnoComponent = () => {
     <Image className={classes.tech_img}
   src={`/images/tech/ios.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>KOTLIN</div>
@@ -161,7 +161,7 @@ const TechnoComponent = () => {
     <Image className={classes.tech_img}
   src={`/images/tech/aws.svg`}
   alt={'Spad Software Logo'}
-  width={256}
+  width={56}
   height={56}
 />
 <div className={classes.tech_imgTxt}>CLOUD</div>
