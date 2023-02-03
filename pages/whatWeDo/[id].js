@@ -155,8 +155,8 @@ function createMarkup() {
           <button style={{float:'right',color:'white',background:'#ff1269',border:'1px solid #ff1269'}}
           onClick={() => router.back()}>Back</button>
 
-          <Grid container spacing={3}>
-          <Grid item xs={8} md={9} lg={9} style={{paddingLeft:'0px',
+          <Grid container spacing={3} columns={{ xs: 12, sm: 12, md: 12 }}>
+          <Grid item xs={12} md={9} sm={12} style={{paddingLeft:'0px',
         borderStyle: 'solid',
         borderWidth: "0px 0px 0px 5px",
         borderColor: "#ff1269",
@@ -170,12 +170,13 @@ function createMarkup() {
               alt={'Spad Software Logo'}
               width={876}
               height={366}
+              style={{width:'100%',height:'100%'}}
             />:''}
           
           
               </Grid>
 
-              <Grid item xs={4} md={3} lg={3} style={{paddingLeft:'0px',paddingTop:'0px',}}>
+              <Grid item xs={12} md={3} sm={12} style={{paddingLeft:'0px',paddingTop:'0px',}}>
               <Paper sx={{ background:'white',height:'94%',
               borderStyle: 'solid',
               borderWidth: "0px 0px 0px 5px",
@@ -196,7 +197,7 @@ function createMarkup() {
 
                   <div>
                     <Grid container style={{padding:'10px'}}>
-                      <Grid item xs={4} sm={6}>
+                      <Grid item xs={12} sm={6}>
                         <TextField
                           style={{ width: "80%" }}
                           id="standard-required"
@@ -290,7 +291,7 @@ function createMarkup() {
                             }
                             id="grouped-select"
                             label="Grouping"
-                            style={{ left: "17px",width:'112%' }}
+                            style={{ left: "17px",width:'100%' }}
                           >
                             <option value="dv"> </option>
 
@@ -351,7 +352,8 @@ function createMarkup() {
                   </div>
                 </form>
                 <CardActions
-                style={{ justifyContent: "center", paddingTop: "50px" }}
+                style={{ justifyContent: "center", paddingTop: "50px",top:'-30px',
+              position:'relative' }}
               >
                 <Button type="submit" variant="contained">
                   Get Quotes

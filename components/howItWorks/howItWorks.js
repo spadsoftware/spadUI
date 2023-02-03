@@ -72,12 +72,13 @@ const HowItWorks = () => {
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
-        <Typography variant="h6" component="span" style={{fontSize:'18px',
+        <Typography variant="h6" component="span" style={{fontSize:'14px',
+        fontWeight:'600',
         background:'linear-gradient(#d9232d,#d9232d) bottom repeat-x',
         color:'white'}}>
           Tell Us your Requirement
         </Typography>
-        <Typography>You can select the requirement like web development,web design,digital marketing,real time Training,Placement services through book an Appoinment</Typography>
+        <Typography style={{fontSize:'10px',fontWeight:'600'}}>You can select the requirement like web development,web design,digital marketing,real time Training,Placement services through book an Appoinment</Typography>
       </TimelineContent>
     </TimelineItem>
     <TimelineItem>
@@ -98,13 +99,13 @@ const HowItWorks = () => {
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
         <Typography variant="h6" component="span" style={{
-          fontSize:'18px',
+          fontSize:'14px',fontWeight:'600',
           background:'linear-gradient(#d9232d,#d9232d) bottom repeat-x',
           color:'white'
         }}>
           We will alalyze your requirement
         </Typography>
-        <Typography>Our Expert team will look into your requirement and will prepare the process and quote</Typography>
+        <Typography style={{fontSize:'10px',fontWeight:'600'}}>Our Expert team will look into your requirement and will prepare the process and quote</Typography>
       </TimelineContent>
     </TimelineItem>
     <TimelineItem>
@@ -125,12 +126,12 @@ const HowItWorks = () => {
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }} >
         <Typography variant="h6" component="span" style={{
-          fontSize:'18px',
+          fontSize:'14px',fontWeight:'600',
           background:'linear-gradient(#d9232d,#d9232d) bottom repeat-x',
           color:'white'}}>
           Get the quote 
         </Typography>
-        <Typography>we will get back with you within 24 hours and provide 
+        <Typography style={{fontSize:'10px',fontWeight:'600'}}>we will get back with you within 24 hours and provide 
           estimation quote & development Ideas</Typography>
       </TimelineContent>
     </TimelineItem>

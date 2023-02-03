@@ -125,17 +125,17 @@ const goalComponent = () => {
 <Grid item  className={classes.goal_mission_box}>
          
           <Item className={classes.goal_mission}>  
-          <Grid container columns={{ xs: 4, sm: 8, md: 12 }} spacing={{ xs: 2, md: 3 }} 
+          <Grid container columns={{ xs: 4, sm: 4, md: 12 }} spacing={{ xs: 2, md: 3 }} 
            columnSpacing={{ xs: 1, sm: 1, md: 1}}>
 
-    <Grid item xs={5}>
+    <Grid item xs={5} md={5} sm={5}>
     <Box style={{justifyContent: "center"}}
           sx={{
             display: 'flex',
             flexWrap: 'wrap',
             '& > :not(style)': {
               m: 1,
-              width: 138,
+              width: 112,
               height: 108,
             },
             
@@ -229,7 +229,7 @@ const goalComponent = () => {
     </Paper>
     </Box>
   </Grid>
-  <Grid item xs={7}>    
+  <Grid item xs={7} md={7} sm={7}>    
           <Box
       sx={{ flexGrow: 1, bgcolor: 'background.paper', display: 'flex', height: 370 }}
     >

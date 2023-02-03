@@ -111,7 +111,7 @@ const AboutComponent = () => {
         <TimelineOppositeContent color="text.secondary"   sx={{ fontFamily: "Gilroy-Bold !important",
           fontWeight: 'bold',
           fontSize: "11px"}}>
-        3.Develop 
+        4.Develop 
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="primary"/>
@@ -119,13 +119,13 @@ const AboutComponent = () => {
         </TimelineSeparator>
         <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
           fontWeight: 'bold',
-          fontSize: "11px"}}>4.Design</TimelineContent>
+          fontSize: "11px"}}>3.Design</TimelineContent>
       </TimelineItem>
       <TimelineItem className= {classes.dot_line}>
         <TimelineOppositeContent color="text.secondary"   sx={{ fontFamily: "Gilroy-Bold !important",
           fontWeight: 'bold',
           fontSize: "11px"}}>
-          5.Test
+          6.Testing
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="error"/>
@@ -133,13 +133,13 @@ const AboutComponent = () => {
         </TimelineSeparator>
         <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
           fontWeight: 'bold',
-          fontSize: "11px"}}>6.Deploy</TimelineContent>
+          fontSize: "11px"}}>5.Deploy</TimelineContent>
       </TimelineItem>
       <TimelineItem className= {classes.dot_line_last}>
         <TimelineOppositeContent color="text.secondary"   sx={{ fontFamily: "Gilroy-Bold !important",
           fontWeight: 'bold',
           fontSize: "11px"}}> 
-          7.Review
+          8.Review
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="success"/>
@@ -147,7 +147,7 @@ const AboutComponent = () => {
         </TimelineSeparator>
         <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
           fontWeight: 'bold',
-          fontSize: "11px"}}>8.Launch</TimelineContent>
+          fontSize: "11px"}}>7.Launch</TimelineContent>
       </TimelineItem>
     </Timeline>
 
