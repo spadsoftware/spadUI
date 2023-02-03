@@ -34,6 +34,7 @@ import Icon from '@mui/material/Icon';
 import { loadCSS } from 'fg-loadcss';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 const { useState, useEffect } = React;
+import FileSaver from 'file-saver';
 
 function appBarLabel(label) {
   return (
@@ -123,7 +124,12 @@ function MainNavigation(props) {
     setMobileMoreAnchorEl(event.currentTarget);
   };
   const menuId = 'primary-search-account-menu';
-
+  const saveFile = () => {
+    FileSaver.saveAs(
+      "https://www.spadsoftware.com/images/logo/spadBroucher.png",
+      "spadBroucher.png"
+    );
+  }
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
@@ -144,11 +150,16 @@ function MainNavigation(props) {
             </Link>
           </ListItem>
         ))}
+         <button className="cv" onClick={saveFile}
+          style={{fontWeight:'600',fontSize:'14px',background:'#fdf7e3',border:'none',color:'#d9232d'}}
+          >
+              BROUCHER
+         </button>
       </List>
     </Box>
              
   );
-
+  
   //rerender=currentRoute.includes('/whatWeDo/')
 
   return (
@@ -201,8 +212,15 @@ function MainNavigation(props) {
               className={router.pathname == item[0].toLocaleLowerCase()+ item.slice(1) ? classes.active : ""}>{item}</a>
             </Link>
 
+
                 </Button>
               ))}
+              {/* <a href="/images/logo/spadBroucher.png" onClick={saveFile}   value="download" ><button>Download Broucher</button></a> */}
+              <button className="cv" onClick={saveFile}
+          style={{fontWeight:'600',fontSize:'14px',background:'#fdf7e3',border:'none',color:'#d9232d'}}
+          >
+              BROUCHER
+         </button>
             </Box>
             <Typography 
              sx={{ flexGrow: 1, display: { xs: 'block', sm: 'none' } }}>
