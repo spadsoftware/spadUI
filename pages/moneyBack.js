@@ -58,11 +58,11 @@ const MoneyBack = () => {
         
         borderStyle: 'solid',
         borderWidth: "0px 0px 0px 20px",
-        borderColor: "#0231f7",
+        borderColor: "#1f255e",
         transition: "background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s",
             padding: "0px 0px 0px 0px",
         boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25);'}}>
-   <h3 style={{color:'#da4536',textAlign:'center',top:'0px',position:'relative'}}>Spad Software Money Back Policy</h3>
+   <h3 style={{color:'#da4536',textAlign:'center',top:'0px',position:'relative', marginTop: '0px'}}>Spad Software Money Back Policy</h3>
 <Grid container rowSpacing={1} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}
 style={{top:'0px',position:'relative'
 }}>
@@ -89,7 +89,7 @@ style={{top:'0px',position:'relative'
    in business for the long term. for some reason, 
    if you don’t feel satisfied we’re not satisfied as well
     either we do everything we can to make you happy or
-    &nbsp;<span style={{borderBottom:'3px solid #0231f7',color:'#0231f7'}}> you’ll 
+    &nbsp;<span style={{borderBottom:'3px solid #d9232d',color:'#d9232d'}}> you’ll 
     get 100% money back </span>after seeing the first design.</div>
 
    <div style={{paddingTop:'10px'}}><Image

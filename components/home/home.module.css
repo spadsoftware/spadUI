@@ -300,6 +300,8 @@
   width: auto;
   animation: shake 1.5s infinite linear;
   transform: translate3d(0, 0, 0);
+  width: 30px;
+  height: 30px;
 }
 
 @keyframes shake {
@@ -402,12 +404,12 @@
 .homeServiceiconcategory{
 color: black;
 margin-top: 14px;
-    margin-left: 19px;
+    margin-left: 26px;
 /* margin-top: 20px; */
 }
 .homeServiceiconcategorylabel{
-  width: 71%;
-    left: 32px;
+  width: 80%;
+    left: 40px;
 }
 .homeServiceiconBtn{
   justify-content: center;

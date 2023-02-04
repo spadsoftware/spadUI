@@ -52,7 +52,7 @@ const HowItWorks = () => {
         padding: "0px 0px 0px 0px",
     boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25)'
     }}>
-      <h5 style={{fontSize:'18px',color:'#d1482d',textAlign:'center'}}>How Spad Software Works-It's 3 step process.</h5>
+      <h5 style={{fontSize:'18px',color:'#d1482d',textAlign:'center', marginTop: '0px'}}>How Spad Software Works-It's 3 step process.</h5>
       <div style={{fontSize:'18px',color:'#d1482d',textAlign:'center'}}>Start</div>
     <Timeline position="alternate" >
     <TimelineItem>

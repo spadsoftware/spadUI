@@ -86,15 +86,16 @@ function MainNavigation(props) {
 
     const options = { passive: true }; // options must match add/remove event
     const scroll = (event) => {
-      if(event.path[1].window.pageYOffset){
-      if(event.path[1].window.pageYOffset<500){
-        setRerender(false);
-      }
-      else{
-        setRerender(true);
-        // console.log(rerender)
-      }
-      }
+      console.log(event)
+      // if(event.path[1]){
+      // if(event.path[1].window.pageYOffset<500){
+      //   setRerender(false);
+      // }
+      // else{
+      //   setRerender(true);
+      //   // console.log(rerender)
+      // }
+      // }
     };
     document.addEventListener("scroll", scroll, options);
     // remove event on unmount to prevent a memory leak

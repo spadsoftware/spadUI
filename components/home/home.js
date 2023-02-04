@@ -389,7 +389,7 @@ const HomeComponent = (props) => {
                   </Grid>
                   <Grid item xs={4} sm={12}>
                     <FormControl
-                      style={{ width: "110%", left: "3px" }}
+                      style={{ width: "100%" }}
                       sx={{ m: 0 }}
                       className={classes.homeServiceiconcategorieslbl}
                     >
@@ -742,7 +742,7 @@ const HomeComponent = (props) => {
                     <Grid container>
                       <Grid item xs={4} sm={12}>
                         <TextField
-                          style={{ width: "80%" }}
+                          style={{ width: "100%" }}
                           id="standard-required"
                           label="Name"
                           InputLabelProps={{
@@ -758,7 +758,7 @@ const HomeComponent = (props) => {
                       </Grid>
                       <Grid item xs={12} sm={12}>
                         <TextField
-                          style={{ width: "80%" }}
+                          style={{ width: "100%" }}
                           id="standard-required"
                           label="email"
                           value={enteredEmail}
@@ -775,7 +775,7 @@ const HomeComponent = (props) => {
                       </Grid>
                       <Grid item xs={12} sm={12}>
                         <TextField
-                          style={{ width: "80%" }}
+                          style={{ width: "100%" }}
                           id="standard-required"
                           label="Phone"
                           value={enteredPhone}
@@ -793,7 +793,7 @@ const HomeComponent = (props) => {
                       </Grid>
                       <Grid item xs={12} sm={12}>
                         <TextField
-                          style={{ width: "80%" }}
+                          style={{ width: "100%" }}
                           id="standard-required"
                           label="subject"
                           value={enteredMessage}
@@ -819,7 +819,7 @@ const HomeComponent = (props) => {
                         }}
                       >
                         <FormControl
-                          style={{ width: "80%" }}
+                          style={{ width: "100%" }}
                           sx={{ m: 0 }}
                           // style={{top:'30px',width:'183px'}}
                         >
@@ -867,7 +867,7 @@ const HomeComponent = (props) => {
                           top: "23px",
                           position: "relative",
                           left: "0px",
-                          maxWidth: "82%",
+                          maxWidth: "100%",
                         }}
                         item
                         xs={12}
