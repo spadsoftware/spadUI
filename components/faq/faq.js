@@ -29,6 +29,7 @@ import 'react-creative-cursor/dist/styles.css';
 import HelpOutlineIcon from '@mui/icons-material/HelpOutline';
 import Masonry from '@mui/lab/Masonry';
 import Link from 'next/link';
+import Slider from "react-slick";
 
 
 
@@ -98,6 +99,25 @@ useEffect(() => {
   getProfile();
 }, []);
 
+
+var setting = {  
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  dots: false,
+  centerMode: false,
+  infinite: true, 
+  arrows: false, 
+  autoplay: true,
+  speed: 5000,
+  autoplaySpeed: 100,
+  cssEase: "linear",  
+  pauseOnHover: true,
+  vertical: true,
+  verticalSwiping: true,  
+  swipeToSlide: true,  
+  className: "recentSlider",
+};
+
   const Item = styled(Paper)(({ theme }) => ({
     backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
     ...theme.typography.body2,
@@ -109,17 +129,9 @@ useEffect(() => {
     <>
       <section id="faq" className= {classes.section_faq}>
     <div>
-      <div>
-      
-                <div>Frequently Asked Questions</div>
-                <Image
-                  src={`/images/title_header/hdrBtm.png`}
-                  alt='Spad Software Log about'
-                  width={126}
-                  height={5}
-                /></div>
+    <div className={classes.aboutSpan}>Frequently Asked Questions</div> 
 
-      <div className= {classes.section__subtlt}>We are offering latest technology to our clients and students </div>
+      <h3 className= {classes.section__subtlt}>We are offering latest technology to our clients and students </h3>
       
       </div>
 
@@ -266,16 +278,13 @@ useEffect(() => {
         </Grid>
         <Grid item xs={4}>
       
-        <List  sx={{
-        width: '100%',
-        bgcolor: 'background.paper',
-        position: 'relative',
-        overflow: 'auto',
-        maxHeight: 484,
-        boxShadow:'0 0 5px 2px #00000029',
-
-        '& ul': { padding: 0 },
-      }}>
+        <List sx={{
+            width: '100%',
+            bgcolor: 'background.paper',
+            position: 'relative',
+            overflow: 'auto',
+            maxHeight: 484 
+            }}>
           <Typography
                 sx={{ display: 'inline',color:'#d9232d' }}
                 component="span"
@@ -283,45 +292,40 @@ useEffect(() => {
                 color="text.primary"
               >
                Recent News
-              </Typography>
-        { 
-        
-        Array.isArray(searchNews) ? searchNews.map(i => {
-            return (
-     
-        <ListItem alignItems="flex-start"   key={i.id}>
-                      <ListItemAvatar>
-                        <Avatar  alt="Remy Sharp" src={i.img} />
-                      </ListItemAvatar>
-                      <ListItemText
-                        primary= {i.title}
-                        secondary={
-                          <React.Fragment>
-                            <Typography
-                              sx={{ display: 'inline' }}
-                              component="span"
-                              variant="body2"
-                              color="text.primary"
-                            >
-                           
-                            </Typography>
-                            {i.body}
-                            <Link   href={i.link} >
-                        <span className= {classes.clickHere}>&nbsp;&nbsp; {i.linkText}
-                      </span></Link>
-                          </React.Fragment>
-                        }
-                      />
-                    </ListItem>
-       
-             
-
-
+          </Typography>
+          
+          <Slider {...setting}>
+          {  
+            Array.isArray(searchNews) ? searchNews.map(i => {
+              return ( 
+                  <ListItem alignItems="flex-start"   key={i.id}>
+                    <ListItemAvatar>
+                      <Avatar  alt="Remy Sharp" src={i.img} />
+                    </ListItemAvatar>
+                    <ListItemText
+                      primary= {i.title}
+                      secondary={
+                        <React.Fragment>
+                          <Typography
+                            sx={{ display: 'inline' }}
+                            component="span"
+                            variant="body2"
+                            color="text.primary"
+                          >
+                          
+                          </Typography>
+                          {i.body}
+                          <Link   href={i.link} >
+                      <span className= {classes.clickHere}>&nbsp;&nbsp; {i.linkText}
+                    </span></Link>
+                        </React.Fragment>
+                      }
+                    />
+                  </ListItem>  
             )
-          }):'No Latest News'
+          }):'No Latest News' } 
 
-            } 
-
+          </Slider>
   
     </List>
 

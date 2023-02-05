@@ -1,14 +1,57 @@
+.paddingInline15{
+    padding-inline: 15px;
+}
+
+.justifyContentBetween{
+    justify-content: space-between;
+}
+
+.textLeft{
+    text-align: left;
+}
+
+.subTitle{
+    font-size: 20px;
+    color: #333333;
+    line-height: 1.2;
+    margin-block: 12px;
+    font-weight: 600;
+}
+
+
+.section_service::before {
+    content: '';
+    height: 1000px;
+    width: 100%;
+    background: url('../../public/images/tech/help-shap.png') no-repeat left;
+    position: absolute;
+    left: 0px;
+    top: 0;
+    z-index: -1;
+    background-size: contain;
+  }
+  
+
+.paracontent{ 
+    color: #4e5564;
+    font-size: 15px;
+}
+
+.countNum {
+    color: #ff7f02;
+    margin-right: 15px;
+}
 .section_service{
     text-align: center;
-    color: black;
-    /* padding-left:12px;
-    padding-right: 12px; */
+    color: black; 
     font-weight: bold;
     border-style: solid;
-    border-width: 0px 0px 0px 20px;
+    border-width: 0px 0px 0px 5px;
     border-color: #da4536;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-        /* padding: 50px 0px 20px 0px; */
+    padding: 70px 0px 20px 0px;
+    z-index: 1;
+    position: relative;
     
 }
 .section__btm{
@@ -16,12 +59,27 @@
   }
 .section_service_tblhdr{
     text-align: center;
+    margin-bottom: 40px;
 }
+.svcs_img{text-align: center;}
 .svc_img{
-    width:auto;
+    width: auto;
 }
+
+.consutImg{
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+}
+    
 .section__subtlt{
-    padding: 12px;
+    text-align: center;
+    color: black;
+    padding: 0px;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    position: relative;
   }
   
 
@@ -103,80 +161,48 @@ padding: 10px;
 } */
 
 
-
+.section_servicesvc_grid {
+    padding: 40px 20px;
+    border-radius: 5px 5px 5px 5px;
+    margin-inline: 10px; 
+    margin-bottom: 15px; 
+}
 
 .section_servicesvc011{
-    background-color:#ffd2d9 ;
-    padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-    
+        background-color: #e7fbf3; 
     }
-    .section_servicesvc21{
-        background-color:#b6d4fc;
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
+    .section_servicesvc21{ 
+        background-color: #fffbe9;
     }
     .section_servicesvc31{
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color:#d2e6ff
+        background-color: #f9eafe;
     }
     .section_servicesvc41{
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color:#b6d4fc
+        background-color: #fff0e9;
     }
     .section_servicesvc51{
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color:#fff2d5
+        background-color: #fff0e9;
     }
     .section_servicesvc61{
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color:#e7ffc9
+        background-color: #f9eafe;
     }
     .section_servicesvc71{
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color:#d2e6ff
+        background-color: #fffbe9;
     }
     .section_servicesvc81{
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color:#d2e6ff
+        background-color: #e7fbf3; 
     }
     .section_servicesvc91{
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color:#a6ceed
+        background-color: #fff0e9;
     }
     .section_servicesvc101{
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color:#fff2d5
+        background-color: #e7fbf3; 
     }
     .section_servicesvc111{
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color:#d2e6ff
+        background-color: #fffbe9;
     }
     .section_servicesvc121{
-        padding: 10px;
-        border: 2px solid white;
-        border-radius: 10px;
-        background-color:#dde38d
+        background-color: #f9eafe;
     }
 
 
@@ -185,7 +211,7 @@ padding: 10px;
 			
 }
 .service_icon_gif {
-    background: url(../../public/images/services/smm.gif) no-repeat -8px -7px;
+    background: url('../../public/images/services/branding.png') no-repeat -8px -7px;
     height: 106px;
     width: 116px;
 }
@@ -236,12 +262,21 @@ padding: 10px;
     width: 158px;
 }
 
+.aboutSpan{
+    font-weight: 500;
+    line-height: normal;
+    font-size: 14px;
+    color: #fff;
+    background-color: #d8232d;
+    display: inline-block;
+    padding: 0px 6px;
+    border-radius: 4px;
+}
 
 @media (min-width: 768px) {
     .service_icon_gif {
-        background: url(../../public/images/services/smm.gif) no-repeat 8px -7px;
-        height: 106px;
-        width: 129px;
+        background: url('../../public/images/services/branding.png') no-repeat; 
+        width: 100px;
     }
     .service_icon_gif2 {
         background: url(../../public/images/services/ecom.gif) no-repeat -166px -6px;
@@ -259,3 +294,58 @@ padding: 10px;
         width: 158px;
     }        
 }
+
+
+@media (max-width: 1199px){
+.section_servicesvc_grid { 
+    padding: 20px;
+    margin-inline: 10px;
+    flex-grow: 0;
+    max-width: 30%;
+    flex-basis: 30%;
+}
+}
+
+
+
+@media (max-width: 991px){
+    .section_servicesvc_grid { 
+        padding: 20px;
+        margin-inline: 10px;
+        flex-grow: 0;
+        max-width: 29%;
+        flex-basis: 29%;
+    }
+}
+
+
+@media (max-width: 765px){
+    .section_servicesvc_grid { 
+        padding: 20px;
+        margin-inline: 10px;
+        flex-grow: 0;
+        max-width: 44%;
+        flex-basis: 44%;
+    }
+}
+
+@media (max-width: 576px){
+    .section_servicesvc_grid { 
+        padding: 20px;
+        margin-inline: 10px;
+        flex-grow: 0;
+        max-width: 100%;
+        flex-basis: 100%;
+    }
+}
+
+@media (min-width: 1200px){
+    .section_servicesvc_grid { 
+      flex-grow: 0;
+      max-width: 18.5%;
+      flex-basis: 18.5%;
+    } 
+    .justifyContentBetween{
+        justify-content: initial;
+    }
+    }

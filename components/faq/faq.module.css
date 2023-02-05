@@ -1,16 +1,14 @@
 .section_faq{
     text-align: center;
-    color: black;
-    /* padding: 12px; */
+    color: black; 
     font-weight: bold;
     border-style: solid;
-    border-width: 0px 0px 0px 20px;
+    border-width: 0px 0px 0px 5px;
     border-color: #da4536;
     transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-        /* padding: 50px 0px 20px 0px; */
-  
-    
-    /* background-color: #eee; */
+    padding: 70px 0px 20px 0px; 
+    position: relative;
+    z-index: 1;
 }
 .section_faq_detail{
     margin-bottom: 0;
@@ -21,6 +19,17 @@
     color:#d9232d
 }
 
+.section_faq:before {
+  content: '';
+  height: 800px;
+  width: 100%;
+  background: url('../../public/images/tech/vector-40.png') no-repeat right;
+  position: absolute;
+  right: 0;
+  top: 0px;
+  z-index: -1;
+  background-size: contain;
+}
 
 .section_faq_TitleText:hover{
     color:#d9232d
@@ -30,7 +39,13 @@
     padding-bottom:15px !important;
   }
   .section__subtlt{
-    padding: 12px;
+    text-align: center;
+    color: black;
+    padding: 0px;
+    font-size: 24px;
+    margin-bottom: 40px;
+    font-weight: bold;
+    position: relative;
   }
 
   .clickHere{
@@ -60,4 +75,15 @@
   50% {color: black;}
   100% {color: #d9232d;}
 
+}
+
+.aboutSpan{
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+  color: #fff;
+  background-color: #d8232d;
+  display: inline-block;
+  padding: 0px 6px;
+  border-radius: 4px;
 }

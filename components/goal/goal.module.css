@@ -1,18 +1,68 @@
+
+.verticalTabs{
+  padding: 15px 30px;
+  border-style: solid;
+  border-width: 1px 1px 1px 1px;
+  border-color: #dae2ef;
+  border-radius: 5px 5px 5px 5px;
+  background-color: #eef1f6;
+  max-width: 38%;
+  width: 38%;
+}
+
+.vertical_button.Mui-selected{
+  background-color: white;
+}
+
 .section_goal {
     text-align: center;
     color: black;
     padding: 12px;
     font-weight: bold;
-    padding-bottom:5px;
-    /* top:13px; */
-    position: relative;
-    /* background-color: #eee; */
+    padding-bottom:5px; 
+    position: relative; 
     border-style: solid;
-    border-width: 0px 0px 0px 20px;
+    border-width: 0px 0px 0px 5px;
     border-color: #da4536;
-    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
-        /* padding: 50px 0px 20px 0px; */
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s; 
+    padding: 70px 0px 20px 0px;
 }
+
+
+.section_about {
+  text-align: center;
+  color: black;
+  padding: 12px;
+  /* background-color: #eee; */
+  font-weight: bold; 
+  border-style: solid;
+  border-width: 0px 0px 0px 5px;
+  border-color: #212861;
+  transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+  padding: 70px 0px 20px 0px;
+  position: initial;
+}
+.section_aboutspan{
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+  color: #fff;
+  background-color: #d8232d;
+  display: inline-block;
+  padding: 0px 6px;
+  border-radius: 4px; 
+}
+
+.section_about1 {
+  text-align: center;
+  color: black;
+  padding: 0px;
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: bold; 
+  position: relative; 
+}
+
 .section__btm{
     padding-bottom:15px !important;
   }
@@ -38,7 +88,7 @@
     justify-content: center;
 }
 .goal_mission{
-    /* box-shadow: rgb(0 0 0 / 80%) 0 0 5px; */
+    box-shadow: none !important;
     padding: 10px;
 }
 .goal_mission_box{
@@ -281,9 +331,46 @@
  height: 48px;
  font-size: 0; 
 }
+
+
+.section_wwd_lt{ 
+  animation-duration: 10s;
+  animation-name: flash;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  -webkit-animation:flash 10s infinite; 
+  display:inline-block !important;
+  margin-block: 0px;
+}
+@keyframes flash  {
+0% {color: #3f8ec4}
+50% {color: #d9232d;}
+100% {color: green;}
+
+
+}
+@-webkit-keyframes flash  {
+0% {color: #3f8ec4}
+50% {color: #d9232d;}
+100% {color: green;}
+
+}
+ 
+
+
 @media (max-width: 768px) {
   .hdr{
     font-size:11px
+  }
+  .vertical_mobile_view{
+    flex-direction: column;
+    height: calc(100vh - 100px);
+    min-height: calc(100vh - 100px);
+    max-height: calc(100vh - 100px);
+  }
+  .verticalTabs{
+    max-width: 100%;
+    width: 100%; 
   }
 }
 

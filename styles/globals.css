@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Roboto&family=Source+Sans+Pro:wght@300&display=swap');
 
 * {
   box-sizing: border-box;
@@ -52,15 +51,15 @@ body {
   --logo1-red-color:#1e2762;
   --logo3-red-color:#3f8ec6;
   color: #252525;
-  font-family: 'Montserrat ','helvetica','arial ', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
-  box-shadow: 0 0 6px 1px #00000012 !important;
+  box-shadow: 0 0 6px 1px #00000012;
 }
 h1,
 h2,
 h3,h4 {
-  font-family: 'Montserrat ','helvetica','arial ', sans-serif;
+  font-family: 'Poppins', sans-serif !important;
 }
 
 a {
@@ -70,4 +69,166 @@ a {
 button {
   font: inherit;
   cursor: pointer;
+}
+
+.text-left{
+  text-align: left;
+}
+ 
+.bannerslider .slick-list {
+  padding-top: 30px;
+  padding-bottom: 40px;
+}
+ 
+.MuiTextField-root.MuiFormControl-root{ 
+  margin: 0px !important;
+}
+
+
+.bannerslider.slick-initialized .slick-slide .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
+  min-height: 140px;
+}
+
+.slick-slider.recentSlider.slick-vertical.slick-initialized li {
+  display: flex !important;
+}
+
+.slick-vertical .slick-slide{
+  width: 100% !important;
+}
+
+.subTitleHeading{
+  font-weight: 500;
+  line-height: normal;
+  font-size: 14px;
+  color: #fff;
+  background-color: #d8232d;
+  display: inline-block;
+  padding: 0px 6px;
+  border-radius: 4px; 
+}
+
+.subTitleMainHeading{
+  color: black;
+  padding: 0px;
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  position: relative;
+}
+
+.tab_button { 
+  padding: 0px;
+  margin-inline: 10px;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+.tab_button.MuiTab-root.Mui-selected {
+  color: #da4536; 
+  padding: 0px;
+  margin-inline: 10px;
+  font-weight: 600;
+}
+
+.MuiTabs-indicator{ 
+  background-color: #da4536 !important; 
+}
+
+.vertical_button{
+  font-size: 16px;
+  color: #000;
+  font-weight: 600;
+  text-transform: capitalize;
+  padding: 0px;
+  margin-bottom: 10px;
+  text-align: left;
+  align-items: flex-start;
+  padding-left: 20px;
+}
+
+.vertical_button.Mui-selected{ 
+    background: white;
+    border-radius: 10px;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #000;
+    font-weight: 600;
+}
+ 
+.MuiTabs-vertical .MuiTabs-indicator{ 
+  background-color: transparent !important;
+}
+
+/* Timeline css */
+
+
+.timeline-customize{
+  margin: 0;
+  padding: 0;
+}
+
+.timeline-customize .MuiTimelineConnector-root {
+  background-color: #00000024;
+}
+
+.timeline-customize .MuiTimelineContent-positionAlternate{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.timeLineTitleText{
+    font-weight: 600;
+    color: #d8232d;
+    font-size: 16px;
+    font-family: 'Poppins';
+    margin-bottom: 10px !important;
+    display: block;
+}
+
+.timeLineSubText{
+  color: #4e5564;
+  font-size: 12px;
+  font-weight: 400;
+  font-family: 'Poppins';
+}
+
+span.MuiTimelineDot-root.MuiTimelineDot-filled {
+  background: #08093d !important;
+  margin: auto;
+}
+
+/*  */
+
+@media (max-width: 1199px){
+  .bannerslider.slick-initialized .slick-slide { 
+    margin-right: 10px; 
+    width: 180px !important;
+  }
+}
+
+@media (max-width: 991px){
+  .bannerslider.slick-initialized .slick-slide { 
+    margin-right: 10px; 
+    width: 160px !important;
+  }
+}
+
+@media (max-width: 765px){
+  .bannerslider.slick-initialized .slick-slide { 
+    margin-right: 10px; 
+    width: 140px !important;
+  }
+}
+
+
+@media (min-width: 1200px){
+  .bannerslider.slick-initialized .slick-slide { 
+    margin-right: 10px;
+    width: 180px !important;
+  }
+    /* .MuiGrid-container{
+      max-width: 1460px;
+      margin: auto;
+    }  */
 }

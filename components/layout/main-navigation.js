@@ -168,7 +168,7 @@ function MainNavigation(props) {
 
     <Box sx={{ display: 'flex',background:rerender?'rgb(255 255 255)':'#fdf7e3',color:'Black' }}>
         <CssBaseline />
-        <AppBar component="nav"  style={{background:rerender?'rgb(255 255 255)':'#fdf7e3',color:'Black'}}>
+        <AppBar component="nav"  style={{background:rerender?'rgb(255 255 255)':'#fdf7e3',color:'Black', boxShadow: 'none'}}>
           <Toolbar>
             <IconButton
               color="inherit"

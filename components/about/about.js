@@ -51,30 +51,18 @@ const AboutComponent = () => {
 
     <section id="about" className= {classes.section_about}>
       <div className= {classes.section__btm}>
-    <div className= {classes.section_about1}>
-
-               
-               <div>
-               About <span >Us</span>
-                </div> 
-    <Image
-                  src={`/images/title_header/hdrBtm.png`}
-                  alt='Spad Software Log about'
-                  width={126}
-                  height={5}
-                />
-                </div>
+      <div className= {classes.section_aboutspan}> About <span >Us</span> </div>
                  
-    <span>
-    {/* <Image
+              <span>
+                {/* <Image
                   src={`/images/title_header/about_hdr.png`}
                   alt='Spad Software About us'
                   width={50}
                   height={50}
                 /> */}
-    </span>
-       <h1 className= {classes.section_about1}>What Makes Us One of The Top Rated Web Development 
-      and Digital Marketing Company In Bangalore, India.</h1>
+              </span>
+       <h3 className= {classes.section_about1}>What Makes Us One of The Top Rated Web Development & Digital Marketing Company <br /> 
+      In Bangalore, India.</h3>
       </div>
       <Box sx={{ width: '100%' }}>
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 8, md: 12 }}>

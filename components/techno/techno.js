@@ -9,7 +9,7 @@ import { green } from '@mui/material/colors';
 import Icon from '@mui/material/Icon';
 import SouthIcon from '@mui/icons-material/South';
 import StarIcon from '@mui/icons-material/Star';
-import Grid2 from '@mui/material/Unstable_Grid2'; 
+import Grid2 from '@mui/material/Unstable_Grid2';
 import Image from 'next/image';
 const { useState, useEffect } = React;
 import { Cursor } from 'react-creative-cursor';
@@ -33,144 +33,134 @@ const TechnoComponent = () => {
     textAlign: 'center',
     color: theme.palette.text.secondary,
   }));
-  
-  
+
+
   return (
-  <>
-    <section id="technology" className= {classes.section_tech}>
-      {/* <div className= {classes.section_tech} 
+    <>
+      <section id="technology" className={classes.section_tech}>
+        {/* <div className= {classes.section_tech} 
       data-cursor-magnetic data-cursor-color="#f5eeee8f" data-cursor-size="80px">
           </div> */}
-          <div className= {classes.section__btm}>
-        <div id="stick-title">
-      
-                <div>Technology</div>
-                <Image
-                  src={`/images/title_header/hdrBtm.png`}
-                  alt='Spad Software Log about'
-                  width={126}
-                  height={5}
-                /></div>
-                
-   
-      <div className= {classes.section__subtlt}>We are offering latest technology to our clients and students </div>
-      </div>
-      <Grid container  columns={{ xs: 4, sm: 4, md: 12 }}>
-  <Grid item xs={1} md={2} sm={2}>
-    
-    <Image className={classes.tech_img}
-  src={`/images/tech/javat.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div  className={classes.tech_imgTxt}>JAVA</div>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <Image className={classes.tech_img}
-  src={`/images/tech/got.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>GOLANG</div>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <Image className={classes.tech_img}
-  src={`/images/tech/php.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>php</div>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <Image className={classes.tech_img}
-  src={`/images/tech/andt.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>ANDRIOS</div>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <Image className={classes.tech_img}
-  src={`/images/tech/angt.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>ANGULAR</div>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <Image className={classes.tech_img}
-  src={`/images/tech/dot.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>.NET</div>
-</Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <Image className={classes.tech_img}
-  src={`/images/tech/ios.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>IOS</div>
-</Grid>
-  <Grid item xs={1} md={2} sm={2}>
-  <Image className={classes.tech_img}
-  src={`/images/tech/node.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>NODE</div>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}>
-    <Image className={classes.tech_img}
-  src={`/images/tech/pyt.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>PYTHON</div>
-  </Grid>
-  <Grid item xs={1} md={2} sm={2}> 
-    <Image className={classes.tech_img}
-  src={`/images/tech/svg.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>WEB DEVELOP</div>
-</Grid>
+        <div className={classes.section__btm}>
+          <div className={classes.aboutspan}>Technology</div>
+          <h3 className={classes.section__subtlt}>We are offering latest technology to our clients and students </h3>
+        </div>
+        <Grid container columns={{ xs: 4, sm: 4, md: 12 }}>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
 
-  <Grid item xs={1} md={2} sm={2}> 
-    <Image className={classes.tech_img}
-  src={`/images/tech/ios.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>KOTLIN</div>
-</Grid>
-<Grid item xs={1} md={2} sm={2}> 
-    <Image className={classes.tech_img}
-  src={`/images/tech/aws.svg`}
-  alt={'Spad Software Logo'}
-  width={56}
-  height={56}
-/>
-<div className={classes.tech_imgTxt}>CLOUD</div>
-</Grid>
+            <Image className={classes.tech_img}
+              src={`/images/tech/javat.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>JAVA</div>
+          </Grid>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/got.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>GOLANG</div>
+          </Grid>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/php.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>php</div>
+          </Grid>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/andt.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>ANDRIOS</div>
+          </Grid>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/angt.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>ANGULAR</div>
+          </Grid>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/dot.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>.NET</div>
+          </Grid>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/ios.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>IOS</div>
+          </Grid>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/node.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>NODE</div>
+          </Grid>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/pyt.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>PYTHON</div>
+          </Grid>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/svg.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>WEB DEVELOP</div>
+          </Grid>
 
-</Grid>
-  </section>
-      
-  </>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/ios.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>KOTLIN</div>
+          </Grid>
+          <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>
+            <Image className={classes.tech_img}
+              src={`/images/tech/aws.svg`}
+              alt={'Spad Software Logo'}
+              width={56}
+              height={56}
+            />
+            <div className={classes.tech_imgTxt}>CLOUD</div>
+          </Grid>
+
+        </Grid>
+      </section>
+
+    </>
   )
 }
 

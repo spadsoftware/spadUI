@@ -1,7 +1,7 @@
-import React  , { useReducer }from 'react'
+import React, { useReducer } from 'react'
 
 import Head from "next/head";
-import {Typography } from '@mui/material'
+import { Typography } from '@mui/material'
 import Image from 'next/image';
 import { loadCSS } from 'fg-loadcss';
 import Box from '@mui/material/Box';
@@ -34,33 +34,33 @@ import Link from 'next/link';
 import Divider from '@mui/material/Divider';
 
 const Item = styled(Paper)(({ theme }) => ({
-    backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
-    ...theme.typography.body2,
-    padding: theme.spacing(1),
-    textAlign: 'center',
-    color: theme.palette.text.secondary,
-  }));
- 
-  
-  async function sendContactData(contactDetails) {
-    const response = await fetch('http://127.0.0.1:8080/appoinment', {
-      method: 'POST',
-      body: JSON.stringify(contactDetails),
-      headers: {
-        'Content-Type': 'application/json',
-      },
-    });
-  
-    const data = await response.json();
-  
-    if (!response.ok) {
-      throw new Error(data.message || 'Something went wrong!');
-    }
+  backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+  ...theme.typography.body2,
+  padding: theme.spacing(1),
+  textAlign: 'center',
+  color: theme.palette.text.secondary,
+}));
+
+
+async function sendContactData(contactDetails) {
+  const response = await fetch('http://127.0.0.1:8080/appoinment', {
+    method: 'POST',
+    body: JSON.stringify(contactDetails),
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+
+  const data = await response.json();
+
+  if (!response.ok) {
+    throw new Error(data.message || 'Something went wrong!');
   }
-  
+}
+
 
 const footer = () => {
-  
+
 
   const [enteredEmail, setEnteredEmail] = useState('');
   const [enteredName, setEnteredName] = useState('');
@@ -84,11 +84,11 @@ const footer = () => {
     }
   }, [requestStatus]);
 
-  
+
   async function sendMessageHandler(event) {
     event.preventDefault();
-// console.log(enteredDate,enteredEmail,enteredName,
-//   enteredPhone,enteredCategory,enteredMessage,value.$d)
+    // console.log(enteredDate,enteredEmail,enteredName,
+    //   enteredPhone,enteredCategory,enteredMessage,value.$d)
 
     setRequestStatus('pending');
 
@@ -147,125 +147,129 @@ const footer = () => {
   }
   return (
     <>
-     <Head>
-    <title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software
-     </title>
+      <Head>
+        <title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software
+        </title>
         <meta name="keyword" content="Footer" />
       </Head>
-  
-   
 
-    <Box sx={{background:'linear-gradient(180deg, #FEF7E2 0%, #EEEEFD 100%)',
-    color:'black',textAlign: 'center',
-    borderStyle: 'solid',
-    borderWidth: "0px 0px 0px 20px",
-    borderColor: "#F89000",
-    transition: "background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s",
+
+
+      <Box sx={{
+        background: 'linear-gradient(180deg, #FEF7E2 0%, #EEEEFD 100%)',
+        color: 'black', textAlign: 'center',
+        borderStyle: 'solid',
+        borderWidth: "0px 0px 0px 5px",
+        borderColor: "#F89000",
+        transition: "background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s",
         padding: "50px 0px 20px 0px",
-    boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25);'}}>
+        boxShadow: ' 0px 0px 30px rgba(127, 137, 161, 0.25);',
+        zIndex: '1',
+        position: 'relative'
+      }}>
 
-<Grid container rowSpacing={1} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-           
-        <Grid item xs={6} md={4} style={{left: '0px',position: 'relative',}}>
-      
-      <h3 style={{color:'#da4536'}}>Contact US</h3>
-           <h5>Want to Book an Appoinment
-           <Link style={{color:'#da4536'}}  href='/home'>
-           <span style={{color:'#da4536'}}> click here
-           </span>
-           </Link>
-           </h5>
-           <h5>Looking for Job 
-            <Link   href='/jobSeekers'style={{color:'#da4536'}}>
-            <span style={{color:'#da4536'}}> click here
-           </span></Link></h5>
-           <h5>Hire Talents,we are the one to provide best resource
-           <Link href='/hireTalents' style={{color:'#da4536'}}>
-           <span style={{color:'#da4536'}}> click here
-           </span>
-           </Link>
-           </h5>
-           <h5>Subscribe Now
-           <Link href='/hireTalents' style={{color:'#da4536'}}>
-           <span style={{color:'#da4536'}}> click here
-           </span>
-           </Link>
-           </h5>
-           </Grid>
-           <Grid item xs={6} md={4} style={{left: '0px',position: 'relative',}}>
-      
-      <h3 style={{color:'#da4536'}}>Get In Touch </h3>
-           <h5>SPAD Software consultancy services Private Limited,Bangalore-India</h5>
-           <h5>GSTIN:33ABICS7047K1ZZ</h5>
-           <h5>CIN:U72900TN2022PTC152959</h5>
-           <h5>info@spadsoftware.com / 8438353493</h5>
-        
-           </Grid>
-           <Grid item xs={6} md={4} style={{left: '0px',position: 'relative',}}>
-           <h3 style={{color:'#da4536'}}>Know More</h3>
+        <Grid container rowSpacing={1} spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }}>
+
+          <Grid item xs={6} md={4} style={{ left: '0px', position: 'relative', }}>
+
+            <h3 style={{ color: '#da4536' }}>Contact US</h3>
+            <h5>Want to Book an Appoinment
+              <Link style={{ color: '#da4536' }} href='/home'>
+                <span style={{ color: '#da4536' }}> click here
+                </span>
+              </Link>
+            </h5>
+            <h5>Looking for Job
+              <Link href='/jobSeekers' style={{ color: '#da4536' }}>
+                <span style={{ color: '#da4536' }}> click here
+                </span></Link></h5>
+            <h5>Hire Talents,we are the one to provide best resource
+              <Link href='/hireTalents' style={{ color: '#da4536' }}>
+                <span style={{ color: '#da4536' }}> click here
+                </span>
+              </Link>
+            </h5>
+            <h5>Subscribe Now
+              <Link href='/hireTalents' style={{ color: '#da4536' }}>
+                <span style={{ color: '#da4536' }}> click here
+                </span>
+              </Link>
+            </h5>
+          </Grid>
+          <Grid item xs={6} md={4} style={{ left: '0px', position: 'relative', }}>
+
+            <h3 style={{ color: '#da4536' }}>Get In Touch </h3>
+            <h5>SPAD Software consultancy services Private Limited,Bangalore-India</h5>
+            <h5>GSTIN:33ABICS7047K1ZZ</h5>
+            <h5>CIN:U72900TN2022PTC152959</h5>
+            <h5>info@spadsoftware.com / 8438353493</h5>
+
+          </Grid>
+          <Grid item xs={6} md={4} style={{ left: '0px', position: 'relative', }}>
+            <h3 style={{ color: '#da4536' }}>Know More</h3>
 
             <span>
-         <div>
-           <span style={{fontSize:'14px',fontWeight:'600'}}>
-           <Link   href='/tc'style={{color:'#da4536'}}>Term of services</Link> - </span> 
-           <span style={{fontSize:'14px',fontWeight:'600'}}> 
-           <Link   href='/privacy'style={{color:'#da4536'}}>Privacy policy</Link> -</span>  
-           <span style={{fontSize:'14px',fontWeight:'600'}}> 
-           <Link   href='/refund'style={{color:'#da4536'}}>Refund policy</Link> </span> 
-           </div>
-           <div>
-           <Image
-               src={`/images/logo/linked.png`}
-               alt={'Spad Software Logo'}
-               width={32}
-               height={32}
-             />      
-       
-              <Image
-               src={`/images/logo/fb.png`}
-               alt={'Spad Software Logo'}
-               width={32}
-               height={32}
-             />       
-             <Image
-               src={`/images/logo/wp.png`}
-               alt={'Spad Software Logo'}
-               width={30}
-               height={30}
-             />   
-             <Image
-               src={`/images/logo/insta.png`}
-               alt={'Spad Software Logo'}
-               width={28}
-               height={28}
-             /> 
+              <div>
+                <span style={{ fontSize: '14px', fontWeight: '600' }}>
+                  <Link href='/tc' style={{ color: '#da4536' }}>Term of services</Link> - </span>
+                <span style={{ fontSize: '14px', fontWeight: '600' }}>
+                  <Link href='/privacy' style={{ color: '#da4536' }}>Privacy policy</Link> -</span>
+                <span style={{ fontSize: '14px', fontWeight: '600' }}>
+                  <Link href='/refund' style={{ color: '#da4536' }}>Refund policy</Link> </span>
+              </div>
+              <div>
+                <Image
+                  src={`/images/logo/linked.png`}
+                  alt={'Spad Software Logo'}
+                  width={32}
+                  height={32}
+                />
+
+                <Image
+                  src={`/images/logo/fb.png`}
+                  alt={'Spad Software Logo'}
+                  width={32}
+                  height={32}
+                />
+                <Image
+                  src={`/images/logo/wp.png`}
+                  alt={'Spad Software Logo'}
+                  width={30}
+                  height={30}
+                />
+                <Image
+                  src={`/images/logo/insta.png`}
+                  alt={'Spad Software Logo'}
+                  width={28}
+                  height={28}
+                />
               </div>
               <div>
                 <Typography variant='caption'
-            style={{marginLeft: '48px'}} >
-              © SPAD Software consultancy services Private Limited. All rights reserved.
-             </Typography>
-             </div>
-             </span>
-           </Grid>
+                  style={{ marginLeft: '48px' }} >
+                  © SPAD Software consultancy services Private Limited. All rights reserved.
+                </Typography>
+              </div>
+            </span>
+          </Grid>
 
-           
-    
-      </Grid>
 
-   
-   
-  </Box>
 
-  {notification && (
+        </Grid>
+
+
+
+      </Box>
+
+      {notification && (
         <Notification
           status={notification.status}
           title={notification.title}
           message={notification.message}
         />
       )}
- 
-  </>
+
+    </>
   )
 }
 

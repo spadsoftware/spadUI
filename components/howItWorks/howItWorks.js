@@ -46,21 +46,22 @@ const HowItWorks = () => {
   return (
     <section style={{top:'0px',position:'relative',
     borderStyle: 'solid',
-    borderWidth: "0px 0px 0px 20px",
+    borderWidth: "0px 0px 0px 5px",
     borderColor: "#212861",
     transition: "background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s",
-        padding: "0px 0px 0px 0px",
-    boxShadow:' 0px 0px 30px rgba(127, 137, 161, 0.25)'
+        padding: "70px 0px 0px 0px", 
+        textAlign: 'center'
     }}>
-      <h5 style={{fontSize:'18px',color:'#d1482d',textAlign:'center', marginTop: '0px'}}>How Spad Software Works-It's 3 step process.</h5>
-      <div style={{fontSize:'18px',color:'#d1482d',textAlign:'center'}}>Start</div>
-    <Timeline position="alternate" >
+      <div className='subTitleHeading'>Step Process</div>
+      <h3 className='subTitleMainHeading'>How Spad Software Works-It's 3 step process.</h3>
+      <div style={{fontSize:'18px',fontWeight: '600',color:'#4caf50',textAlign:'center', marginTop: '60px'}}>Start</div>
+    <Timeline position="alternate" className='timeline-customize'>
     <TimelineItem>
       <TimelineOppositeContent
         sx={{ m: 'auto 0' }}
         align="right"
         variant="body2"
-        color="text.secondary"
+        color="text.secondary" className='timeLineSubText'
       >
         Through Book an Appoinment
       </TimelineOppositeContent>
@@ -72,13 +73,10 @@ const HowItWorks = () => {
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
-        <Typography variant="h6" component="span" style={{fontSize:'14px',
-        fontWeight:'600',
-        background:'linear-gradient(#d9232d,#d9232d) bottom repeat-x',
-        color:'white'}}>
+        <Typography variant="h6" component="span" className='timeLineTitleText'>
           Tell Us your Requirement
         </Typography>
-        <Typography style={{fontSize:'10px',fontWeight:'600'}}>You can select the requirement like web development,web design,digital marketing,real time Training,Placement services through book an Appoinment</Typography>
+        <Typography className='timeLineSubText'>You can select the requirement like web development,web design,digital marketing,real time Training,Placement services through book an Appoinment</Typography>
       </TimelineContent>
     </TimelineItem>
     <TimelineItem>
@@ -86,7 +84,7 @@ const HowItWorks = () => {
         sx={{ m: 'auto 0' }}
         align="right"
         variant="body2"
-        color="text.secondary"
+        color="text.secondary" className='timeLineSubText'
       >
         within 12 hours
       </TimelineOppositeContent>
@@ -98,14 +96,10 @@ const HowItWorks = () => {
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }}>
-        <Typography variant="h6" component="span" style={{
-          fontSize:'14px',fontWeight:'600',
-          background:'linear-gradient(#d9232d,#d9232d) bottom repeat-x',
-          color:'white'
-        }}>
+        <Typography variant="h6" component="span" className='timeLineTitleText'>
           We will alalyze your requirement
         </Typography>
-        <Typography style={{fontSize:'10px',fontWeight:'600'}}>Our Expert team will look into your requirement and will prepare the process and quote</Typography>
+        <Typography  className='timeLineSubText'>Our Expert team will look into your requirement and will prepare the process and quote</Typography>
       </TimelineContent>
     </TimelineItem>
     <TimelineItem>
@@ -113,7 +107,7 @@ const HowItWorks = () => {
         sx={{ m: 'auto 0' }}
         align="right"
         variant="body2"
-        color="text.secondary"
+        color="text.secondary" className='timeLineSubText'
       >
         within 24 hours
       </TimelineOppositeContent>
@@ -125,19 +119,16 @@ const HowItWorks = () => {
         <TimelineConnector />
       </TimelineSeparator>
       <TimelineContent sx={{ py: '12px', px: 2 }} >
-        <Typography variant="h6" component="span" style={{
-          fontSize:'14px',fontWeight:'600',
-          background:'linear-gradient(#d9232d,#d9232d) bottom repeat-x',
-          color:'white'}}>
+        <Typography variant="h6" component="span" className='timeLineTitleText'>
           Get the quote 
         </Typography>
-        <Typography style={{fontSize:'10px',fontWeight:'600'}}>we will get back with you within 24 hours and provide 
+        <Typography className='timeLineSubText'>we will get back with you within 24 hours and provide 
           estimation quote & development Ideas</Typography>
       </TimelineContent>
     </TimelineItem>
     
   </Timeline>
-  <div style={{fontSize:'18px',color:'#d1482d',textAlign:'center'}}>End</div>
+  <div style={{fontSize:'18px',color:'#d1482d',fontWeight: '600', textAlign:'center'}}>End</div>
   </section>
   )
 }

@@ -34,6 +34,10 @@ import { textAlign } from '@mui/system';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
+ 
+import Slider from "react-slick"; 
+
+
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -46,6 +50,55 @@ const styles = theme => ({
       color:'black'
   }
 });
+
+var settings = { 
+  slidesToShow: 7,
+  slidesToScroll: 1,
+  initialSlide: 0,
+  dots: false,
+  centerMode: false,
+  infinite: true, 
+  arrows: false, 
+  autoplay: true, 
+  cssEase: "linear", 
+  swipeToSlide: true,  
+  speed: 5000,
+  autoplaySpeed: 100, 
+  pauseOnHover: true,
+  className: "bannerslider",
+  responsive: [
+    {
+      breakpoint: 1024,
+      settings: { 
+        slidesToShow: 7,
+        slidesToScroll: 1,
+        infinite: true, 
+      }
+    },
+    {
+      breakpoint: 991,
+      settings: { 
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        infinite: true, 
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2, 
+      }
+    },
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 3,
+        slidesToScroll: 3
+      }
+    }
+  ]
+};
 
 const bull = (
   <Box
@@ -86,7 +139,7 @@ const HomeComponent = (props) => {
   const [requestStatus, setRequestStatus] = useState(); // 'pending', 'success', 'error'
   const [requestError, setRequestError] = useState();
 
-  useEffect(() => {
+  useEffect(() => { 
     if (requestStatus === 'success' || requestStatus === 'error') {
       const timer = setTimeout(() => {
         setRequestStatus(null);
@@ -190,36 +243,27 @@ const HomeComponent = (props) => {
             />
           </a>
         </Typography>
-
-        <Stack
-          spacing={2}
-          style={{
-            position: "relative",
-            top: "13%",
-            textAlign: "center",
-            padding: "10px",
-          }}
-        >
+ 
           <Grid
             sx={{ flexGrow: 1, display: { xs: "block", sm: "none" } }}
-            container
-            spacing={{ xs: 2, md: 3 }}
-            columns={{ xs: 4, sm: 12, md: 12 }}
+            container 
+            columns={{ xs: 12, sm: 12, md: 12 }}
           >
             <Grid
               item
               xs={12}
               sm={4}
               md={4}
-              style={{ color: "#000248", paddingLeft: "5px" }}
+              style={{ color: "#000248", padding: '10px'}}
             >
               <Divider />
 
               <div
                 style={{
                   fontSize: "15px",
-                  paddingBottom: "15px",
+                  paddingBlock: "15px",
                   fontWeight: "600",
+                  textAlign: 'center'
                 }}
               >
                 <span
@@ -253,7 +297,8 @@ const HomeComponent = (props) => {
               </div>
 
               <div
-                style={{ display: "flex", color: "#000248", fontSize: "15px" }}
+                style={{ display: "flex", color: "#000248", fontSize: "15px" , justifyContent: 'evenly', alignItems: 'center', 
+                paddingBlock: "15px" }}
               >
                 <Image
                   src={`/images/title_header/wedesign.svg`}
@@ -281,7 +326,7 @@ const HomeComponent = (props) => {
               </div>
               <Divider />
             </Grid>
-            <Grid item xs={12} sm={4} md={4} style={{ color: "#000248" }}>
+            <Grid item xs={12} sm={4} md={4} style={{ color: "#000248" ,padding: '10px' }}>
               <div
                 style={{
                   fontSize: "17px",
@@ -311,75 +356,56 @@ const HomeComponent = (props) => {
               </div>
             </Grid>
 
-            <Box
-              sx={{
-                "& .MuiTextField-root": { m: 1, width: "17ch" },
-              }}
+            <Box 
               noValidate
               autoComplete="off"
             >
-              <form onSubmit={sendMessageHandler}>
-                <div className={classes.homeServiceiconBAHdr}>
+              <form onSubmit={sendMessageHandler} style={{padding: '10px'}}>
+                <h4 className={classes.homeServiceiconBAHdr} style={{padding: '10px 0px 0px', margin: '0'}}>
                   Book An Appoinment
-                </div>
+                </h4>
 
-                <div className={classes.homeServiceiconBA}>
-                  <Grid item xs={4} sm={12}>
+                <div className={classes.homeServiceiconBA} style={{padding: '10px 15px'}}>
+                  <Grid item xs={12} sm={12} className={classes.formcontrol}>
                     <TextField
-                      style={{ width: "80%" }}
+                      style={{ width: "100%" }}
                       id="standard-required"
-                      label="Name"
-                      InputLabelProps={{
-                        shrink: true,
-                        className: classes.multilineColor,
-                      }}
+                      placeholder="Name" 
                       name="name"
                       value={enteredName}
                       variant="standard"
                       onChange={(event) => setEnteredName(event.target.value)}
                     />
                   </Grid>
-                  <Grid item xs={4} sm={12}>
+                  <Grid item xs={12} sm={12} className={classes.formcontrol}>
                     <TextField
-                      style={{ width: "80%" }}
+                      style={{ width: "100%" }}
                       id="standard-required"
-                      label="email"
-                      value={enteredEmail}
-                      InputLabelProps={{
-                        shrink: true,
-                        className: classes.multilineColor,
-                      }}
+                      placeholder="email"
+                      value={enteredEmail} 
                       name="email"
                       variant="standard"
                       onChange={(event) => setEnteredEmail(event.target.value)}
                     />
                   </Grid>
-                  <Grid item xs={4} sm={12}>
+                  <Grid item xs={12} sm={12} className={classes.formcontrol}>
                     <TextField
-                      style={{ width: "80%" }}
+                      style={{ width: "100%" }}
                       id="standard-required"
-                      label="Phone"
-                      value={enteredPhone}
-                      InputLabelProps={{
-                        shrink: true,
-                        className: classes.multilineColor,
-                      }}
+                      placeholder="Phone"
+                      value={enteredPhone} 
                       type="number"
                       name="phone"
                       variant="standard"
                       onChange={(event) => setEnteredPhone(event.target.value)}
                     />
                   </Grid>
-                  <Grid item xs={4} sm={12}>
+                  <Grid item xs={12} sm={12} className={classes.formcontrol}>
                     <TextField
-                      style={{ width: "80%" }}
+                      style={{ width: "100%" }}
                       id="standard-required"
-                      label="subject"
-                      value={enteredMessage}
-                      InputLabelProps={{
-                        shrink: true,
-                        className: classes.multilineColor,
-                      }}
+                      placeholder="subject"
+                      value={enteredMessage} 
                       name="subject"
                       variant="standard"
                       onChange={(event) =>
@@ -387,20 +413,34 @@ const HomeComponent = (props) => {
                       }
                     />
                   </Grid>
-                  <Grid item xs={4} sm={12}>
-                    <FormControl
-                      style={{ width: "100%" }}
-                      sx={{ m: 0 }}
-                      className={classes.homeServiceiconcategorieslbl}
-                    >
-                      <InputLabel
-                        htmlFor="grouped-select"
-                        shrink={true}
-                        className={classes.homeServiceiconcategory}
-                      >
-                        Services
-                      </InputLabel>
-                      <NativeSelect
+                  <Grid item xs={12} sm={12} className={classes.formcontrol}>
+                    <FormControl size="small"
+                          style={{ width: "100%" }}
+                          sx={{ m: 0 }} variant="standard"
+                        >
+                      <Select defaultValue={enteredCategory} displayEmpty
+                        onChange={(event) =>
+                          setEnteredCategory(event.target.value)
+                        }
+                        id="grouped-select" label="Grouping" 
+                        className={classes.homeServiceiconcategorylabel}>
+                        <MenuItem value="">Services</MenuItem>
+                          <ListSubheader>software Development</ListSubheader>
+                          <MenuItem value='SD-wd'>Web Design</MenuItem>
+                          <MenuItem value='SD-ld'>Logo Design</MenuItem>
+                          <MenuItem value='SD-crm'>CRM Development</MenuItem>
+                          <MenuItem value='SD-wrd'>Website Redesign</MenuItem>
+                          <MenuItem value='SD-wm'>Website Maintenanace</MenuItem>
+                          <ListSubheader>Corporate Training</ListSubheader>
+                          <MenuItem value='ST-ct'>Corporate Training</MenuItem>
+                          <MenuItem value='ST-one2one'>One to one training</MenuItem>
+                          <MenuItem value='ST-ot'>Online training</MenuItem>
+                          <MenuItem value='ST-cr'>Class room training</MenuItem>
+                          <MenuItem value='SC'>Software Consultancy</MenuItem>
+                          <MenuItem value='DM'>Digital Marketing</MenuItem>
+                          <MenuItem value='BG'>Branding</MenuItem>
+                      </Select>
+                      {/* <NativeSelect
                         variant="outlined"
                         value={enteredCategory}
                         onChange={(event) =>
@@ -431,48 +471,41 @@ const HomeComponent = (props) => {
                         <option value="SC">software Consultancy</option>
                         <option value="DM">Digital Marketing</option>
                         <option value="BG">Branding</option>
-                      </NativeSelect>
+                      </NativeSelect> */}
                     </FormControl>
                   </Grid>
-                  <Grid
-                    item
-                    xs={4}
-                    sm={12}
-                    style={{ width: "64%", display: "inline-block" }}
-                  >
-                    <LocalizationProvider dateAdapter={AdapterDayjs}>
-                      <div className={classes.datepick}>
-                        <DateTimePicker
-                          label="Appoinment Date"
+                  <Grid item xs={12} sm={12} className={classes.formcontrol}>
+                    <LocalizationProvider dateAdapter={AdapterDayjs} style={{width: '100%'}}> 
+                        <DateTimePicker className={classes.datapicker}
+                          placeholder="Appoinment Date"
                           value={value}
-                          onChange={handleChange}
-                          className={classes.dt}
+                          onChange={handleChange} 
                           renderInput={(params) => (
                             <TextField
                               {...params}
                               sx={{
+                                width: '100%', 
                                 svg: { color: "black" },
                                 input: { color: "black" },
                                 label: { color: "black" },
                               }}
                             />
                           )}
-                        />
-                      </div>
+                        /> 
                     </LocalizationProvider>
-                  </Grid>
-                  <Button
-                    className={classes.homeServiceiconBtn}
-                    type="submit"
-                    variant="contained"
-                  >
-                    Get Quotes
-                  </Button>
+                  </Grid> 
+                   <CardActions
+                      style={{ justifyContent: "center", padding:'0px' }}
+                    >
+                      <Button type="submit" variant="contained" className={classes.btnPrimary}>
+                        Get Quotes
+                      </Button>
+                   </CardActions>
+
                 </div>
               </form>
             </Box>
-          </Grid>
-        </Stack>
+          </Grid> 
 
         <Grid
           sx={{
@@ -486,11 +519,11 @@ const HomeComponent = (props) => {
           <Grid
             item
             xs={9}
-            sm={9}
-            md={9}
+            md={8}
+            sm={12}
             style={{ position: "relative", display: "inline-block" }}
           >
-            <div style={{ padding: "10px" }}>
+            <div>
               <div
                 style={{
                   fontSize: "35px",
@@ -580,7 +613,7 @@ const HomeComponent = (props) => {
               </div>
             </div>
 
-            <div style={{ paddingLeft: "35px" }}>
+            <div>
               <div
                 style={{
                   fontSize: "17px",
@@ -604,150 +637,37 @@ const HomeComponent = (props) => {
                 Steel Equipments, Mining, Banking & Finance, software Training &
                 stock market Training.
               </div>
-              <Box
-                sx={{
-                  display: "flex",
-                  "& > :not(style)": {
-                    m: 1,
-                    width: 128,
-                    height: 128,
-                  },
-                }}
-              >
-                {/* <Image
-  src={`/images/home/trust.png`}
-  alt={'Spad Software Logo'}
-  width={50}
-  height={56}
-/> */}
-
-                <Paper variant="outlined" style={{background:'#ecebfe'}}>
-                  <div style={{textAlign:'center'}}>
-                    {" "}
-                    <Image
-                      src={`/images/home/ps.png`}
-                      alt={"Spad Software Logo"}
-                      width={50}
-                      height={56}
-                    />{" "}
-                  </div >{" "}
-                  <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}> 1st year Running successfully.</div>
-                </Paper>
-                <Paper elevation={1} style={{background:'#bedbff'}}>
-                  <div style={{textAlign:'center',padding: '10px'}}>
-                    <Image
-                      src={`/images/home/pd.png`}
-                      alt={"Spad Software Logo"}
-                      width={50}
-                      height={56}
-                    />{" "}
-                  </div>
-                  <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}> 10+ Projects launched</div>
-                </Paper>
-                <Paper  elevation={2} style={{background:'#e5e5e5'}}>
-                  <div style={{textAlign:'center',padding: '10px'}}>
-                    {" "}
-                    <Image
-                      src={`/images/home/sati.png`}
-                      alt={"Spad Software Logo"}
-                      width={50}
-                      height={56}
-                    />{" "}
-                  </div>
-                  <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>client satisfaction</div>
-                </Paper>
-                <Paper  elevation={3} style={{background:'#e7ffc9'}}>
-                  <div style={{textAlign:'center',padding: '10px'}}>
-                    <Image
-                      src={`/images/home/cr.png`}
-                      alt={"Spad Software Logo"}
-                      width={50}
-                      height={56}
-                    />
-                  </div>
-                  <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>happy customer</div>
-                </Paper>
-                <Paper   elevation={4} style={{background:'#fff2d5'}}>
-                  <div style={{textAlign:'center',padding: '10px'}}>
-                    <Image
-                      src={`/images/home/moneyback.png`}
-                      alt={"Spad Software Logo"}
-                      width={50}
-                      height={56}
-                    />
-                  </div>
-
-                  <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>100% money Back</div>
-                </Paper>
-                <Paper  elevation={5} style={{background:'#d4d6d9'}}>
-                  <div style={{textAlign:'center',padding: '10px'}}>
-                    <Image
-                      src={`/images/home/trust.png`}
-                      alt={"Spad Software Logo"}
-                      width={50}
-                      height={56}
-                    />
-                  </div>
-
-                  <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>trusted Relationship</div>
-                </Paper>
-                <Paper  elevation={6} style={{background:'#b1c3d7'}}>
-                  <div style={{textAlign:'center',padding: '10px'}}>
-                    {" "}
-                    <Image
-                      src={`/images/home/sm.png`}
-                      alt={"Spad Software Logo"}
-                      width={50}
-                      height={56}
-                    />{" "}
-                  </div>
-                  <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>more options for marketing</div>
-                </Paper>
-                <Paper  elevation={7} style={{background:'#bdffe4'}}>
-                  <div style={{textAlign:'center',padding: '10px'}}>
-                    <Image
-                      src={`/images/home/support.png`}
-                      alt={"Spad Software Logo"}
-                      width={50}
-                      height={56}
-                    />
-                  </div>
-                  <div style={{textAlign:'center',fontSize:'12px',fontWeight:'600'}}>support & maintenance</div>
-                </Paper>
-              </Box>
             </div>
           </Grid>
 
+
           <Grid
             item
-            xs={4}
-            sm={4}
-            md={3}
+            xs={3}
+            md={4}
+            sm={12}
             style={{ padding: "15px", display: "inline-block" }}
           >
             <Card>
               <CardContent>
                 <form onSubmit={sendMessageHandler}>
-                  <div
+                  <h4
                     style={{
-                      textAlign: "center",
-                      paddingBottom: "30px",
+                      textAlign: "center", 
                       fontSize: "20px",
+                      margin: '0px'
                     }}
                   >
                     Book An Appoinment
-                  </div>
+                  </h4>
 
                   <div>
                     <Grid container>
-                      <Grid item xs={4} sm={12}>
+                      <Grid item xs={12} sm={12} className={classes.formcontrol}>
                         <TextField
                           style={{ width: "100%" }}
                           id="standard-required"
-                          label="Name"
-                          InputLabelProps={{
-                            shrink: true,
-                          }}
+                          placeholder="Name" 
                           name="name"
                           value={enteredName}
                           variant="standard"
@@ -756,16 +676,12 @@ const HomeComponent = (props) => {
                           }
                         />
                       </Grid>
-                      <Grid item xs={12} sm={12}>
+                      <Grid item xs={12} sm={12} className={classes.formcontrol}>
                         <TextField
                           style={{ width: "100%" }}
                           id="standard-required"
-                          label="email"
-                          value={enteredEmail}
-                          InputLabelProps={{
-                            shrink: true,
-                          }}
-                          // style={{left:'8px'}}
+                          placeholder="Email"
+                          value={enteredEmail}  
                           name="email"
                           variant="standard"
                           onChange={(event) =>
@@ -773,16 +689,12 @@ const HomeComponent = (props) => {
                           }
                         />
                       </Grid>
-                      <Grid item xs={12} sm={12}>
+                      <Grid item xs={12} sm={12} className={classes.formcontrol}>
                         <TextField
                           style={{ width: "100%" }}
                           id="standard-required"
-                          label="Phone"
-                          value={enteredPhone}
-                          InputLabelProps={{
-                            shrink: true,
-                          }}
-                          // style={{top:'10px',}}
+                          placeholder="Phone"
+                          value={enteredPhone} 
                           type="number"
                           name="phone"
                           variant="standard"
@@ -791,16 +703,12 @@ const HomeComponent = (props) => {
                           }
                         />
                       </Grid>
-                      <Grid item xs={12} sm={12}>
+                      <Grid item xs={12} sm={12} className={classes.formcontrol}>
                         <TextField
                           style={{ width: "100%" }}
                           id="standard-required"
-                          label="subject"
-                          value={enteredMessage}
-                          InputLabelProps={{
-                            shrink: true,
-                          }}
-                          // style={{top:'10px',left:'8px'}}
+                          placeholder="Subject"
+                          value={enteredMessage} 
                           name="subject"
                           variant="standard"
                           onChange={(event) =>
@@ -808,22 +716,12 @@ const HomeComponent = (props) => {
                           }
                         />
                       </Grid>
-                      <Grid
-                        item
-                        xs={12}
-                        sm={12}
-                        style={{
-                          top: "10px",
-                          position: "relative",
-                          left: "-16px",
-                        }}
-                      >
-                        <FormControl
+                      <Grid item xs={12} sm={12} className={classes.formcontrol}>
+                        <FormControl size="small"
                           style={{ width: "100%" }}
-                          sx={{ m: 0 }}
-                          // style={{top:'30px',width:'183px'}}
+                          sx={{ m: 0 }} variant="standard"
                         >
-                          <InputLabel htmlFor="grouped-select" shrink={true}>
+                          {/* <InputLabel htmlFor="grouped-select" shrink={true}>
                             Services
                           </InputLabel>
                           <NativeSelect
@@ -859,29 +757,42 @@ const HomeComponent = (props) => {
                             <option value="SC">software Consultancy</option>
                             <option value="DM">Digital Marketing</option>
                             <option value="BG">Branding</option>
-                          </NativeSelect>
+                          </NativeSelect> */} 
+                                <Select defaultValue={enteredCategory} displayEmpty
+                                  onChange={(event) =>
+                                    setEnteredCategory(event.target.value)
+                                  }
+                                  id="grouped-select" label="Grouping" 
+                                  className={classes.homeServiceiconcategorylabel}>
+                                  <MenuItem value="">Services</MenuItem>
+                                    <ListSubheader>software Development</ListSubheader>
+                                    <MenuItem value='SD-wd'>Web Design</MenuItem>
+                                    <MenuItem value='SD-ld'>Logo Design</MenuItem>
+                                    <MenuItem value='SD-crm'>CRM Development</MenuItem>
+                                    <MenuItem value='SD-wrd'>Website Redesign</MenuItem>
+                                    <MenuItem value='SD-wm'>Website Maintenanace</MenuItem>
+                                    <ListSubheader>Corporate Training</ListSubheader>
+                                    <MenuItem value='ST-ct'>Corporate Training</MenuItem>
+                                    <MenuItem value='ST-one2one'>One to one training</MenuItem>
+                                    <MenuItem value='ST-ot'>Online training</MenuItem>
+                                    <MenuItem value='ST-cr'>Class room training</MenuItem>
+                                    <MenuItem value='SC'>Software Consultancy</MenuItem>
+                                    <MenuItem value='DM'>Digital Marketing</MenuItem>
+                                    <MenuItem value='BG'>Branding</MenuItem>
+                                </Select>
                         </FormControl>
                       </Grid>
-                      <Grid
-                        style={{
-                          top: "23px",
-                          position: "relative",
-                          left: "0px",
-                          maxWidth: "100%",
-                        }}
-                        item
-                        xs={12}
-                        sm={12}
-                      >
-                        <LocalizationProvider dateAdapter={AdapterDayjs}>
-                          <DateTimePicker
-                            label="Appoinment Date"
+                      <Grid item xs={12} sm={12} className={classes.formcontrol}>
+                        <LocalizationProvider dateAdapter={AdapterDayjs} style={{width: '100%'}}>
+                          <DateTimePicker className={classes.datapicker}
+                            placeholder="Appoinment Date"
                             value={value}
                             onChange={handleChange}
                             renderInput={(params) => (
                               <TextField
-                                {...params}
+                                {...params} 
                                 sx={{
+                                  width: '100%', 
                                   svg: { color: "black" },
                                   input: { color: "black" },
                                   label: { color: "black" },
@@ -892,17 +803,120 @@ const HomeComponent = (props) => {
                         </LocalizationProvider>
                       </Grid>
                     </Grid>
+                
+                    <CardActions
+                      style={{ justifyContent: "center", padding:'0px' }}
+                    >
+                      <Button type="submit" variant="contained" className={classes.btnPrimary}>
+                        Get Quotes
+                      </Button>
+                    </CardActions>
+  
                   </div>
                 </form>
               </CardContent>
-              <CardActions
-                style={{ justifyContent: "center", paddingTop: "50px" }}
-              >
-                <Button type="submit" variant="contained">
-                  Get Quotes
-                </Button>
-              </CardActions>
             </Card>
+          </Grid>
+
+          <Grid item xs={12} >
+ 
+          <Box style={{marginInline: '15px'}}> 
+              <Slider {...settings} style={{padding: 0, margin: 0}}> 
+                <Paper elevation={1} style={{background:'#ecebfe'}}>
+                  <div style={{textAlign:'center',padding: '10px'}}>
+                    <Image style={{margin: 'auto'}}
+                      src={`/images/home/ps.png`}
+                      alt={"Spad Software Logo"}
+                      width={50}
+                      height={56}
+                    />{" "}
+                  </div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}> 1st year Running successfully.</div>
+                </Paper>
+                <Paper elevation={1} style={{background:'#bedbff'}}>
+                  <div style={{textAlign:'center',padding: '10px'}}>
+                    <Image style={{margin: 'auto'}}
+                      src={`/images/home/pd.png`}
+                      alt={"Spad Software Logo"}
+                      width={50}
+                      height={56}
+                    />{" "}
+                  </div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}> 10+ Projects launched</div>
+                </Paper>
+                <Paper  elevation={2} style={{background:'#e5e5e5'}}>
+                  <div style={{textAlign:'center',padding: '10px'}}>
+                    {" "}
+                    <Image style={{margin: 'auto'}}
+                      src={`/images/home/sati.png`}
+                      alt={"Spad Software Logo"}
+                      width={50}
+                      height={56}
+                    />{" "}
+                  </div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>client satisfaction</div>
+                </Paper>
+                <Paper  elevation={3} style={{background:'#e7ffc9'}}>
+                  <div style={{textAlign:'center',padding: '10px'}}>
+                    <Image style={{margin: 'auto'}}
+                      src={`/images/home/cr.png`}
+                      alt={"Spad Software Logo"}
+                      width={50}
+                      height={56}
+                    />
+                  </div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>happy customer</div>
+                </Paper>
+                <Paper   elevation={4} style={{background:'#fff2d5'}}>
+                  <div style={{textAlign:'center',padding: '10px'}}>
+                    <Image style={{margin: 'auto'}}
+                      src={`/images/home/moneyback.png`}
+                      alt={"Spad Software Logo"}
+                      width={50}
+                      height={56}
+                    />
+                  </div>
+
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>100% money Back</div>
+                </Paper>
+                <Paper  elevation={5} style={{background:'#d4d6d9'}}>
+                  <div style={{textAlign:'center',padding: '10px'}}>
+                    <Image style={{margin: 'auto'}}
+                      src={`/images/home/trust.png`}
+                      alt={"Spad Software Logo"}
+                      width={50}
+                      height={56}
+                    />
+                  </div>
+
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>trusted Relationship</div>
+                </Paper>
+                <Paper  elevation={6} style={{background:'#b1c3d7'}}>
+                  <div style={{textAlign:'center',padding: '10px'}}>
+                    {" "}
+                    <Image style={{margin: 'auto'}}
+                      src={`/images/home/sm.png`}
+                      alt={"Spad Software Logo"}
+                      width={50}
+                      height={56}
+                    />{" "}
+                  </div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>more options for marketing</div>
+                </Paper>
+                <Paper  elevation={7} style={{background:'#bdffe4'}}>
+                  <div style={{textAlign:'center',padding: '10px'}}>
+                    <Image style={{margin: 'auto'}}
+                      src={`/images/home/support.png`}
+                      alt={"Spad Software Logo"}
+                      width={50}
+                      height={56}
+                    />
+                  </div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>support & maintenance</div>
+                </Paper>
+              </Slider>
+ 
+              </Box>
           </Grid>
         </Grid>
       </section>

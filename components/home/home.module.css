@@ -21,8 +21,8 @@
   width: 100%;
   height: auto;
   background: linear-gradient(180deg, #FEF7E2 0%, #EEEEFD 100%);
-  position:relative;
-  top:63px;
+  position:relative; 
+  padding-top: 70px;
 }
 .multilineColor{
   color:black
@@ -212,9 +212,10 @@
       .datepick .MuiInputBase-root{
         width:212%
       }
-      /* .dt{
-        width: 94% !important;
-      } */
+}
+
+.dt{
+  width: 100% !important;
 }
 
 .homeServiceiconcategories{
@@ -284,7 +285,10 @@
     animation-name: pic2;
     animation-iteration-count: infinite;
     animation-duration: 3s;
-    position: fixed;bottom: 40px;left: 40px; z-index: 5;
+    position: fixed;
+    bottom: 10px;
+    left: 20px; 
+    z-index: 5;
   }
 
 .section_whatsapp_img:hover {
@@ -368,24 +372,42 @@
   text-align: right;
 }
 
-.form button {
-  font: inherit;
+.btnPrimary {
+  font-size: 14px;
   cursor: pointer;
-  background-color: var(--color-primary-700);
-  border: 1px solid var(--color-primary-700);
-  padding: var(--size-2) var(--size-4);
+  background-color: #d8232d;
+  border: 1px solid #d8232d;
+  padding: 10px 15px;
+  width: 100%;
+  height: auto;
+  line-height: normal;
   border-radius: 4px;
-  color: var(--color-primary-50);
-  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  box-shadow: none;
+  transition: 0.5s;
+  text-transform: capitalize;
 }
 
-.form button:hover {
-  background-color: var(--color-primary-500);
-  border-color: var(--color-primary-500);
+.btnPrimary:hover {
+  background-color: transparent;
+  border-color: #d8232d;
+  color: #d8232d;
+  box-shadow: none;
 }
 
+.formcontrol {
+  margin-block: 10px;
+}
 
+.datapicker input {
+  padding-block: 9px;
+  color: #0000009c;
+}
 
+.datapicker svg {
+  padding-block: 4px;
+  color: #0000009c;
+}
 
 @media (min-width: 768px) {
   .contact h1 {
@@ -402,28 +424,46 @@
 }
 
 .homeServiceiconcategory{
-color: black;
-margin-top: 14px;
-    margin-left: 26px;
-/* margin-top: 20px; */
-}
-.homeServiceiconcategorylabel{
-  width: 80%;
-    left: 40px;
-}
+    color: black;   
+} 
 .homeServiceiconBtn{
   justify-content: center;
-    text-align: center;
-    background:#1d2862;
-color: white;
-height: 55px;
-top: 22px;
-
+  text-align: center;
+  background:#1d2862;
+  color: white;
+  height: 55px;
+  top: 22px; 
 }
 
+.formcontrol label, .formcontrol input, .formcontrol .homeServiceiconcategorylabel  {
+  font-size: 14px;
+  color: #0000009c;
+  text-align: left;
+}
 
+.formcontrol input::placeholder{
+  opacity: 1;
+}
 
+.formcontrol .homeServiceiconcategorylabel:focus{
+  background-color: #fff !important;
+}
 
+ul.MuiMenu-root.MuiList-padding.MuiMenu-list  {
+  max-height: 100px !important;
+}
+
+ul.MuiMenu-root.MuiList-padding.MuiMenu-list li {
+  font-size: 14px;
+}
+
+ul.MuiMenu-root.MuiList-padding.MuiMenu-list li.MuiListSubheader-sticky {
+  background: #ffffff;
+  z-index: 999;
+  border-block: 1px solid #00000024;
+  line-height: normal;
+  padding-block: 10px;
+}
 
 
 

@@ -26,11 +26,12 @@
     "file-saver": "^2.0.5",
     "gray-matter": "^4.0.2",
     "mongodb": "^3.6.4",
-    "next": "^13.1.1",
+    "next": "^13.1.6",
     "react": "^18.2.0",
     "react-creative-cursor": "^1.2.7",
     "react-dom": "^18.2.0",
     "react-markdown": "^5.0.3",
+    "react-slick": "^0.29.0",
     "react-syntax-highlighter": "^15.4.3",
     "styled-components": "^5.3.6",
     "webpack-bundle-analyzer": "^4.7.0"
