@@ -52,7 +52,9 @@ const styles = theme => ({
 });
 
 var settings = { 
-  slidesToShow: 7,
+
+
+  slidesToShow: 6,
   slidesToScroll: 1,
   initialSlide: 0,
   dots: false,
@@ -903,7 +905,7 @@ const HomeComponent = (props) => {
                   </div>
                   <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>more options for marketing</div>
                 </Paper>
-                <Paper  elevation={7} style={{background:'#bdffe4'}}>
+                {/* <Paper  elevation={7} style={{background:'#bdffe4'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
                     <Image style={{margin: 'auto'}}
                       src={`/images/home/support.png`}
@@ -913,7 +915,7 @@ const HomeComponent = (props) => {
                     />
                   </div>
                   <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>support & maintenance</div>
-                </Paper>
+                </Paper> */}
               </Slider>
  
               </Box>

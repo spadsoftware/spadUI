@@ -64,7 +64,7 @@ const MoneyBack = () => {
         fontWeight: 'bold',
         borderStyle: 'solid',
         borderWidth: '0px 0px 0px 5px',
-        borderColor: '#da4536',
+        borderColor: '#212861',
         transition: 'background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s',
         padding: '70px 0px 20px 0px',
         zIndex: '1',

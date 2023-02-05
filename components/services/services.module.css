@@ -346,6 +346,6 @@ padding: 10px;
       flex-basis: 18.5%;
     } 
     .justifyContentBetween{
-        justify-content: initial;
+        justify-content: center;
     }
     }

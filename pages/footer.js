@@ -59,6 +59,10 @@ async function sendContactData(contactDetails) {
 }
 
 
+
+
+
+
 const footer = () => {
 
 
@@ -68,6 +72,7 @@ const footer = () => {
   const [enteredPhone, setEnteredPhone] = useState('');
   const [enteredCategory, setEnteredCategory] = useState('');
   const [enteredDate, setEnteredDate] = useState('');
+  const [newsletter, setNewsletter] = useState('');
 
 
   const [requestStatus, setRequestStatus] = useState(); // 'pending', 'success', 'error'
@@ -84,7 +89,25 @@ const footer = () => {
     }
   }, [requestStatus]);
 
-
+  async function  saveNewletter(){
+    let saveEmail={
+      email: newsletter
+    }
+    const response = await fetch('http://127.0.0.1:8080/newsletter', {
+      method: 'POST',
+      body: JSON.stringify(saveEmail),
+      headers: {
+        'Content-Type': 'application/json',
+      },
+    });
+  
+    const data = await response.json();
+    setNewsletter('');
+  console.log()
+    if (!response.ok) {
+      throw new Error(data.message || 'Something went wrong!');
+    }
+  }
   async function sendMessageHandler(event) {
     event.preventDefault();
     // console.log(enteredDate,enteredEmail,enteredName,
@@ -145,6 +168,9 @@ const footer = () => {
       message: requestError,
     };
   }
+
+
+
   return (
     <>
       <Head>
@@ -245,6 +271,26 @@ const footer = () => {
                 />
               </div>
               <div>
+              <TextField id="standard-basic" size="small"
+               label="Newsletters" 
+              variant="standard" 
+              value={newsletter}
+              onChange={(event) =>
+                setNewsletter(event.target.value)
+              }
+            
+              />
+                  <Button style={{top:'17px',left:'10px',background:'#d8232d'}}
+                  variant="contained" size="small"
+                  onClick={(event) =>
+                    saveNewletter()
+                  }
+                   >
+                  Subscribe Now
+                </Button>
+             </div>
+           
+              <div>
                 <Typography variant='caption'
                   style={{ marginLeft: '48px' }} >
                   © SPAD Software consultancy services Private Limited. All rights reserved.
@@ -270,6 +316,8 @@ const footer = () => {
       )}
 
     </>
+
+ 
   )
 }
 

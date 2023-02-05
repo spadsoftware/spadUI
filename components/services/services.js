@@ -132,7 +132,7 @@ const ServicesComponent = () => {
                     <h4 >Ecommerce</h4>
                   </div>
                 </Grid>
-                <Grid item xs={4} sm={4} md={2} className={`${classes.section_servicesvc6} ${classes.section_servicesvc_grid}`}>
+                <Grid item  className={`${classes.section_servicesvc6} ${classes.section_servicesvc_grid}`} xs={4} sm={4} md={2}>
                   <div className={classes.svcs_img}>
                     <Image className={classes.svc_img}
                       src={`/images/services/services-wordpress.png`}
