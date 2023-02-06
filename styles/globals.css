@@ -54,7 +54,7 @@ body {
   font-family: 'Poppins', sans-serif !important;
 }
 .MuiPaper-root.MuiPaper-elevation.MuiPaper-rounded {
-  box-shadow: 0 0 6px 1px #00000012;
+  box-shadow: 0 0 6px 1px #00000012 !important;
 }
 h1,
 h2,
@@ -136,24 +136,24 @@ button {
 }
 
 .vertical_button{
-  font-size: 16px;
-  color: #000;
-  font-weight: 600;
-  text-transform: capitalize;
-  padding: 0px;
-  margin-bottom: 10px;
-  text-align: left;
-  align-items: flex-start;
-  padding-left: 20px;
+  font-size: 16px !important;
+  color: #000 !important;
+  font-weight: 600 !important;
+  text-transform: capitalize !important; 
+  padding: 0px !important;
+  margin-bottom: 10px !important;
+  text-align: left !important;
+  align-items: flex-start !important;
+  padding-left: 20px !important;
 }
 
 .vertical_button.Mui-selected{ 
-    background: white;
-    border-radius: 10px;
-    font-size: 16px;
-    text-transform: capitalize;
-    color: #000;
-    font-weight: 600;
+    background: white !important;
+    border-radius: 10px !important;
+    font-size: 16px !important;
+    text-transform: capitalize !important;
+    color: #000 !important;
+    font-weight: 600 !important;
 }
  
 .MuiTabs-vertical .MuiTabs-indicator{ 
@@ -178,23 +178,23 @@ button {
 }
 
 .timeLineTitleText{
-    font-weight: 600;
-    color: #d8232d;
-    font-size: 16px;
+    font-weight: 600 !important;
+    color: #d8232d !important;
+    font-size: 16px !important;
     font-family: 'Poppins';
     margin-bottom: 10px !important;
-    display: block;
+    display: block !important;
 }
 
 .timeLineSubText{
-  color: #4e5564;
-  font-size: 12px;
-  font-weight: 400;
-  font-family: 'Poppins';
+  color: #4e5564 !important;
+  font-size: 12px !important;
+  font-weight: 400 !important;
+  font-family: 'Poppins' !important;
 }
 
 span.MuiTimelineDot-root.MuiTimelineDot-filled {
-  background: #64646c ;
+  background: #64646c !important;
   /* margin: auto; */
 }
 
@@ -202,21 +202,21 @@ span.MuiTimelineDot-root.MuiTimelineDot-filled {
 
 @media (max-width: 1199px){
   .bannerslider.slick-initialized .slick-slide { 
-    margin-right: 10px; 
+    margin-right: 10px !important; 
     width: 180px !important;
   }
 }
 
 @media (max-width: 991px){
   .bannerslider.slick-initialized .slick-slide { 
-    margin-right: 10px; 
+    margin-right: 10px !important; 
     width: 160px !important;
   }
 }
 
 @media (max-width: 765px){
   .bannerslider.slick-initialized .slick-slide { 
-    margin-right: 10px; 
+    margin-right: 10px !important; 
     width: 140px !important;
   }
 }
@@ -224,7 +224,7 @@ span.MuiTimelineDot-root.MuiTimelineDot-filled {
 
 @media (min-width: 1200px){
   .bannerslider.slick-initialized .slick-slide { 
-    margin-right: 10px;
+    margin-right: 10px !important;
     width: 180px !important;
   }
     /* .MuiGrid-container{

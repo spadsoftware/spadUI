@@ -120,11 +120,11 @@
 .section_wwd_slider_services{
     }
     .whatWeDo_section_wwd  .MuiMasonry-root {
-      margin: calc(0px);
+      margin: calc(0px) !important;
   }
 
 .section_wwd_slider_services_items{
-  font-size: 100px;
+  font-size: 100px !important;
 
 }
 .section_wwd_slider_services_items:hover {
@@ -132,28 +132,28 @@
 }
 
 .masonry_item{
-  padding: 15px 30px;
-  background-color: #f4e3e9;
-  border-color: #fda6c5;
-  border-style: solid;
-  border-width: 5px 0 0 0;
-  border-radius: 10px 10px 10px 10px;
-  text-align: left;
+  padding: 15px 30px !important; 
+  background-color: #f4e3e9 !important;
+  border-color: #fda6c5 !important;
+  border-style: solid !important;
+  border-width: 5px 0 0 0 !important;
+  border-radius: 10px 10px 10px 10px !important;
+  text-align: left !important;
 }
 
 .masonry_item:nth-child(2), .masonry_item:nth-child(7), .masonry_item:nth-child(11){
-  background: #f4e1ba;
-  border-color: #f3c870;
+  background: #f4e1ba !important;
+  border-color: #f3c870 !important;
 }
 
 .masonry_item:nth-child(3), .masonry_item:nth-child(6), .masonry_item:nth-child(8), .masonry_item:nth-child(12){
-  background: #e0edfc;
-  border-color: #b5d7ff;
+  background: #e0edfc !important;
+  border-color: #b5d7ff !important;
 }
 
 .masonry_item_title{
-  color: #000;
-  font-size: 20px;
+  color: #000 !important;
+  font-size: 20px !important;
 }
 
 .items_lists{
@@ -163,20 +163,16 @@
 }
 
 .read_more{
-  color: #4390c6;
-  font-size: 14px;
+  color: #4390c6 !important;
+  font-size: 14px !important;
   font-weight: 500;
   position: relative;
   display: inline-block;
   cursor: pointer;
 }
  
-.item_list1:hover,.item_list6:hover,.item_list10:hover,
-.item_list2:hover,.item_list7:hover,.item_list11:hover,
-.item_list3:hover,.item_list8:hover,.item_list:hover,
-.item_list4:hover,.item_list9:hover,
-.item_list5:hover{
-    background: rgba(255,255,255,0);
-    border-color: rgba(255,255,255,.5);
+.item_list:hover{
+    background: rgba(255,255,255,0) !important;
+    border-color: rgba(255,255,255,.5) !important;
 }
  
