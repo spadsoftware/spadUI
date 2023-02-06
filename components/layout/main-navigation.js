@@ -35,6 +35,14 @@ import { loadCSS } from 'fg-loadcss';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 const { useState, useEffect } = React;
 import FileSaver from 'file-saver';
+import { styled, alpha } from '@mui/material/styles';
+
+import EditIcon from '@mui/icons-material/Edit';
+import ArchiveIcon from '@mui/icons-material/Archive';
+import FileCopyIcon from '@mui/icons-material/FileCopy';
+import MoreHorizIcon from '@mui/icons-material/MoreHoriz';
+import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
+
 
 function appBarLabel(label) {
   return (
@@ -101,7 +109,46 @@ function MainNavigation(props) {
     // remove event on unmount to prevent a memory leak
     () => document.removeEventListener("scroll", scroll, options);
    }, []);
-
+   const StyledMenu = styled((props) => (
+    <Menu
+      elevation={0}
+      anchorOrigin={{
+        vertical: 'bottom',
+        horizontal: 'right',
+      }}
+      transformOrigin={{
+        vertical: 'top',
+        horizontal: 'right',
+      }}
+      {...props}
+    />
+  ))(({ theme }) => ({
+    '& .MuiPaper-root': {
+      borderRadius: 6,
+      marginTop: theme.spacing(1),
+      minWidth: 180,
+      color:
+        theme.palette.mode === 'light' ? 'rgb(55, 65, 81)' : theme.palette.grey[300],
+      boxShadow:
+        'rgb(255, 255, 255) 0px 0px 0px 0px, rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px',
+      '& .MuiMenu-list': {
+        padding: '4px 0',
+      },
+      '& .MuiMenuItem-root': {
+        '& .MuiSvgIcon-root': {
+          fontSize: 18,
+          color: theme.palette.text.secondary,
+          marginRight: theme.spacing(1.5),
+        },
+        '&:active': {
+          backgroundColor: alpha(
+            theme.palette.primary.main,
+            theme.palette.action.selectedOpacity,
+          ),
+        },
+      },
+    },
+  }));
   const [anchorEl, setAnchorEl] = React.useState(null);
   const [mobileMoreAnchorEl, setMobileMoreAnchorEl] = React.useState(null);
 
@@ -131,7 +178,18 @@ function MainNavigation(props) {
       "spadBroucher.png"
     );
   }
-
+  const open = Boolean(anchorEl);
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+  const handleClose = (event) => {
+    console.log(event)
+    FileSaver.saveAs(
+      `https://www.spadsoftware.com/images/logo/${event}`,
+      event
+    );
+    setAnchorEl(null);
+  };
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <Typography variant="h6" sx={{ my: 2 }}>
@@ -151,11 +209,58 @@ function MainNavigation(props) {
             </Link>
           </ListItem>
         ))}
-         <button className="cv" onClick={saveFile}
-          style={{fontWeight:'600',fontSize:'14px',background:'#fdf7e3',border:'none',color:'#d9232d'}}
-          >
-              BROUCHER
-         </button>
+        <Button
+        id="demo-customized-button"
+        className="cv"
+        style={{fontWeight:'600',fontSize:'14px',background:'#fdf7e3',border:'none',color:'#d9232d'}}
+        aria-controls={open ? 'demo-customized-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        variant="contained"
+        disableElevation
+        onClick={handleClick}
+        endIcon={<KeyboardArrowDownIcon />}
+      >
+        Broucher
+      </Button>
+      <StyledMenu
+        id="demo-customized-menu"
+        MenuListProps={{
+          'aria-labelledby': 'demo-customized-button',
+        }}
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+      >
+        <MenuItem 
+        onClick={(event) => handleClose("spadBroucher.png")}
+         disableRipple>
+          <ArchiveIcon />
+          Spad Broucher
+        </MenuItem>
+        <Divider sx={{ my: 0.5 }} />
+        <MenuItem 
+         onClick={(event) => handleClose("DigitalMarketingBroucher.png")}
+         disableRipple>
+          <ArchiveIcon />
+          Digital marketing Pricing
+        </MenuItem>
+        <Divider sx={{ my: 0.5 }} />
+        <MenuItem 
+         onClick={(event) => handleClose("websiteBroucher.png")}
+          disableRipple>
+          <ArchiveIcon />
+          Web Development Pricing
+        </MenuItem>
+        <Divider sx={{ my: 0.5 }} />
+        <MenuItem  
+        onClick={(event) => handleClose("TrainingBroucher.png")}
+         disableRipple>
+          <ArchiveIcon />
+          Training Pricing
+        </MenuItem>
+      </StyledMenu>
+        
       </List>
     </Box>
              
@@ -217,11 +322,64 @@ function MainNavigation(props) {
                 </Button>
               ))}
               {/* <a href="/images/logo/spadBroucher.png" onClick={saveFile}   value="download" ><button>Download Broucher</button></a> */}
-              <button className="cv" onClick={saveFile}
+              {/* <button className="cv" onClick={saveFile}
           style={{fontWeight:'600',fontSize:'14px',background:'#fdf7e3',border:'none',color:'#d9232d'}}
           >
               BROUCHER
-         </button>
+         </button> */}
+        
+      <Button
+        id="demo-customized-button"
+        className="cv"
+        style={{fontWeight:'600',fontSize:'14px',background:'#fdf7e3',border:'none',color:'#d9232d'}}
+        aria-controls={open ? 'demo-customized-menu' : undefined}
+        aria-haspopup="true"
+        aria-expanded={open ? 'true' : undefined}
+        variant="contained"
+        disableElevation
+        onClick={handleClick}
+        endIcon={<KeyboardArrowDownIcon />}
+      >
+        Broucher
+      </Button>
+      <StyledMenu
+        id="demo-customized-menu"
+        MenuListProps={{
+          'aria-labelledby': 'demo-customized-button',
+        }}
+        anchorEl={anchorEl}
+        open={open}
+        onClose={handleClose}
+      >
+        <MenuItem 
+        onClick={(event) => handleClose("spadBroucher.png")}
+         disableRipple>
+          <ArchiveIcon />
+          Spad Broucher
+        </MenuItem>
+        <Divider sx={{ my: 0.5 }} />
+        <MenuItem 
+         onClick={(event) => handleClose("DigitalMarketingBroucher.png")}
+         disableRipple>
+          <ArchiveIcon />
+          Digital marketing Pricing
+        </MenuItem>
+        <Divider sx={{ my: 0.5 }} />
+        <MenuItem 
+         onClick={(event) => handleClose("websiteBroucher.png")}
+          disableRipple>
+          <ArchiveIcon />
+          Web Development Pricing
+        </MenuItem>
+        <Divider sx={{ my: 0.5 }} />
+        <MenuItem  
+        onClick={(event) => handleClose("TrainingBroucher.png")}
+         disableRipple>
+          <ArchiveIcon />
+          Training Pricing
+        </MenuItem>
+      </StyledMenu>
+   
             </Box>
             <Typography 
              sx={{ flexGrow: 1, display: { xs: 'block', sm: 'none' } }}>

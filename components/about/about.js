@@ -107,13 +107,13 @@ const AboutComponent = () => {
         </TimelineSeparator>
         <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
           fontWeight: 'bold',
-          fontSize: "11px"}}>3.Design</TimelineContent>
+          fontSize: "11px"}}>3.Design&nbsp;&nbsp;&nbsp;</TimelineContent>
       </TimelineItem>
       <TimelineItem className= {classes.dot_line}>
         <TimelineOppositeContent color="text.secondary"   sx={{ fontFamily: "Gilroy-Bold !important",
           fontWeight: 'bold',
           fontSize: "11px"}}>
-          6.Testing
+          6.Testing&nbsp;&nbsp;
         </TimelineOppositeContent>
         <TimelineSeparator>
           <TimelineDot color="error"/>
@@ -135,7 +135,7 @@ const AboutComponent = () => {
         </TimelineSeparator>
         <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
           fontWeight: 'bold',
-          fontSize: "11px"}}>7.Launch</TimelineContent>
+          fontSize: "11px"}}>7.Launch&nbsp;&nbsp;</TimelineContent>
       </TimelineItem>
     </Timeline>
 

@@ -85,7 +85,7 @@ const MoneyBack = () => {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={5} style={{ left: '0px', position: 'relative' }}>
+          <Grid item xs={6} md={5} style={{ left: '0px', position: 'relative',paddingLeft: '30px' }}>
             <div style={{ position: 'relative' }}>
               <div className='text-left'>
                 <h3 className='subTitleMainHeading'>
@@ -111,7 +111,7 @@ const MoneyBack = () => {
               </div>
             </div>
           </Grid>
-          <Grid item xs={6} md={5} style={{ left: '0px', position: 'relative', background: 'white' }}>
+          <Grid item xs={6} md={5} style={{ left: '0px', position: 'relative',paddingLeft: '30px'  }}>
             <div style={{ position: 'relative' }}>
               <div className='text-left'>
                 <h3 className='subTitleMainHeading'>

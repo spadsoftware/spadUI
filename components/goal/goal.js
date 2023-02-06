@@ -38,8 +38,12 @@ import CardContent from '@mui/material/CardContent';
 import PropTypes from 'prop-types';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import Button from '@mui/material/Button';
 
-
+import Stepper from '@mui/material/Stepper';
+import Step from '@mui/material/Step';
+import StepLabel from '@mui/material/StepLabel';
+import StepContent from '@mui/material/StepContent';
 const Item = styled(Paper)(({ theme }) => ({
   backgroundColor: theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
   ...theme.typography.body2,
@@ -79,7 +83,32 @@ function a11yProps(index) {
     'aria-controls': `vertical-tabpanel-${index}`,
   };
 }
-
+const steps = [
+  {
+    label: 'Requirements Analysis',
+    description: `Requirements gathering is more than just asking a few questions `,
+  },
+  {
+    label: 'Wireframes & mockUp & UI/UX',
+    description:
+      'The website design process is transforming user requirements into a suitable form.',
+  },
+  {
+    label: 'Development & Testing',
+    description:
+      'After getting the system design documents, the work is divided into small modules and units and the actual development of coding is started.',
+  },
+  {
+    label: 'Handover & support',
+    description:
+      'Once the full web application or software has been fully tested and the no more high priority issues remain at anymore.',
+  },
+ 
+  {
+    label: 'Free Promotion/Branding',
+    description: ` We some of the commonly known promotion techniques such as mouth marketing, Websites, Social media, Flyers, Newspaper Ads. `,
+  },
+];
 
 const goalComponent = () => {
   const [value, setValue] = React.useState(0);
@@ -94,6 +123,19 @@ const goalComponent = () => {
     textAlign: 'center',
     color: theme.palette.text.secondary,
   }));
+  const [activeStep, setActiveStep] = React.useState(0);
+
+  const handleNext = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep + 1);
+  };
+
+  const handleBack = () => {
+    setActiveStep((prevActiveStep) => prevActiveStep - 1);
+  };
+
+  const handleReset = () => {
+    setActiveStep(0);
+  };
 
   return (
     <>
@@ -185,8 +227,8 @@ const goalComponent = () => {
                       </span>
 
                       <Grid component="span"
-                        container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{ paddingTop: '20px' }}>
-                        <Grid component="span" item xs={2} sm={4} md={6}>
+                        container spacing={2} columns={{ xs: 12, sm: 8, md: 12 }} style={{ paddingTop: '20px' }}>
+                        <Grid component="span" item xs={3} sm={4} md={3}>
                           <span style={{ display: 'block' }}>
                             <Image className={classes.about_ac}
                               src={`/images/about/ac.png`}
@@ -196,7 +238,7 @@ const goalComponent = () => {
                             /></span>
                           <span style={{ fontSize: '13px' }}> Cost & quality</span>
                         </Grid >
-                        <Grid component="span" item xs={2} sm={4} md={6}>
+                        <Grid component="span" item xs={3} sm={4} md={3}>
                           <span style={{ display: 'block' }}>
                             <Image className={classes.about_choose}
                               src={`/images/about/clock.png`}
@@ -207,7 +249,7 @@ const goalComponent = () => {
                           </span>
                           <span style={{ fontSize: '13px' }}>On time Delivery</span>
                         </Grid >
-                        <Grid component="span" item xs={2} sm={4} md={6}>
+                        <Grid component="span" item xs={3} sm={4} md={3}>
                           <span style={{ display: 'block' }}>
                             <Image className={classes.about_mission}
                               src={`/images/about/tr.png`}
@@ -218,7 +260,7 @@ const goalComponent = () => {
                           </span>
                           <span style={{ fontSize: '13px' }}>Trusted Relationship</span>
                         </Grid >
-                        <Grid component="span" item xs={2} sm={4} md={6}>
+                        <Grid component="span" item xs={3} sm={4} md={3}>
                           <span style={{ display: 'block' }}>
                             <Image className={classes.about_ms}
                               src={`/images/goal/ms.png`}
@@ -228,6 +270,54 @@ const goalComponent = () => {
                             />
                           </span>
                           <span style={{ fontSize: '13px' }}>Support</span>
+                        </Grid >
+
+                        <Grid component="span" item xs={3} sm={4} md={3}>
+                          <span style={{ display: 'block' }}>
+                            <Image className={classes.about_ms}
+                              src={`/images/title_header/secureCoding.svg`}
+                              alt='Spad Software Log about'
+                              width={256}
+                              height={56}
+                            />
+                          </span>
+                          <span style={{ fontSize: '13px' }}> Secure Coding</span>
+                        </Grid >
+
+                        <Grid component="span" item xs={3} sm={4} md={3}>
+                          <span style={{ display: 'block' }}>
+                            <Image className={classes.about_ms}
+                              src={`/images/title_header/support.svg`}
+                              alt='Spad Software Log about'
+                              width={256}
+                              height={56}
+                            />
+                          </span>
+                          <span style={{ fontSize: '13px' }}>24/7 Email Support</span>
+                        </Grid >
+
+                        <Grid component="span" item xs={3} sm={4} md={3}>
+                          <span style={{ display: 'block' }}>
+                            <Image className={classes.about_ms}
+                              src={`/images/title_header/team.svg`}
+                              alt='Spad Software Log about'
+                              width={256}
+                              height={56}
+                            />
+                          </span>
+                          <span style={{ fontSize: '13px' }}>Dedicated Team</span>
+                        </Grid >
+
+                        <Grid component="span" item xs={3} sm={4} md={3}>
+                          <span style={{ display: 'block' }}>
+                            <Image className={classes.about_ms}
+                              src={`/images/title_header/team.svg`}
+                              alt='Spad Software Log about'
+                              width={256}
+                              height={56}
+                            />
+                          </span>
+                          <span style={{ fontSize: '13px' }}>Dedicated Manager</span>
                         </Grid >
                       </Grid>
                     </Typography>
@@ -252,7 +342,7 @@ const goalComponent = () => {
                   </TabPanel>
                   <TabPanel className={classes.our_Process} value={value} index={3}>
 
-                    <Typography component="span">
+                    <Typography   sx={{ flexGrow: 1, display: { xs: "block", sm: "none" } }} component="span">
 
                       <Grid component="span"
                         container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{ paddingTop: '20px' }}>
@@ -260,7 +350,9 @@ const goalComponent = () => {
                           <Card sx={{ minWidth: 5, height: 48 }} component="span" >
                             <CardContent>
                               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                1.Requirements
+                                1.Requirements,   2.Wireframes, 3.MockUp,
+                                4. UI/UX, 5.Development,6.Testing,7.Handover
+                                ,8.Support,9.Free Branding
                               </Typography>
 
                             </CardContent>
@@ -268,107 +360,62 @@ const goalComponent = () => {
                             </CardActions>
                           </Card>
                         </Grid >
-                        <Grid component="span" style={{ height: '40px', textAlign: 'left', padding: '3px' }} item xs={12} sm={12} md={3}>
-                          <Card sx={{ minWidth: 5, height: 48 }} component="span" >
-                            <CardContent>
-                              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                2.Wireframes
-                              </Typography>
-
-                            </CardContent>
-                            <CardActions>
-                            </CardActions>
-                          </Card>
-                        </Grid >
-                        <Grid component="span" style={{ height: '40px', textAlign: 'left', padding: '3px' }} item xs={12} sm={12} md={3}>
-                          <Card sx={{ minWidth: 5, height: 48 }} component="span" >
-                            <CardContent>
-                              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                3.MockUp
-                              </Typography>
-
-                            </CardContent>
-                            <CardActions>
-                            </CardActions>
-                          </Card>
-                        </Grid >
-                        <Grid component="span" style={{ height: '40px', textAlign: 'left', padding: '3px' }} item xs={12} sm={12} md={3}>
-                          <Card sx={{ minWidth: 5, height: 48 }} component="span" >
-                            <CardContent>
-                              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                4. UI/UX
-                              </Typography>
-
-                            </CardContent>
-                            <CardActions>
-                            </CardActions>
-                          </Card>
-                        </Grid >
-
-                        <Grid component="span" style={{ height: '40px', textAlign: 'left', padding: '3px' }} item xs={12} sm={12} md={3}>
-                          <Card sx={{ minWidth: 5, height: 48 }} component="span" >
-                            <CardContent>
-                              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                5.Development
-                              </Typography>
-
-                            </CardContent>
-                            <CardActions>
-                            </CardActions>
-                          </Card>
-                        </Grid >
-                        <Grid component="span" style={{ height: '40px', textAlign: 'left', padding: '3px' }} item xs={12} sm={12} md={3}>
-                          <Card sx={{ minWidth: 5, height: 48 }} component="span" >
-                            <CardContent>
-                              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                6.Testing
-                              </Typography>
-
-                            </CardContent>
-                            <CardActions>
-                            </CardActions>
-                          </Card>
-                        </Grid >
-                        <Grid component="span" style={{ height: '40px', textAlign: 'left', padding: '3px' }} item xs={12} sm={12} md={3}>
-                          <Card sx={{ minWidth: 5, height: 48 }} component="span" >
-                            <CardContent>
-                              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                7.Handover
-                              </Typography>
-
-                            </CardContent>
-                            <CardActions>
-                            </CardActions>
-                          </Card>
-                        </Grid >
-                        <Grid component="span" style={{ height: '40px', textAlign: 'left', padding: '3px' }} item xs={12} sm={12} md={3}>
-                          <Card sx={{ minWidth: 5, height: 48 }} component="span" >
-                            <CardContent>
-                              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                8.Support
-                              </Typography>
-
-                            </CardContent>
-                            <CardActions>
-                            </CardActions>
-                          </Card>
-                        </Grid >
-                        <Grid component="span" style={{ height: '40px', textAlign: 'left', padding: '3px' }} item xs={12} sm={12} md={3}>
-                          <Card sx={{ minWidth: 5, height: 48 }} component="span" >
-                            <CardContent>
-                              <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
-                                9.Free Branding
-                              </Typography>
-
-                            </CardContent>
-                            <CardActions>
-                            </CardActions>
-                          </Card>
-                        </Grid >
+                     
 
                       </Grid>
                     </Typography>
 
+
+          <Box sx={{ maxWidth: 800 ,
+            display: { xs: "none", sm: "block" },
+            left:'20%',position:'relative'
+            
+          }}>
+                <Stepper activeStep={activeStep} orientation="vertical">
+                  {steps.map((step, index) => (
+                    <Step key={step.label}>
+                      <StepLabel
+                        optional={
+                          index === 4 ? (
+                            <Typography variant="caption">Last step</Typography>
+                          ) : null
+                        }
+                      >
+                        {step.label}
+                      </StepLabel>
+                      <StepContent>
+                        <Typography sx={{fontSize:'11px',fontWeight:'600'}}>{step.description}</Typography>
+                        <Box sx={{ mb: 2 }}>
+                          <div>
+                            <Button
+                              variant="contained"
+                              onClick={handleNext}
+                              sx={{ mt: 1, mr: 1 }}
+                            >
+                              {index === steps.length - 1 ? 'Finish' : 'Continue'}
+                            </Button>
+                            <Button
+                              disabled={index === 0}
+                              onClick={handleBack}
+                              sx={{ mt: 1, mr: 1 }}
+                            >
+                              Back
+                            </Button>
+                          </div>
+                        </Box>
+                      </StepContent>
+                    </Step>
+                  ))}
+                </Stepper>
+                {activeStep === steps.length && (
+                  <Paper square elevation={0} sx={{ p: 3 }}>
+                    <Typography>All steps completed - you&apos;re finished</Typography>
+                    <Button onClick={handleReset} sx={{ mt: 1, mr: 1 }}>
+                      Reset
+                    </Button>
+                  </Paper>
+                )}
+              </Box>
 
 
                   </TabPanel>
@@ -416,7 +463,7 @@ const goalComponent = () => {
 
                       <Grid component="span"
                         container spacing={2} columns={{ xs: 12, sm: 12, md: 12 }} style={{ paddingTop: '20px' }}>
-                        <Grid component="span" style={{ padding: '0px' }} item xs={6} sm={6} md={4}>
+                        <Grid component="span" style={{ padding: '0px' }} item xs={4} sm={6} md={4}>
                           <Card sx={{ minWidth: 5, height: 48 }} component="span" >
                             <CardContent>
                               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -429,7 +476,7 @@ const goalComponent = () => {
                             </CardActions>
                           </Card>
                         </Grid >
-                        <Grid component="span" style={{ padding: '0px' }} item xs={6} sm={6} md={4}>
+                        <Grid component="span" style={{ padding: '0px' }} item xs={4} sm={6} md={4}>
                           <Card sx={{ minWidth: 5, height: 48 }} component="span" >
                             <CardContent>
                               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -442,7 +489,7 @@ const goalComponent = () => {
                             </CardActions>
                           </Card>
                         </Grid >
-                        <Grid component="span" style={{ padding: '0px' }} item xs={6} sm={6} md={4}>
+                        <Grid component="span" style={{ padding: '0px' }} item xs={4} sm={6} md={4}>
                           <Card sx={{ minWidth: 5, height: 48 }} component="span" >
                             <CardContent>
                               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -455,7 +502,7 @@ const goalComponent = () => {
                             </CardActions>
                           </Card>
                         </Grid >
-                        <Grid component="span" style={{ padding: '0px' }} item xs={6} sm={6} md={4}>
+                        <Grid component="span" style={{ padding: '0px' }} item xs={4} sm={6} md={4}>
                           <Card sx={{ minWidth: 5, height: 48 }} component="span" >
                             <CardContent>
                               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -469,7 +516,7 @@ const goalComponent = () => {
                           </Card>
                         </Grid >
 
-                        <Grid component="span" style={{ padding: '0px' }} item xs={6} sm={6} md={4}>
+                        <Grid component="span" style={{ padding: '0px' }} item xs={4} sm={6} md={4}>
                           <Card sx={{ minWidth: 5, height: 48 }} component="span" >
                             <CardContent>
                               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
@@ -482,7 +529,7 @@ const goalComponent = () => {
                             </CardActions>
                           </Card>
                         </Grid >
-                        <Grid component="span" style={{ padding: '0px' }} item xs={6} sm={6} md={4}>
+                        <Grid component="span" style={{ padding: '0px' }} item xs={4} sm={6} md={4}>
                           <Card sx={{ minWidth: 5, height: 48 }} component="span" >
                             <CardContent>
                               <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>

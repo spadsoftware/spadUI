@@ -52,7 +52,7 @@ const HowItWorks = () => {
         padding: "70px 0px 0px 0px", 
         textAlign: 'center'
     }}>
-      <div className='subTitleHeading'>Step Process</div>
+      <div className='subTitleHeading'>Work Process</div>
       <h3 className='subTitleMainHeading'>How Spad Software Works-It's 3 step process.</h3>
       <div style={{fontSize:'18px',fontWeight: '600',color:'#4caf50',textAlign:'center', marginTop: '60px'}}>Start</div>
     <Timeline position="alternate" className='timeline-customize'>

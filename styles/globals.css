@@ -81,7 +81,7 @@ button {
 }
  
 .MuiTextField-root.MuiFormControl-root{ 
-  margin: 0px !important;
+  margin: 0px;
 }
 
 
@@ -111,7 +111,7 @@ button {
 .subTitleMainHeading{
   color: black;
   padding: 0px;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 20px;
   font-weight: bold;
   position: relative;
@@ -188,7 +188,7 @@ button {
 
 .timeLineSubText{
   color: #4e5564 !important;
-  font-size: 12px !important;
+  font-size: 11px !important;
   font-weight: 400 !important;
   font-family: 'Poppins' !important;
 }
