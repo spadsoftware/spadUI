@@ -28,20 +28,27 @@ const firebaseCloudMessaging = {
         appId: "1:1085795151920:web:87f4b9abf5590d180cbdf5",
       }
       const app = initializeApp(firebaseConfig);
-
+      console.log("status")
       try {
       //  const messaging = firebase.messaging();
       const messaging = getMessaging(app);
-
+      
         const tokenInLocalForage = await localforage.getItem("fcm_token");
+        console.log("tokenInLocalForage",tokenInLocalForage)
 
          // Return the token if it is alredy in our local storage
-        if (tokenInLocalForage !== null) {
-          return tokenInLocalForage;
-        }
+        // if (tokenInLocalForage !== null) {
+        //   return tokenInLocalForage;
+        // }
 
         // Request the push notification permission from browser
         const status = await Notification.requestPermission();
+        Notification.requestPermission().then(function(permission) {
+             console.log('permiss', permission)
+            
+            });
+            console.log("statusw",status)
+
         if (status && status === "granted") {
         // Get new token from Firebase
           const fcm_token = await getToken(messaging, {
@@ -54,6 +61,7 @@ const firebaseCloudMessaging = {
             return fcm_token;
           }
         }
+
       } catch (error) {
         console.error(error);
         return null;
