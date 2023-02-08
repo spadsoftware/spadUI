@@ -3,6 +3,7 @@ import Script from 'next/script';
 
 import '../styles/globals.css';
 import Layout from '../components/layout/layout';
+import "react-toastify/dist/ReactToastify.css";
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -47,6 +48,7 @@ function MyApp({ Component, pageProps }) {
 <link rel="canonical" href="https://www.spadsoftware.com"></link>
       </Head>
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-HM2WBMT0Q0"></Script>
+
       <Script>
       {` window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}

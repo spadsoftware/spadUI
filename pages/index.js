@@ -22,6 +22,7 @@ import Benefits from  './benefits'
 import MoneyBack from './moneyBack'
 import Script from 'next/script'
 
+import PushNotificationLayout from "../components/PushNotificationLayout";
 
 function HomePage(props) {
   return (
@@ -45,7 +46,11 @@ function HomePage(props) {
 
 
       </Head>
+      <PushNotificationLayout>
       <Home pageDetails={props.pageDetails}/>
+
+    </PushNotificationLayout>
+
       <About />
       <Goal />
       <HowItWork />
