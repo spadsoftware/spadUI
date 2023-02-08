@@ -10,10 +10,8 @@ const Faq = () => {
         <title>Spad Software | Faq</title>
         <meta name="keyword" content="Faq" />
       </Head>
-      <PushNotificationLayout>
 
      <FaqComponent />
-     </PushNotificationLayout>
 
     </>
   );

@@ -4,6 +4,8 @@ import "firebase/messaging";
 import { firebaseCloudMessaging } from "../utils/firebase";
 import { ToastContainer, toast } from "react-toastify";
 import { useRouter } from "next/router";
+import { getMessaging, getToken,onMessage} from 'firebase/messaging';
+
 
 function PushNotificationLayout({ children }) {
   const router = useRouter();
@@ -39,8 +41,8 @@ function PushNotificationLayout({ children }) {
 
   // Get the push notification message and triggers a toast to display it
   function getMessage() {
-    const messaging = firebase.messaging();
-    messaging.onMessage((message) => {
+    // const messaging = firebase.messaging();
+    onMessage((message) => {
       toast(
         <div onClick={() => handleClickPushNotification(message?.data?.url)}>
           <h5>{message?.notification?.title}</h5>
