@@ -19,6 +19,8 @@ messaging.onBackgroundMessage(function(payload) {
   const notificationTitle = payload.notification.title;
   const notificationOptions = {
     body: payload.notification.body,
+    vibrate: [200, 100, 200, 100, 200, 100, 200],
+    tag: "vibration-sample",
   };
 
   self.registration.showNotification(notificationTitle,

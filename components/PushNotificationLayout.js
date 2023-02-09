@@ -17,6 +17,7 @@ function PushNotificationLayout({ children }) {
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.addEventListener("message", (event) => {
         console.log("event for the service worker", event);
+        getMessage()
       });
     }
 
