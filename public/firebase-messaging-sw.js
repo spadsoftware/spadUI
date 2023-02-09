@@ -24,3 +24,5 @@ messaging.onBackgroundMessage(function(payload) {
   self.registration.showNotification(notificationTitle,
     notificationOptions);
 });
+
+//https://www.audreyhal.com/blog/push-notifications-with-firebase-in-react
