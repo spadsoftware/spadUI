@@ -182,7 +182,7 @@ var setting = {
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
-                id="panel2a-header"
+                id="panel2a-header1"
               >
                 <HelpOutlineIcon className= {classes.section_faq_Title}/>&nbsp;
                 <Typography className= {classes.section_faq_TitleText}>What kind of software does spad software develop?</Typography>
@@ -200,7 +200,7 @@ var setting = {
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
-                id="panel2a-header"
+                id="panel2a-header2"
               > <HelpOutlineIcon className= {classes.section_faq_Title} />&nbsp;
                 <Typography className= {classes.section_faq_TitleText}>How much does it cost for website development?</Typography>
               </AccordionSummary>
@@ -217,7 +217,7 @@ var setting = {
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
-                id="panel1a-header"
+                id="panel1a-header3"
               > <HelpOutlineIcon className= {classes.section_faq_Title} />&nbsp;
                 <Typography className= {classes.section_faq_TitleText}> How can I track the status of my project? </Typography>
               </AccordionSummary>
@@ -232,7 +232,7 @@ var setting = {
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
-                id="panel2a-header"
+                id="panel2a-header4"
               >
                 <HelpOutlineIcon className= {classes.section_faq_Title} />&nbsp;
                 <Typography className= {classes.section_faq_TitleText}>Can you maintain my website? </Typography>
@@ -248,7 +248,7 @@ var setting = {
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel1a-content"
-                id="panel1a-header"
+                id="panel1a-header5"
               ><HelpOutlineIcon className= {classes.section_faq_Title}/>&nbsp;
                 <Typography className= {classes.section_faq_TitleText}>Why we need to train in Spad Software?</Typography>
               </AccordionSummary>
@@ -263,7 +263,7 @@ var setting = {
               <AccordionSummary
                 expandIcon={<ExpandMoreIcon />}
                 aria-controls="panel2a-content"
-                id="panel2a-header"
+                id="panel2a-header6"
               >
                 <HelpOutlineIcon className= {classes.section_faq_Title}/>&nbsp;
                 <Typography className= {classes.section_faq_TitleText}>Why we need to Spad Software consultancy?</Typography>

@@ -23,7 +23,7 @@
   content: '';
   height: 800px;
   width: 100%;
-  background: url('../../public/images/tech/vector-40.png') no-repeat right;
+  /* background: url('../../public/images/tech/vector-40.png') no-repeat right; */
   position: absolute;
   right: 0;
   top: 0px;

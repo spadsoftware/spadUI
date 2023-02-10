@@ -94,14 +94,14 @@ function MainNavigation(props) {
 
     const options = { passive: true }; // options must match add/remove event
     const scroll = (event) => {
-      console.log(event)
+      // console.log(event)
       // if(event.path[1]){
       // if(event.path[1].window.pageYOffset<500){
       //   setRerender(false);
       // }
       // else{
       //   setRerender(true);
-      //   // console.log(rerender)
+      //   // // console.log(rerender)
       // }
       // }
     };
@@ -183,7 +183,7 @@ function MainNavigation(props) {
     setAnchorEl(event.currentTarget);
   };
   const handleClose = (event) => {
-    console.log(event)
+    // console.log(event)
     FileSaver.saveAs(
       `https://www.spadsoftware.com/images/logo/${event}`,
       event
@@ -200,9 +200,9 @@ function MainNavigation(props) {
         {navItems.map((item) => (
           <ListItem key={item} disablePadding sx={{ textAlign: 'center',color: 'black'  }}>
            
-              <Link   href={item[0].toLocaleLowerCase()+ item.slice(1)}>
+              <Link   href={item[0].toLocaleLowerCase()+ item.slice(1)} shallow>
               <ListItemButton sx={{ textAlign: 'center',color: 'black'  }}
-            to={item[0].toLocaleLowerCase()+ item.slice(1)}>
+            >
 
               <ListItemText primary={item} />
              </ListItemButton>
@@ -314,8 +314,9 @@ function MainNavigation(props) {
                   >
                   
                   <Link href={'/'+item[0].toLocaleLowerCase()+ item.slice(1)} shallow>
-              <a style={{color:'Black'}}
-              className={router.pathname == item[0].toLocaleLowerCase()+ item.slice(1) ? classes.active : ""}>{item}</a>
+              <p style={{color:'Black'}}
+              className={router.pathname == item[0].toLocaleLowerCase()+ item.slice(1) ? 
+              classes.active : ""}>{item}</p>
             </Link>
 
 

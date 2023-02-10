@@ -22,7 +22,7 @@ const PageNotFound = () => {
     <Box sx={{margin:20}}>
         <Typography variant='h5'>Whoops! Page not found</Typography>
         <Typography variant='h5'>Redirecting to home page</Typography>
-        <Link href='/'><a><Button variant='text'>Go to Home</Button></a></Link>
+        <Link href='/'><Button variant='text'>Go to Home</Button></Link>
     </Box>
   )
 }

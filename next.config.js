@@ -34,3 +34,26 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+
+
+const withBundleAnalyzer = require('@next/bundle-analyzer')({
+  enabled: process.env.ANALYZE === 'true'
+})
+
+
+
+const DuplicatePackageCheckerPlugin = require('duplicate-package-checker-webpack-plugin')
+
+module.exports = {
+  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+    config.plugins.push(new DuplicatePackageCheckerPlugin())
+    config.resolve.alias['fast-deep-equal'] = path.resolve(
+      __dirname,
+      'node_modules',
+      'fast-deep-equal'
+    )
+    return config
+  },
+}
+
+module.exports = withBundleAnalyzer({})

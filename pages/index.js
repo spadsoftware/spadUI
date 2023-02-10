@@ -29,19 +29,26 @@ function HomePage(props) {
     <Fragment>
       <link rel="shortcut icon" href="favicon.jpg" />
       <Head>
-      <meta charset="UTF-8" />
-      <meta http-equiv="X-UA-Compatible" content="IE=edge"></meta>
+      <meta charSet="UTF-8" />
+      <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software</title>
-      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-HM2WBMT0Q0"></Script>
-      <Script>
-    {` window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+<title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software</title>
+<meta name="title" content="Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software" />
+<meta name="description" content="Top Web Design & Development Company in Bangalore. Our expert team of website developers creates high quality websites and digital marketing. "  />
 
-      gtag('config', 'G-HM2WBMT0Q0');
-      `}
-    </Script>
+<meta property="og:type" content="website"  />
+<meta property="og:url" content="https://www.spadsoftware.com/"  />
+<meta property="og:title" content="Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software"  />
+<meta property="og:description" content="Top Web Design & Development Company in Bangalore. Our expert team of website developers creates high quality websites and digital marketing. "  />
+<meta property="og:image" content="https://www.spadsoftware.com/images/logo/spadLogov1.jpg"  />
+
+<meta property="twitter:card" content="summary_large_image"  />
+<meta property="twitter:url" content="https://www.spadsoftware.com/"  />
+<meta property="twitter:title" content="Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software"  />
+<meta property="twitter:description" content="Top Web Design & Development Company in Bangalore. Our expert team of website developers creates high quality websites and digital marketing. "  />
+<meta property="twitter:image" content="https://www.spadsoftware.com/images/logo/spadLogov1.jpg"  />
+     
+     
 
 
 

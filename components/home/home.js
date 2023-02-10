@@ -155,7 +155,7 @@ const HomeComponent = (props) => {
   
   async function sendMessageHandler(event) {
     event.preventDefault();
-// console.log(enteredDate,enteredEmail,enteredName,
+// // console.log(enteredDate,enteredEmail,enteredName,
 //   enteredPhone,enteredCategory,enteredMessage,value.$d)
 
     setRequestStatus('pending');
@@ -764,7 +764,7 @@ const HomeComponent = (props) => {
                                   onChange={(event) =>
                                     setEnteredCategory(event.target.value)
                                   }
-                                  id="grouped-select" label="Grouping" 
+                                  id="grouped-selects" label="Grouping" 
                                   className={classes.homeServiceiconcategorylabel}>
                                   <MenuItem value="">Services</MenuItem>
                                     <ListSubheader>software Development</ListSubheader>

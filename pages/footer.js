@@ -103,14 +103,14 @@ const footer = () => {
   
     const data = await response.json();
     setNewsletter('');
-  console.log()
+  // console.log()
     if (!response.ok) {
       throw new Error(data.message || 'Something went wrong!');
     }
   }
   async function sendMessageHandler(event) {
     event.preventDefault();
-    // console.log(enteredDate,enteredEmail,enteredName,
+    // // console.log(enteredDate,enteredEmail,enteredName,
     //   enteredPhone,enteredCategory,enteredMessage,value.$d)
 
     setRequestStatus('pending');

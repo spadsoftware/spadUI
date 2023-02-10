@@ -70,7 +70,7 @@ import {
 
   const About = (props) => {
     const { query } = props;
-  // console.log(query);
+  // // console.log(query);
     const [enteredEmail, setEnteredEmail] = useState('');
     const [enteredName, setEnteredName] = useState('');
     const [enteredMessage, setEnteredMessage] = useState('');
@@ -79,7 +79,7 @@ import {
     const [enteredDate, setEnteredDate] = useState('');
     async function sendMessageHandler(event) {
       event.preventDefault();
-  // console.log(enteredDate,enteredEmail,enteredName,
+  // // console.log(enteredDate,enteredEmail,enteredName,
   //   enteredPhone,enteredCategory,enteredMessage,value.$d)
   
       setRequestStatus('pending');
@@ -113,7 +113,7 @@ import {
   const handleChange = (newValue) => {
     setValue(newValue);
   };
-    // console.log(services);
+    // // console.log(services);
     //const [filterdSvcs, setfilterdSvcs] =  useState('');
 
     const router = useRouter();
@@ -121,11 +121,11 @@ import {
 
     let filterdSvcs = Services.filter(services => services.name == router.asPath.split('/')[2])
     // setfilterdSvcs(fltrsvc)
-    console.log(filterdSvcs)
+    // console.log(filterdSvcs)
 
     // useEffect(() => {
       
-    //   console.log("fltrsvc")
+    //   // console.log("fltrsvc")
     // }, []);
 
 
@@ -473,7 +473,7 @@ function createMarkup() {
   // ) => {
   //    const res = await fetch('http://localhost:3000/api/services')
   //    const data = await res.json()
-  //    console.log(data)
+  //    // console.log(data)
   //    return { props: { services: data.services } }
   // }
 
@@ -492,11 +492,11 @@ function createMarkup() {
   // export const getStaticProps: GetStaticProps = async (
   //    context: GetStaticPropsContext
   // ) => {
-  //    // console.log(context);
+  //    // // console.log(context);
   
   //    const res = await fetch('http://localhost:3000/api/services')
   //    const { services } = await res.json()
-  //    console.log({ services })
+  //    // console.log({ services })
   //    return { props: { services: services } }
   // }
   
