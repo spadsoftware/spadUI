@@ -90,23 +90,18 @@ const MoneyBack = () => {
               <div className='text-left'>
                 <h3 className='subTitleMainHeading'>
                   100% Money-Back Guarantee</h3>
-                <div style={{ fontSize: '15px', color: '#0000008a', fontWeight: '400', lineHeight: '30px' }}>Get the design you love or your money back. it’s as simple as that.</div>
-                <div style={{ fontSize: '15px', color: '#0000008a', fontWeight: '400', lineHeight: '30px' }}>We believe if our clients are happy only then can we stay and thrive
-                  in business for the long term. for some reason,
-                  if you don’t feel satisfied we’re not satisfied as well
-                  either we do everything we can to make you happy or
-                  &nbsp;<span style={{ borderBottom: '3px solid #d9232d', color: '#d9232d' }}> you’ll
-                    get 100% money back </span>after seeing the first design.</div>
+                <div style={{ fontSize: '15px', color: '#0000008a', fontWeight: '400', lineHeight: '30px' }}>We believe if our clients are happy only then can we stay and thrive.
+                A &nbsp;<span style={{ borderBottom: '3px solid #000000', color: '#000000' }}> "Money-Back Guarantee" </span> is a statement or promise made by SPAD Software Consultancy Services Private Limited to its clients, which essentially says that if the client is 
+                not satisfied with the services provided, they will receive a full or partial refund of their payment. 
+               
+                  At SPAD Software Consultancy Services Private Limited, we're committed to providing our clients with the best possible software consultancy services.
+                   That's why we offer a money-back guarantee on all of our services. 
+                 
+                    If for any reason you're not completely satisfied with the services we provide, 
+                    we'll work with you to make it right or provide you with a full refund. We believe in our services, 
+                    and  &nbsp;<span style={{ borderBottom: '3px solid #000000', color: '#000000' }}> we're confident that you'll be completely satisfied with the results </span>.</div>
 
-                <div style={{ paddingTop: '10px' }}><Image
-                  src={`/images/mb/signature.png`}
-                  alt={'Spad Software Logo'}
-                  width={158}
-                  height={38}
-                />
-                  <div style={{ top: '-18px', position: 'relative' }}>Sambathkumar Manjula</div>
-                  <div style={{ top: '-18px', position: 'relative' }}> Director of Spad software</div>
-                </div>
+              
 
               </div>
             </div>
@@ -117,15 +112,23 @@ const MoneyBack = () => {
                 <h3 className='subTitleMainHeading'>
                   Refund Scenario:</h3>
                 <div style={{ fontSize: '15px', color: '#0000008a', fontWeight: '400', lineHeight: '30px' }}>
-                  The client must ask for a full refund at the stage when they get the first or second
-                  variation(option) of the design. After entering into revision
-                  mode or beyond 2nd design stage, client is not eligible to get 100% as a refund.</div>
-                <div style={{color: '#0000008a', fontWeight: '400'}}>if the client wants to see all the designs and in the end, he/she is still not
+                It's important to note that a money-back guarantee should be specific and clear, and should outline the conditions and circumstances under which a client is eligible for a refund.</div>
+                <div style={{color: '#0000008a', fontWeight: '400'}}>
+                Additionally, the company should have a clear process for handling refund requests, and should communicate this process to clients in advance to ensure a smooth and straightforward process if a refund is requested.
+                if the client wants to see all the designs and in the end, he/she is still not
                   satisfied then the client is eligible to ask for a 50% as refund.</div>
                 <div style={{color: '#0000008a', fontWeight: '400'}}>Read the full <Link href='/refund'><span>
                 Refund policy here</span></Link></div>
 
-
+                <div style={{ paddingTop: '10px' }}><Image
+                  src={`/images/mb/signature.png`}
+                  alt={'Spad Software Logo'}
+                  width={158}
+                  height={38}
+                />
+                  <div style={{ top: '-18px', position: 'relative' }}>Sambathkumar Manjula</div>
+                  <div style={{ top: '-18px', position: 'relative' }}> Director of Spad software</div>
+                </div>
               </div>
             </div>
           </Grid>

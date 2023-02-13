@@ -85,28 +85,28 @@ function a11yProps(index) {
 }
 const steps = [
   {
-    label: 'Requirements Analysis',
-    description: `Requirements gathering is more than just asking a few questions `,
+    label: 'Consultation',
+    description: `Our process starts with a consultation, where we work with you to understand your specific software needs and goals. During this phase, we listen to your concerns and ideas, and use this information to develop a customized solution that meets your unique needs`,
   },
   {
-    label: 'Wireframes & mockUp & UI/UX',
+    label: 'Software Selection',
     description:
-      'The website design process is transforming user requirements into a suitable form.',
+      'Based on the information gathered during the consultation phase, we will work with you to select the software that is right for your business. We will provide recommendations based on your specific requirements, and help you evaluate the different options to ensure that you choose the software that is best for your business',
   },
   {
-    label: 'Development & Testing',
+    label: 'Implementation',
     description:
-      'After getting the system design documents, the work is divided into small modules and units and the actual development of coding is started.',
+      'Once the software has been selected, we will work with you to implement it into your business. This may include configuring the software, integrating it with other systems, and training your staff on how to use it effectively.',
   },
   {
-    label: 'Handover & support',
+    label: 'Project Management',
     description:
-      'Once the full web application or software has been fully tested and the no more high priority issues remain at anymore.',
+      ' Throughout the implementation process, we will work closely with you to manage the project and ensure that it is completed on time and within budget. We will provide regular updates and progress reports, and we will be available to answer any questions or address any concerns that you may have.',
   },
  
   {
-    label: 'Free Promotion/Branding',
-    description: ` We some of the commonly known promotion techniques such as mouth marketing, Websites, Social media, Flyers, Newspaper Ads. `,
+    label: 'Ongoing Support',
+    description: `After the implementation is complete, we'll continue to provide ongoing support to ensure that you get the most from your software. This may include providing software upgrades, fixing any bugs or issues that may arise, and answering any questions that you may have.`,
   },
 ];
 
@@ -149,10 +149,10 @@ const goalComponent = () => {
           </div>
 
 
-          <h3 className={classes.section_about1}>Our Goal is to reach our mission,vision,
-            <span className={classes.section_wwd_lt}>
-              why to choose us?
-            </span>
+          <h3 className={classes.section_about1}>Our goal at SPAD Software Consultancy Services Private Limited is to
+           help businesses succeed in the digital world.
+            {/* <span className={classes.section_wwd_lt}>
+            </span> */}
 
 
           </h3>
@@ -201,12 +201,8 @@ const goalComponent = () => {
                         container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{ paddingTop: '20px' }}>
                         <Grid component="span" item xs={12} sm={12} md={12}
                           className={classes.hdr}>
-
-
-                          Provide exceptional people who deliver extraordinary results
-                          With spad software, you can be confident that your software will be developed to the highest standards.
-                          We use the latest technologies and tools to ensure that your software is of the highest quality.
-
+"Our mission at SPAD Software Consultancy Services Private Limited is to empower businesses to achieve their goals through cutting-edge technology solutions. 
+We strive to provide our clients with exceptional web design, development, mobile app development, and digital marketing services that help them stay ahead of the competition. Our team of experts is committed to delivering results-driven solutions that drive success and growth for our clients."
                         </Grid >
                       </Grid>
                     </Typography>
@@ -221,11 +217,13 @@ const goalComponent = () => {
                         fontSize: '18px',
                         fontWeight: '600'
                       }} >
-                        Bridging The Gap Between
-                        &nbsp;<span style={{ borderBottom: '3px solid red' }}>Business And Technology.</span>
+                        
+                        &nbsp;<span style={{  background: '#d9d3c7' }}> Bridging The Gap Between Business And Technology.&nbsp;</span>
 
                       </span>
-
+                      <Grid component="span" item xs={12} sm={12} md={12}>
+                      We will help our clients establish a strong online presence and reach their target audience effectively. .                      
+                      </Grid>
                       <Grid component="span"
                         container spacing={2} columns={{ xs: 12, sm: 8, md: 12 }} style={{ paddingTop: '20px' }}>
                         <Grid component="span" item xs={3} sm={4} md={3}>
@@ -335,8 +333,7 @@ const goalComponent = () => {
                       <Grid component="span"
                         container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} style={{ paddingTop: '20px' }}>
                         <Grid component="span" item xs={12} sm={12} md={12} className={classes.hdr}>
-                          Spad software is a versatile tool that can help you with all your software needs, from developing custom applications to providing real-time training and placement. with our team of talented developers, you can be sure that your project is in good hands.
-                        </Grid >
+                        At SPAD Software Consultancy Services Private Limited, our vision is to be the leading provider of innovative technology solutions for businesses. We envision a future where companies of all sizes have access to the tools and resources they need to succeed in the digital world. Our team is dedicated to delivering exceptional web design, development, mobile app development, and digital marketing services that help our clients reach their goals and make a lasting impact in their industries.                        </Grid >
                       </Grid>
                     </Typography>
                   </TabPanel>

@@ -58,9 +58,7 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}>UI / UX Design and Web Development</h3>
-                  <p className={classes.items_lists}>A stunning design and happy customers? hat’s right.
-                    Everything from the right tools, brilliant ideas and high expertise,
-                    you are guaranteed to enjoy the finished work that we provide.</p>
+                  <p className={classes.items_lists}>Elevate your online presence with SPAD Software Consultancy Services Private Limited, where creativity meets technology. Our team of UI/UX designers and web developers combine their expertise to bring your ideas to life, delivering intuitive and engaging websites that set you apart from the competition. From wireframing to launch, we are dedicated to providing a seamless and effective user experience. Discover the 'Design Revolution' of your website today with SPAD.</p>
                   <Link href={`whatWeDo/ui`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -72,9 +70,7 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}> Mobile Development</h3>
-                  <p className={classes.items_lists}>Create a web design which can interact with your database dynamically with a proper source language. Our
-                    web development team programs an interactive, efficient, user-friendly web page for your visitors. Your
-                    platform is in our hands! Sweat not!</p>
+                  <p className={classes.items_lists}>Unleash the power of mobility with SPAD Software Consultancy Services Private Limited. Our team of skilled mobile developers creates innovative and user-friendly mobile apps that bring your ideas to life. Whether you need a native app for iOS or Android, or a cross-platform solution, we have the expertise to deliver. From concept to launch, we work with you every step of the way to ensure your success</p>
                   <Link href={`whatWeDo/mb`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -85,8 +81,7 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}>CMS Website Development</h3>
-                  <p className={classes.items_lists}>DRIVE your user control with our CMS service; we make our clients website more informative. Stand on
-                    top in your division with our content customized service</p>
+                  <p className={classes.items_lists}>Our team of expert developers specializes in creating custom CMS websites that are both beautiful and functional. Whether you need a simple brochure website or a complex e-commerce platform, we have the skills and experience to deliver. With our user-friendly CMS, you'll have complete control over your website's content, giving you the flexibility to make updates and changes with ease. Join the 'CMS Revolution' with SPAD today.</p>
                   <Link href={`whatWeDo/cms`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -98,9 +93,7 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}>WordPress</h3>
-                  <p className={classes.items_lists}>The countless themes and iconic features of WordPress development has contributed
-                    to the success of various companies. We offer client assistance to help enjoy the
-                    best of WordPress development.</p>
+                  <p className={classes.items_lists}>Make a lasting impression with SPAD Software Consultancy Services Private Limited. Our team of WordPress experts specializes in creating custom WordPress websites that are both visually stunning and user-friendly. Whether you need a simple blog or a complex e-commerce platform, we have the skills and experience to deliver. With our custom WordPress solutions, you'll have the flexibility and control you need to manage your online presence with ease. Join the 'WordPress Wave' with SPAD today.</p>
                   <Link href={`whatWeDo/wp`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -111,7 +104,9 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}>Digital Marketing</h3>
-                  <p className={classes.items_lists}> Our Internet Marketing experts knowledge with Search Engine Optimization,Search Engine Marketing, Social Media Optimization, Link Building and Digital Internet Advertising. We are providing affordable online Marketing services to all our clients. We have listed all the Digital Marketing Services in this website. You can go through them and make the right decision of consigning a project with us!</p>
+                  <p className={classes.items_lists}>
+                  Maximize your online potential with SPAD Software Consultancy Services Private Limited. Our team of digital marketing experts leverages the latest techniques to drive traffic, increase conversions, and grow your business. From search engine optimization (SEO) to social media marketing, we have the skills and experience to deliver results. Join the 'Marketing Momentum' with SPAD and take your online presence to the next level.
+                  </p>
                   <Link href={`whatWeDo/dm`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -122,9 +117,7 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}> Social Media Marketing</h3>
-                  <p className={classes.items_lists}>Create a web design which can interact with your database dynamically with a proper source language. Our
-                    web development team programs an interactive, efficient, user-friendly web page for your visitors. Your
-                    platform is in our hands! Sweat not!</p>
+                  <p className={classes.items_lists}>Connect with your audience like never before with SPAD Software Consultancy Services Private Limited. Our team of social media marketing experts creates and implements custom strategies that build brand awareness, engage your followers, and drive results. From Facebook to Instagram, we have the knowledge and experience to deliver a consistent and effective presence across all of your social media platforms. Join the 'Social Surge' with SPAD and see your online presence soar.</p>
                   <Link href={`whatWeDo/smm`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -135,7 +128,8 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}>Search Engine Optimization</h3>
-                  <p className={classes.items_lists}> Search Engine Optimization is used to show your website in the unpaid search engines (Google, Bing, Yahoo), and improve the ranking of your website. When your website is listed in major search sites, results in letting your content to appear related term in searched on the very first pages.</p>
+                  <p className={classes.items_lists}> Rise to the top with SPAD Software Consultancy Services Private Limited. Our team of SEO experts uses the latest techniques to optimize your website and improve your search engine rankings. From keyword research to on-page optimization, we have the skills and experience to deliver results. With our effective SEO strategies, you'll gain more visibility, attract more traffic, and ultimately, grow your business. Join the 'SEO Summit' with SPAD and see your online presence soar.
+                  </p>
                   <Link href={`whatWeDo/seo`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -147,7 +141,9 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}>Branding</h3>
-                  <p className={classes.items_lists}>Your greatest challenge is to prove to your prospects that you are different and better than any other company. Like many other things in life, when it comes to messages first impressions count. By stating your company’s vision and objectives, you appeal to the brand persona.</p>
+                  <p className={classes.items_lists}>
+                  Bring your brand to life with SPAD's powerful promotion strategies - Reach your target audience and drive business growth like never before.
+                  Unleash the power of your brand with a strong and unforgettable identity - Create a lasting impression with our expert branding solutions.</p>
                   <Link href={`whatWeDo/bg`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -158,8 +154,7 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}>Payment Gateway Integration</h3>
-                  <p className={classes.items_lists}>With e-commerce and online shopping increasing at exponential rates now a days, it is essential that your web store is integrated with a multiple payment gateway. Payment gateway is a service that can be used to process credit card and debit card transactions when accepting online orders from your customers.
-                    These payment gateways are provided by different banks and other dedicated Payment Processors. </p>
+                  <p className={classes.items_lists}>Payment gateway integration refers to the process of connecting an online store or a website to a payment gateway. A payment gateway is a secure online platform that facilitates the transfer of payment information between a website and a acquiring bank, which is the bank that processes credit card transactions on behalf of the merchant. </p>
                   <Link href={`whatWeDo/pgi`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -170,7 +165,7 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}> Website Maintenanace & support</h3>
-                  <p className={classes.items_lists}>We are considerate about maintaining the website which is created by the user and update the website to surpass the users’ opponent in any way even such as simple change in text, adding additional complex functionality or tools to the websites.</p>
+                  <p className={classes.items_lists}>Keep your website up and running with SPAD's expert maintenance and support services - Trust us to keep your online presence in top shape.</p>
                   <Link href={`whatWeDo/wms`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -181,7 +176,7 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}>Website Redesigning</h3>
-                  <p className={classes.items_lists}> We design and develop different types of splendid websites including Static, E-commerce, customized, dynamic, and content management system etc. Our web development team has great knowledge to create best websites with latest trends in design of web pages.</p>
+                  <p className={classes.items_lists}>Revamp your online presence with SPAD's expert website redesigning services - Experience the power of a visually stunning and user-friendly website!</p>
                   <Link href={`whatWeDo/wrd`} key='1'>
                     <span className={classes.read_more}>Read More</span> 
                   </Link>
@@ -192,8 +187,7 @@ const WhatWeDoComponent = () => {
               <div className={classes.item_list}>
                 <div>
                   <h3 className={classes.masonry_item_title}>RealTime Training & Consultancy</h3>
-                  <p className={classes.items_lists}>DRIVE your user control with our CMS service; we make our clients website more informative. Stand on
-                    top in your division with our content customized service</p>
+                  <p className={classes.items_lists}>Accelerate your growth with SPAD's real-time training and consultancy services - Empower your team with the knowledge and skills they need to succeed.</p>
 
                 </div>
               </div>

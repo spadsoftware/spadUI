@@ -31,10 +31,12 @@ function HomePage(props) {
       <Head>
       <meta charSet="UTF-8" />
       <meta httpEquiv="X-UA-Compatible" content="IE=edge"></meta>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" /> 
       <title>Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software</title>
-      <meta name="title" content="Web Design Company in Bangalore | Website Development Company in Bangalore | Best Training & placement company in Bangalore- Spad Software" />
-      <meta name="description" content="Top Web Design & Development Company in Bangalore. Our expert team of website developers creates high quality websites and digital marketing. "  />
+      <meta name="title" content="SPAD Software | Web Design, Development, Mobile App Development, Digital Marketing" />
+      <meta name="description" content="SPAD Software is a leading provider of web design, development, mobile app development, and digital marketing services. Our innovative solutions are designed to help you stand out from the crowd, giving you the competitive edge you need to succeed. 
+      Get in touch with us today and let us help you turn your vision into a reality!"  />
+      <meta name="keyword" content="Web Design, Web Development, Mobile App Development, Digital Marketing, Branding, Consultancy Services, Web Maintenance, Real-Time Training" />
 
       <meta property="og:type" content="website"  />
       <meta property="og:url" content="https://www.spadsoftware.com/"  />

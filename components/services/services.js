@@ -43,10 +43,9 @@ const ServicesComponent = () => {
       <section id="services" className={classes.section_service}>
 
         <div className={classes.section__btm}>
-        <div className={classes.aboutSpan}>What we offers</div>  
+        <div className={classes.aboutSpan}>Services</div>  
           <h3 className={classes.section__subtlt}>
-            Get Expert Web Design, Development & <br />
-            Digital Marketing Solutions with Real-Time Training and Placement Assistance.</h3>
+          Unleash your business potential with SPAD's comprehensive services - From software consulting to branding, web design, and digital marketing, we've got you covered.</h3>
         </div>
 
         <Box sx={{ width: '100%', typography: 'body1' }} className={classes.section_service_box}>

@@ -625,19 +625,17 @@ const HomeComponent = (props) => {
                   textAlign: "left",
                 }}
               >
-                Looking for the &nbsp;
+                Are you Looking for the &nbsp;
                 <span className= {classes.section_wwd_lt}>
-                  Right Web Design & Development Company
+                Best Web Design,Web Development, Mobile App Development, and Digital Marketing Company
                 </span>{" "}
-                to visualize your business idea into reality? Then you are
-                landed in right place!   Spad software is your one-stop shop for all your software development needs.
-                Power Up Your Development and Design Skills with spad Software.
-                Turn your visions into reality with the help of our talented team of developers.
-                Our team consists of the best website builders in bangalore who
-                specializes in providing services for most of the industries
-                like Ecommerce, Healthcare, IT, food Processing, Automobiles,
-                Steel Equipments, Mining, Banking & Finance, software Training &
-                stock market Training.
+                  to make your business idea a reality? In that case, you've found the right place.
+Spad software is your one-stop shop for all your Business needs. Power Up Your Development and Design Skills with spad Software.
+Our innovative solutions are designed to help you stand out from the crowd, giving you the competitive edge you need to succeed.
+With a focus on quality, efficiency, and affordability, we are committed to helping you achieve your
+ goals and grow your business. So why wait? 
+ Experience the 'Revolutionize' of your business today with us!"
+  Get in touch with us today and let us help you turn your vision into a reality!
               </div>
             </div>
           </Grid>
@@ -723,43 +721,7 @@ const HomeComponent = (props) => {
                           style={{ width: "100%" }}
                           sx={{ m: 0 }} variant="standard"
                         >
-                          {/* <InputLabel htmlFor="grouped-select" shrink={true}>
-                            Services
-                          </InputLabel>
-                          <NativeSelect
-                            variant="outlined"
-                            value={enteredCategory}
-                            onChange={(event) =>
-                              setEnteredCategory(event.target.value)
-                            }
-                            id="grouped-select"
-                            label="Grouping"
-                            style={{ left: "17px" }}
-                          >
-                            <option value="dv"> </option>
-
-                            <optgroup label="software Development">
-                              <option value="SD-wd">Web Design</option>
-                              <option value="SD-ld">Logo Design</option>
-                              <option value="SD-crm">CRM Development</option>
-                              <option value="SD-wrd">Website Redesign</option>
-                              <option value="SD-wm">
-                                Website Maintenanace
-                              </option>
-                            </optgroup>
-
-                            <optgroup label="software Training">
-                              <option value="ST-ct">Corporate Training</option>
-                              <option value="ST-one2one">
-                                One to one training
-                              </option>
-                              <option value="ST-ot">Online training</option>
-                              <option value="ST-cr">Class room training</option>
-                            </optgroup>
-                            <option value="SC">software Consultancy</option>
-                            <option value="DM">Digital Marketing</option>
-                            <option value="BG">Branding</option>
-                          </NativeSelect> */} 
+                         
                                 <Select defaultValue={enteredCategory} displayEmpty
                                   onChange={(event) =>
                                     setEnteredCategory(event.target.value)
@@ -833,7 +795,7 @@ const HomeComponent = (props) => {
                       height={56}
                     />{" "}
                   </div>
-                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}> 1st year Running successfully.</div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}> 1st year Running Successfully.</div>
                 </Paper>
                 <Paper elevation={1} style={{background:'#bedbff'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
@@ -844,7 +806,7 @@ const HomeComponent = (props) => {
                       height={56}
                     />{" "}
                   </div>
-                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}> 10+ Projects launched</div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}> 10+ Projects Launched</div>
                 </Paper>
                 <Paper  elevation={2} style={{background:'#e5e5e5'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
@@ -856,7 +818,7 @@ const HomeComponent = (props) => {
                       height={56}
                     />{" "}
                   </div>
-                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>client satisfaction</div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>Client Satisfaction</div>
                 </Paper>
                 <Paper  elevation={3} style={{background:'#e7ffc9'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
@@ -867,7 +829,7 @@ const HomeComponent = (props) => {
                       height={56}
                     />
                   </div>
-                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>happy customer</div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>Happy Client</div>
                 </Paper>
                 <Paper   elevation={4} style={{background:'#fff2d5'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
@@ -879,7 +841,7 @@ const HomeComponent = (props) => {
                     />
                   </div>
 
-                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>100% money Back</div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>Money Back Policy</div>
                 </Paper>
                 <Paper  elevation={5} style={{background:'#d4d6d9'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
@@ -891,7 +853,7 @@ const HomeComponent = (props) => {
                     />
                   </div>
 
-                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>trusted Relationship</div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>Trusted Relationship</div>
                 </Paper>
                 <Paper  elevation={6} style={{background:'#b1c3d7'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>
@@ -903,7 +865,7 @@ const HomeComponent = (props) => {
                       height={56}
                     />{" "}
                   </div>
-                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>more options for marketing</div>
+                  <div style={{textAlign:'center',fontSize:'12px',padding: '10px', fontWeight:'600'}}>More Otions for Marketing</div>
                 </Paper>
                 {/* <Paper  elevation={7} style={{background:'#bdffe4'}}>
                   <div style={{textAlign:'center',padding: '10px'}}>

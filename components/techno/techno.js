@@ -43,7 +43,9 @@ const TechnoComponent = () => {
           </div> */}
         <div className={classes.section__btm}>
           <div className={classes.aboutspan}>Technology</div>
-          <h3 className={classes.section__subtlt}>We are offering latest technology to our clients and students </h3>
+          <h3 className={classes.section__subtlt}>
+          Stay ahead of the curve with SPAD's cutting-edge technologies - Harness the power of innovation and transform your business with our expert technology solutions
+           </h3>
         </div>
         <Grid container columns={{ xs: 4, sm: 4, md: 12 }}>
           <Grid item xs={1} md={2} sm={2} className={classes.marginBottom20}>

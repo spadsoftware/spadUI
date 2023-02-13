@@ -69,75 +69,48 @@ const AboutComponent = () => {
         <Grid item xs={6} className= {classes.solution_cards_box}>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 8, md: 12 }}>
         <Grid item xs={6}  className= {classes.our_solution_category}>
-          <Item className= {classes.wrapper1}>
+          <Item className= {classes.wrapper2}>
           <div >
             <h3>Development</h3>
-           <div className= {classes.about_company} >
-          <div className={classes.approach}>
-
-          <Timeline position="alternate" className= {classes.dot_line_ul}>
-      <TimelineItem className= {classes.dot_line}>
-      <TimelineOppositeContent
-          align="right"
-          variant="p"
-          color="text.secondary"
-          sx={{ fontFamily: "Gilroy-Bold !important",
-          fontWeight: 'bold',
-          fontSize: "11px"}}
-        >
-         1.Analysis
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot />
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
-          fontWeight: 'bold',
-          fontSize: "11px"}}>2.Plan</TimelineContent>
-      </TimelineItem>
-      <TimelineItem className= {classes.dot_line}>
-        <TimelineOppositeContent color="text.secondary"   sx={{ fontFamily: "Gilroy-Bold !important",
-          fontWeight: 'bold',
-          fontSize: "11px"}}>
-        4.Develop 
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot color="primary"/>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
-          fontWeight: 'bold',
-          fontSize: "11px"}}>3.Design&nbsp;&nbsp;&nbsp;</TimelineContent>
-      </TimelineItem>
-      <TimelineItem className= {classes.dot_line}>
-        <TimelineOppositeContent color="text.secondary"   sx={{ fontFamily: "Gilroy-Bold !important",
-          fontWeight: 'bold',
-          fontSize: "11px"}}>
-          6.Testing&nbsp;&nbsp;
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot color="error"/>
-          <TimelineConnector />
-        </TimelineSeparator>
-        <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
-          fontWeight: 'bold',
-          fontSize: "11px"}}>5.Deploy</TimelineContent>
-      </TimelineItem>
-      <TimelineItem className= {classes.dot_line_last}>
-        <TimelineOppositeContent color="text.secondary"   sx={{ fontFamily: "Gilroy-Bold !important",
-          fontWeight: 'bold',
-          fontSize: "11px"}}> 
-          8.Review
-        </TimelineOppositeContent>
-        <TimelineSeparator>
-          <TimelineDot color="success"/>
+            <div className= {classes.about_company} >
+          <div className="">
         
-        </TimelineSeparator>
-        <TimelineContent   sx={{ fontFamily: "Gilroy-Bold !important",
-          fontWeight: 'bold',
-          fontSize: "11px"}}>7.Launch&nbsp;&nbsp;</TimelineContent>
-      </TimelineItem>
-    </Timeline>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Consultation</span>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Software Selection</span>
+
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Implementation</span>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Project Management </span> 
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      /> Ongoing Support </span>
+        
 
           </div>
           </div>
@@ -152,20 +125,40 @@ const AboutComponent = () => {
           <div className="">
         
           <span className={classes.test_bold}>
-          <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
           Free 3 months Maintanance</span>
           <span className={classes.test_bold}>
-          <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
           Dedicated Manager to each Projects</span>
 
           <span className={classes.test_bold}>
-          <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
-          Free Domain Purchase & Hosting</span>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Cost & Quality</span>
           <span className={classes.test_bold}>
-          <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
           3 Months Free Digital Marketing </span> 
           <span className={classes.test_bold}>
-          <Checkbox {...label} icon={<FavoriteBorder />} checkedIcon={<Favorite />} />
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
           Real Time Report Tracking </span>
         
 
@@ -174,7 +167,7 @@ const AboutComponent = () => {
           </div>
           </Item>
         </Grid>
-        <Grid item xs={6} className= {classes.our_solution_category_even}>
+        <Grid item xs={6} className= {classes.our_solution_category}>
         <Item className= {classes.wrapper2}>
         <div >
             <h3>Strength</h3>
@@ -188,7 +181,7 @@ const AboutComponent = () => {
         icon={<BookmarkBorderIcon />}
         checkedIcon={<BookmarkIcon />}
       />
-      Web Developemnt</span>
+      Web & Mobile App Developemnt</span>
           <span className={classes.test_bold}>
           <Checkbox
         {...label}
@@ -214,39 +207,54 @@ const AboutComponent = () => {
         {...label}
         icon={<BookmarkBorderIcon />}
         checkedIcon={<BookmarkIcon />}
-      />RealTime Training</span>
+      />CRM,CMS,E-commerce Application</span>
           
           </div>
           </div>
           </div>
           </Item>
           <Item className= {classes.wrapper3}>
-          <div >
             <h3>Services</h3>
            <div className= {classes.about_company} >
-          <div className="">
-          {/* <h2 className={classes.test_bold}>
-
-Our Services</h2> */}
+         
           <span className={classes.test_bold}>
-          <Checkbox {...label} defaultChecked color="default" size="small" />
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
                     Web Development</span>
           <span className={classes.test_bold}>
-          <Checkbox {...label} defaultChecked color="default" size="small" />
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
                     Mobile Development </span>
           <span className={classes.test_bold}>
-          <Checkbox {...label} defaultChecked color="default" size="small" />
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
           Digital Marketing & Branding</span>
           <span className={classes.test_bold}>
-          <Checkbox {...label} defaultChecked color="default" size="small" />
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
           Software Training & Consultancy</span>
           <span className={classes.test_bold}>   
-          <Checkbox {...label} defaultChecked color="default" size="small" />
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
           Maintanance & Support </span>
-          <span> &nbsp;  </span>
+         
           </div>
-          </div>
-          </div>
+         
           </Item>
         </Grid>
        
@@ -268,18 +276,22 @@ Our Services</h2> */}
 
           
             <p className={classes.cl_brown}>Established in 2022, in Bangalore, India, 
-            Spad Software is a web design, development, and digital marketing agency. We also provide training and placement consultancy services. We are a team of talented and experienced developers who are passionate about software development and digital marketing.
-
+            SPAD Software Consultancy Services Private Limited was founded on the principles of providing outstanding customer service and delivering results that exceed expectations. With a team of highly-skilled and experienced professionals, the company is dedicated to helping businesses succeed in today's competitive marketplace by providing innovative, cutting-edge solutions that drive growth and success.
          </p>
           <p className={classes.cl_brown}>A company’s website design plays a key role in providing the first impression to the customers.
              
-          &nbsp;<span style={{borderBottom:'3px solid red',color:'red'}}>  Each Spad Software developer stands as the pillar to our growth as the leading web design and development company
+         
+          Whether you're looking for help with a new website design,Mobile App development, a complex web development project, or a comprehensive digital marketing strategy, 
+             
+              SPAD Software Consultancy Services Private Limited has the expertise and experience to help you achieve your goals
+
+              We involve providing expert advice and guidance to clients on how to effectively use technology to meet their business needs
+              With a commitment to quality, 
+              &nbsp;<span style={{borderBottom:'3px solid #800000',color:'#800000'}}>  SPAD Software Consultancy Services Private Limited is the right partner for businesses looking to succeed in today's digital world.
               </span>  &nbsp;
-We believe in delivering quality work and customer satisfaction is our top priority.
+Thank you for considering SPAD Software Consultancy Services Private Limited for your software needs. We look forward to the opportunity to work with you and help bring your vision to life.
 
-Our team has a vast amount of experience in software development, web development, digital marketing, and graphic design. 
-
-We are always looking to push the boundaries and exceed our client’s expectations. If you are looking for a team of passionate and experienced developers who can help you take your business to the next level then contact us today!.</p>
+</p>
               
             </div>
             </Item>

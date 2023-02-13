@@ -14,8 +14,10 @@ const HowItWorks = () => {
         padding: "70px 0px 0px 0px", 
         textAlign: 'center'
     }}>
-      <div className='subTitleHeading'>Working Process</div>
-      <h3 className='subTitleMainHeading'>How Spad Software Works-It's 3 step process.</h3> 
+      <div className='subTitleHeading'>Book An Appoinment</div>
+      <h3 className='subTitleMainHeading'>
+      A leading provider of innovative and custom software solutions.
+      Schedule a demo with us today and experience the power of software made for you."</h3> 
       <div className={classes.workingProcessContainer}>
         <div className={classes.workingProcessrow}>
           <div className={classes.workingProcessCol}>
@@ -31,7 +33,10 @@ const HowItWorks = () => {
                   </div>
                   <div className={classes.workingDetail}>
                     <h4>Tell Us your Requirement</h4>
-                    <p className={classes.workingContent}>You can select the requirement like web development,web design,digital marketing,real time Training,Placement services through book an Appoinment</p>
+                    <p className={classes.workingContent}>
+                    Bring your vision to life with SPAD - Tell us your requirements and let us 
+                    turn your ideas into reality with our custom solutions and expert consultation
+                    </p>
                   </div>
                   <div className={classes.workingHoverDetail}>
                       <MenuBookOutlinedIcon className={classes.icons}/>
@@ -52,7 +57,10 @@ const HowItWorks = () => {
                   </div>
                   <div className={classes.workingDetail}>
                     <h4>We will alalyze your requirement</h4>
-                    <p className={classes.workingContent}>Our Expert team will look into your requirement and will prepare the process and quote</p>
+                    <p className={classes.workingContent}>
+                    Unlock your business potential with SPAD's expert analysis - 
+                    Let us analyze your requirements and provide customized solutions for maximum impact and growth.
+                    </p>
                   </div>
                   <div className={classes.workingHoverDetail}>
                       <ZoomInOutlinedIcon className={classes.icons}/>
@@ -70,11 +78,12 @@ const HowItWorks = () => {
                   </div>
                   <div className={classes.workingDetail}>
                     <h4>Get the quote</h4>
-                    <p className={classes.workingContent}>we will get back with you within 24 hours and provide estimation quote & development Ideas</p>
+                    <p className={classes.workingContent}>we will get back with you within 24 hours 
+                     & Transform your business with SPAD - Get a quote now and see the difference with our customized solutions and expert consultation</p>
                   </div>
                   <div className={classes.workingHoverDetail}>
                       <RequestQuoteOutlinedIcon className={classes.icons}/>
-                    <h4>within 12 hours</h4>
+                    <h4>within 24 hours</h4>
                    </div>
               </div>
           </div>  

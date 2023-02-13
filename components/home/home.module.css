@@ -12,9 +12,8 @@
 .section_wwd_lt{
 /* color:#d9232d;
 background-color: #FFFF00; */
-background: linear-gradient(#d9232d,#d9232d) bottom repeat-x;
+background: #d9d3c7;
 /* transition: all 0.25s ease-out; */
-color:white;
 }
 
 .home1{
@@ -375,7 +374,7 @@ text-align: right;
 .btnPrimary {
 font-size: 14px;
 cursor: pointer;
-background-color: #d8232d !important;
+background-color: #800000 !important;
 border: 1px solid #d8232d !important;
 padding: 10px 15px;
 width: 100%;
@@ -389,9 +388,9 @@ text-transform: capitalize;
 }
 
 .btnPrimary:hover {
-background-color: transparent;
+background-color: none;
 border-color: #d8232d;
-color: #d8232d;
+color: white;
 box-shadow: none;
 }
 
