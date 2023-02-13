@@ -54,7 +54,7 @@ const firebaseCloudMessaging = {
         getToken(messaging, {
             vapidKey: "BDV95MBrRKg-Q5IgTIgwA_obgr-jzSXcbj-6wnzezN1ZMyj3RrVjgBFspcuG3pWfjtlH-mcLVZnDIonAS3QD7F4",
           }).then((currentToken) => {
-        console.log("currentToken",currentToken)
+    // console.log("currentToken",currentToken)
             if (currentToken) {
               const FIREBASE_API_KEY = `AAAA_M5vMDA:APA91bEhXjLPG3o6riCgSFA5OLGKEO2zycv_9EoKzmoJFP_4unn_3VlxEFDjwqXRnVvVCBK4XMS0IGNVlYhH-Voxy1y4hlED8Bp7_GFArRQtpSGp9aINIkntGkPX_NKb9ixbv18sth58`;
               // Subscribe to the topic
