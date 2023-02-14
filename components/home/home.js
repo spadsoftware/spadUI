@@ -337,24 +337,19 @@ const HomeComponent = (props) => {
                   textAlign: "left",
                 }}
               >
-                Looking for the &nbsp;
+                Are you Looking for the &nbsp;
                 <span className= {classes.section_wwd_lt}>
-                  Right Web Design & Development Company
+                Best Web Design,Web Development, Mobile App Development, and Digital Marketing Company
                 </span>{" "}
-                to visualize your business idea into reality? Then you are
-                landed in right place! We are team of talented developers
-                developing all kind of &nbsp;
+                to make your business idea a reality? In that case, you've found the right place. &nbsp;
                 <span className= {classes.section_wwd_lt}>
-                  software & Digital Marketing{" "}
+                Spad software is your one-stop shop for all your Business needs{" "}
                 </span>{" "}
                 as well as providing &nbsp;
-                <span className= {classes.section_wwd_lt}>
-                  Real time Training and placement.{" "}
+                Power Up Your Development and Design Skills with spad Software. Our innovative solutions are designed to help you stand out from the crowd, giving you the competitive edge you need to succeed. With a focus on quality, efficiency, and affordability, we are committed to helping you achieve your goals and grow your business. 
+                .
+                <span className= {classes.section_wwd_lt}> So why wait? Experience the 'Revolutionize' of your business today with us!" Get in touch with us today and let us help you turn your vision into a reality!
                 </span>
-                Our team consists of the best website builders in bangalore who
-                specializes in providing services for most of the industries
-                like Ecommerce, Healthcare, IT, food Processing, Automobiles,
-                Steel Equipments, Mining, Banking & Finance.
               </div>
             </Grid>
 

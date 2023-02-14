@@ -69,9 +69,148 @@ const AboutComponent = () => {
         <Grid item xs={6} className= {classes.solution_cards_box}>
         <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 6, sm: 8, md: 12 }}>
         <Grid item xs={6}  className= {classes.our_solution_category}>
+         
           <Item className= {classes.wrapper2}>
+            <h3>Services</h3>
+           <div className= {classes.about_company} >
+         
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+                    Cloud computing & Hosting</span>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+                   Cyber security </span>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Web Application Firewall</span>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Software Training & Consultancy</span>
+          <span className={classes.test_bold}>   
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Maintanance & Support </span>
+         
+          </div>
+         
+          </Item>
+          <Item className= {classes.wrapper3}>
           <div >
-            <h3>Development</h3>
+            <h3>Benefits</h3>
+           <div className= {classes.about_company} >
+          <div className="">
+        
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Free 3 months Maintanance</span>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Dedicated Manager to each Projects</span>
+
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Cost , Quality & Code security</span>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          3 Months Free Digital Marketing </span> 
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+          Real Time Report Tracking </span>
+        
+
+          </div>
+          </div>
+          </div>
+          </Item>
+        </Grid>
+        <Grid item xs={6} className= {classes.our_solution_category}>
+        <Item className= {classes.wrapper2}>
+        <div >
+            <h3>Services</h3>
+           <div className= {classes.about_company} >
+          <div className="">
+          {/* <h2 className={classes.test_bold}>Speciality</h2> */}
+
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />
+      Web & Mobile App Developemnt</span>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />Digital Marketing & Branding
+       </span>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />Andriod IOS Hybrid App  </span>
+
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />Logo Design & UI/UX Design</span>
+          <span className={classes.test_bold}>
+          <Checkbox
+        {...label}
+        icon={<BookmarkBorderIcon />}
+        checkedIcon={<BookmarkIcon />}
+      />CRM,CMS,E-commerce Application</span>
+          
+          </div>
+          </div>
+          </div>
+          </Item>
+          <Item className= {classes.wrapper3}>
+          <div >
+            <h3> Process</h3>
             <div className= {classes.about_company} >
           <div className="">
         
@@ -118,146 +257,16 @@ const AboutComponent = () => {
 
 
           </Item>
-          <Item className= {classes.wrapper3}>
-          <div >
-            <h3>Benefits</h3>
-           <div className= {classes.about_company} >
-          <div className="">
-        
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-          Free 3 months Maintanance</span>
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-          Dedicated Manager to each Projects</span>
-
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-          Cost & Quality</span>
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-          3 Months Free Digital Marketing </span> 
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-          Real Time Report Tracking </span>
-        
-
-          </div>
-          </div>
-          </div>
-          </Item>
         </Grid>
-        <Grid item xs={6} className= {classes.our_solution_category}>
-        <Item className= {classes.wrapper2}>
-        <div >
-            <h3>Strength</h3>
-           <div className= {classes.about_company} >
-          <div className="">
-          {/* <h2 className={classes.test_bold}>Speciality</h2> */}
-
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-      Web & Mobile App Developemnt</span>
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />Digital Marketing & Branding
-       </span>
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />Andriod IOS Hybrid App  </span>
-
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />Logo Design & UI/UX Design</span>
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />CRM,CMS,E-commerce Application</span>
-          
-          </div>
-          </div>
-          </div>
-          </Item>
-          <Item className= {classes.wrapper3}>
-            <h3>Services</h3>
-           <div className= {classes.about_company} >
-         
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-                    Web Development</span>
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-                    Mobile Development </span>
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-          Digital Marketing & Branding</span>
-          <span className={classes.test_bold}>
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-          Software Training & Consultancy</span>
-          <span className={classes.test_bold}>   
-          <Checkbox
-        {...label}
-        icon={<BookmarkBorderIcon />}
-        checkedIcon={<BookmarkIcon />}
-      />
-          Maintanance & Support </span>
-         
-          </div>
-         
-          </Item>
-        </Grid>
-       
+        <Grid item xs={12} md={12} className= {classes.our_solution_category}>
+        <video
+       controls
+        className='absolute w-auto min-w-full min-h-full max-w-none'
+        style={{width:'100%',height:'100%'}}
+      >
+        <source src='../images/logo/spadSoftware.mp4' type='video/mp4' />
+        Your browser does not support the video tag.
+      </video>        </Grid>
       </Grid>
         </Grid>
         <Grid item xs={6} >
@@ -295,76 +304,17 @@ Thank you for considering SPAD Software Consultancy Services Private Limited for
               
             </div>
             </Item>
-            </Grid>
-            {/* <Grid item xs={12}>
-          <Item className={classes.about_wrapperright2}>  
-          <Grid container  columnSpacing={{ xs: 1, sm: 1, md: 1}}>
-          <Grid item xs={6}>
-            <Item className={classes.containerWrapper}>
-            <span>Our Mission</span>
-            
-            <div >
-                  <div className={classes.card_text} >
-                  <Image className={classes.about_mission}
-                  src={`/images/about/clock.png`}
-                  alt='Spad Software Log about'
-                  width={256}
-                  height={56}
-                />
-                    <span className={classes.card_mission_icon_text}>On Time Delivery &nbsp; &nbsp;
-                     </span>
-                   
-                   </div>
-                   <div className={classes.card_text} >
+            {/* <Item  >
+            <Image
+                  src={`/images/logo/watchvideo.gif`}
+                  alt='Spad Software About us'
+                  width={334}
+                  height={224}
                  
-                    <Image className={classes.about_ac}
-                  src={`/images/about/ac.png`}
-                  alt='Spad Software Log about'
-                  width={256}
-                  height={56}
                 />
-                    <span className={classes.card_missionCost_icon_text}>Affordable Costing  </span>
-
-                   </div>
-                   
-                   
-                <p className="card_text">Provide exceptional people who deliver extraordinary results. </p>
-                <p className="card_text"> Provide innovative software solutions for excellence and enterprise compliance. </p>
-              </div>
-
-
-    </Item>
-        </Grid>
-          <Grid item xs={6}>
-
-            
-            <Item className={classes.containerWrapper}>
-              
-             <span>Why to Choose Us?</span> 
-
-              <div >
-                  <div className={classes.card_text} >
-                  <Image className={classes.about_choose}
-                  src={`/images/about/clock.png`}
-                  alt='Spad Software Log about'
-                  width={256}
-                  height={56}
-                />
-                    <span className={classes.card_tc_icon_text}>Trusted Relationship &nbsp; &nbsp;
-                     </span>
-                   
-                   </div>
-                   
-                <p className="card_text">BRIDGING THE GAP BETWEEN BUSINESS AND TECHNOLOGY. </p>
-                <p className="card_text">  SPAD Software is committed to helping its students to reach their goals and their training experiences, 
-                by providing the innovative surroundings and faculties </p>
-              </div>
-            </Item>
-          </Grid>
-        </Grid>
-          
-            </Item>
-            </Grid> */}
+                  </Item> */}
+            </Grid>
+           
             </Grid>
         </Grid>
 

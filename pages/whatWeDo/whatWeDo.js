@@ -192,6 +192,67 @@ const WhatWeDoComponent = () => {
                 </div>
               </div>
             </Item>
+
+            <Item className={classes.masonry_item}>
+              <div className={classes.item_list}>
+                <div>
+                  <h3 className={classes.masonry_item_title}>Cyber security</h3>
+                  <p className={classes.items_lists}>
+                  Regular software updates and patches to address any security vulnerabilities in the website.
+                  Reduce the risk of attacks such as SQL injection, cross-site scripting, and privilege escalation.
+                  Use of secure protocols such as HTTPS, SSL, and TLS.
+                  Use of strong and unique passwords, two-factor authentication, and account lockout policies to protect user accounts.
+
+Implementation of firewalls, intrusion detection systems, and other security measures to prevent attacks and unauthorized access.
+                  </p>
+
+                </div>
+              </div>
+            </Item>
+
+            <Item className={classes.masonry_item}>
+              <div className={classes.item_list}>
+                <div>
+                  <h3 className={classes.masonry_item_title}>Web Application Firewall</h3>
+                  <p className={classes.items_lists}>
+                  A Web Application Firewall (WAF) is a security solution designed to protect web applications from common web-based attacks.
+                  A WAF can block malicious traffic before it reaches the web application, preventing attacks such as SQL injection, cross-site scripting (XSS), and cross-site request forgery (CSRF).
+                  A WAF can be configured to block traffic from known bad IP addresses or countries, reducing the risk of attacks from specific regions or sources.
+
+A WAF can provide detailed logging and reporting capabilities, allowing website owners to monitor traffic and identify potential security incidents.
+                  </p>
+
+                </div>
+              </div>
+            </Item>
+
+            <Item className={classes.masonry_item}>
+              <div className={classes.item_list}>
+                <div>
+                  <h3 className={classes.masonry_item_title}>Cloud computing & Hosting</h3>
+                  <p className={classes.items_lists}>
+                  Cloud computing can be used for a wide range of purposes such as data storage and processing, application development and testing, and more. Cloud hosting is typically used for web hosting, e-commerce, software as a service (SaaS), and other web-based applications.
+                  Cloud computing can be provided through various models such as public cloud, private cloud, and hybrid cloud, each with its own set of benefits and considerations. Cloud hosting is typically provided through a public cloud model, where users pay for the resources they use on a pay-as-you-go basis.
+
+                  </p>
+
+                </div>
+              </div>
+            </Item>
+
+            <Item className={classes.masonry_item}>
+              <div className={classes.item_list}>
+                <div>
+                  <h3 className={classes.masonry_item_title}>E-commerce Application</h3>
+                  <p className={classes.items_lists}>
+                  E-commerce applications are web-based applications designed to facilitate online buying and selling of goods or services.
+                  Key Feature:Product Catalog,Shopping Cart,Payment Gateway Integration,User Registration and Login,Order Management,Security.
+
+                  </p>
+
+                </div>
+              </div>
+            </Item>
           </Masonry>
         </Box>
 
