@@ -434,21 +434,37 @@ We strive to provide our clients with exceptional web design, development, mobil
                       component="span">
                       <span style={{
                         fontSize: '18px', display: 'block', color: 'black',
-                        fontWeight: '600'
+                        fontWeight: '600',textAlign:'left',lineHeight: '30px'
                       }} >
+                        <img
+                src={`/images/footer/arrow.png`}
+                style={{ width: "12px", marginRight: "9px" }}
+                className="img-fluid"
+              />
                         <span style={{ color: '#de4332', }}>Team Lead</span>: you can reach Manager Within  4hour time frame
                       </span>
                       <span style={{
                         fontSize: '18px', display: 'block', color: 'black',
-                        fontWeight: '600'
+                        fontWeight: '600',textAlign:'left',lineHeight: '30px'
                       }} >
+                        <img
+                src={`/images/footer/arrow.png`}
+                style={{ width: "12px", marginRight: "9px" }}
+                className="img-fluid"
+              />
                         <span style={{ color: '#de4332', }}>Manager</span> :you can reach Within  12hour time frame
                       </span>
 
                       <span style={{
                         fontSize: '18px', display: 'block', color: 'black',
-                        fontWeight: '600'
+                        fontWeight: '600',textAlign:'left',lineHeight: '30px'
+
                       }} >
+                        <img
+                src={`/images/footer/arrow.png`}
+                style={{ width: "12px", marginRight: "9px" }}
+                className="img-fluid"
+              />
                         <span style={{ color: '#de4332', }}>CTO&CEO</span>: you can reach Within  3 days time frame
                       </span>
 

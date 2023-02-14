@@ -382,7 +382,7 @@ function createMarkup() {
                   }}
                 >
 
-          <div style={{textAlign:'center',fontSize:'15px',fontWeight:'600'}}>Why spad software for Your 
+          <div style={{textAlign:'center',fontSize:'15px',fontWeight:'600'}}>Why spad software for Your &nbsp;
           {filterdSvcs[0]?filterdSvcs[0].title:''}
           ?</div>
 
@@ -433,7 +433,7 @@ function createMarkup() {
                 <div style={{textAlign:'center',fontSize:'15px',fontWeight:'600'}}> Why  {filterdSvcs[0]?filterdSvcs[0].title:''} for your dream project?</div>
                 
                 {filterdSvcs[0]?filterdSvcs[0].desc:''}
-                <p>Our experts understand the latest UI technologies and architectures, as well as key user experience trends.</p>
+                <p>Our experts understand the latest technologies and architectures, as well as key user experience trends.</p>
                 </Paper>
               </Grid>
 

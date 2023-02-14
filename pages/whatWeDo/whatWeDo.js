@@ -205,7 +205,9 @@ const WhatWeDoComponent = () => {
 
 Implementation of firewalls, intrusion detection systems, and other security measures to prevent attacks and unauthorized access.
                   </p>
-
+                  <Link href={`whatWeDo/cs`} key='1'>
+                    <span className={classes.read_more}>Read More</span> 
+                  </Link>
                 </div>
               </div>
             </Item>
@@ -221,7 +223,9 @@ Implementation of firewalls, intrusion detection systems, and other security mea
 
 A WAF can provide detailed logging and reporting capabilities, allowing website owners to monitor traffic and identify potential security incidents.
                   </p>
-
+                  <Link href={`whatWeDo/waf`} key='1'>
+                    <span className={classes.read_more}>Read More</span> 
+                  </Link>
                 </div>
               </div>
             </Item>
@@ -235,7 +239,9 @@ A WAF can provide detailed logging and reporting capabilities, allowing website 
                   Cloud computing can be provided through various models such as public cloud, private cloud, and hybrid cloud, each with its own set of benefits and considerations. Cloud hosting is typically provided through a public cloud model, where users pay for the resources they use on a pay-as-you-go basis.
 
                   </p>
-
+                  <Link href={`whatWeDo/ch`} key='1'>
+                    <span className={classes.read_more}>Read More</span> 
+                  </Link>
                 </div>
               </div>
             </Item>
@@ -249,7 +255,9 @@ A WAF can provide detailed logging and reporting capabilities, allowing website 
                   Key Feature:Product Catalog,Shopping Cart,Payment Gateway Integration,User Registration and Login,Order Management,Security.
 
                   </p>
-
+                  <Link href={`whatWeDo/ecom`} key='1'>
+                    <span className={classes.read_more}>Read More</span> 
+                  </Link>
                 </div>
               </div>
             </Item>
